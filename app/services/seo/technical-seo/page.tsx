@@ -194,9 +194,8 @@ export default function TechnicalSEOPage() {
     return (
         <div className="pt-16 overflow-hidden">
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-24 lg:py-32 text-white">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558494949-ef526b0042a0?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/90" />
+            <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-5" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <motion.div
@@ -204,27 +203,26 @@ export default function TechnicalSEOPage() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/30 text-blue-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                                <Settings className="h-4 w-4" />
-                                <span>Technical SEO Services</span>
+                            <div className="inline-block bg-blue-50 border border-blue-100 text-blue-600 px-4 py-2 rounded-full text-[10px] font-normal uppercase tracking-widest mb-6">
+                                Technical SEO Services
                             </div>
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                                The Engine Behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Top Rankings</span>
+                            <h1 className="text-5xl md:text-7xl font-normal text-gray-900 mb-6 leading-tight tracking-tight">
+                                The Engine Behind <span className="text-blue-600">Top Rankings</span>
                             </h1>
-                            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                            <p className="text-xl text-gray-600 mb-8 leading-relaxed font-normal">
                                 Don't let invisible errors hold you back. We optimize your site's infrastructure for maximum speed, crawlability, and performance.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center bg-blue-500 text-white px-8 py-4 rounded-lg hover:bg-blue-600 transition-all shadow-lg hover:shadow-blue-500/25 font-bold"
+                                    className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-xl hover:brightness-110 transition-all shadow-sm font-normal uppercase tracking-widest text-xs"
                                 >
                                     Get Technical Audit
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Link>
                                 <Link
                                     href="#process"
-                                    className="inline-flex items-center justify-center bg-white/10 text-white border border-white/20 px-8 py-4 rounded-lg hover:bg-white/20 transition-all backdrop-blur-sm"
+                                    className="inline-flex items-center justify-center bg-gray-50 text-gray-700 border border-gray-100 px-8 py-4 rounded-xl hover:bg-gray-100 transition-all font-normal uppercase tracking-widest text-xs"
                                 >
                                     See Our Process
                                 </Link>
@@ -236,37 +234,37 @@ export default function TechnicalSEOPage() {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="relative hidden lg:block"
                         >
-                            <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-3xl opacity-20 animate-pulse" />
-                            <div className="relative bg-gray-800/50 backdrop-blur-xl border border-gray-700 p-8 rounded-2xl shadow-2xl">
+                            <div className="absolute -inset-4 bg-blue-100 rounded-2xl blur-3xl opacity-20 animate-pulse" />
+                            <div className="relative bg-white border border-gray-100 p-8 rounded-[2.5rem] shadow-2xl">
                                 <div className="flex items-center justify-between mb-8">
                                     <div className="flex space-x-2">
-                                        <div className="w-3 h-3 rounded-full bg-red-500" />
-                                        <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                                        <div className="w-3 h-3 rounded-full bg-green-500" />
+                                        <div className="w-3 h-3 rounded-full bg-red-400" />
+                                        <div className="w-3 h-3 rounded-full bg-yellow-400" />
+                                        <div className="w-3 h-3 rounded-full bg-blue-400" />
                                     </div>
-                                    <div className="text-gray-400 text-sm font-mono">audit_results.json</div>
+                                    <div className="text-gray-400 text-[10px] font-normal uppercase tracking-widest">audit_results.json</div>
                                 </div>
-                                <div className="space-y-4 font-mono text-sm">
-                                    <div className="flex justify-between items-center text-green-400">
-                                        <span>✓ Core Web Vitals</span>
-                                        <span>Passed</span>
+                                <div className="space-y-4 font-normal text-sm">
+                                    <div className="flex justify-between items-center text-gray-900 border-b border-gray-50 pb-2">
+                                        <span className="text-gray-500 text-xs uppercase tracking-tight">Core Web Vitals</span>
+                                        <span className="text-blue-600 font-normal">Passed</span>
                                     </div>
-                                    <div className="flex justify-between items-center text-green-400">
-                                        <span>✓ SSL Certificate</span>
-                                        <span>Valid</span>
+                                    <div className="flex justify-between items-center text-gray-900 border-b border-gray-50 pb-2">
+                                        <span className="text-gray-500 text-xs uppercase tracking-tight">SSL Certificate</span>
+                                        <span className="text-blue-600 font-normal">Valid</span>
                                     </div>
-                                    <div className="flex justify-between items-center text-green-400">
-                                        <span>✓ Mobile Usability</span>
-                                        <span>100/100</span>
+                                    <div className="flex justify-between items-center text-gray-900 border-b border-gray-50 pb-2">
+                                        <span className="text-gray-500 text-xs uppercase tracking-tight">Mobile Usability</span>
+                                        <span className="text-blue-600 font-normal">100/100</span>
                                     </div>
-                                    <div className="flex justify-between items-center text-green-400">
-                                        <span>✓ Crawl Errors</span>
-                                        <span>0 Found</span>
+                                    <div className="flex justify-between items-center text-gray-900">
+                                        <span className="text-gray-500 text-xs uppercase tracking-tight">Crawl Errors</span>
+                                        <span className="text-blue-600 font-normal">0 Found</span>
                                     </div>
-                                    <div className="h-px bg-gray-700 my-4" />
-                                    <div className="flex justify-between items-center text-blue-400 font-bold">
-                                        <span>Health Score</span>
-                                        <span>98/100</span>
+                                    <div className="h-px bg-gray-50 my-4" />
+                                    <div className="flex justify-between items-center text-gray-900 pt-2">
+                                        <span className="text-gray-900 font-normal uppercase tracking-widest text-xs">Health Score</span>
+                                        <span className="text-3xl font-normal tracking-tight text-blue-600">98%</span>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +274,7 @@ export default function TechnicalSEOPage() {
             </section>
 
             {/* Stats Section */}
-            <section className="py-12 bg-blue-900 border-y border-blue-800">
+            <section className="py-12 bg-gray-50 border-y border-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         {[
@@ -286,8 +284,8 @@ export default function TechnicalSEOPage() {
                             { label: 'Client Satisfaction', value: '100%' }
                         ].map((stat, index) => (
                             <div key={index}>
-                                <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
-                                <div className="text-blue-200 text-sm">{stat.label}</div>
+                                <div className="text-3xl md:text-4xl font-normal text-gray-900 mb-1 uppercase tracking-tight">{stat.value}</div>
+                                <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">{stat.label}</div>
                             </div>
                         ))}
                     </div>
@@ -298,8 +296,8 @@ export default function TechnicalSEOPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Common Issues We Resolve</h2>
-                        <p className="text-lg text-gray-600">Technical errors can silently kill your rankings. We find and fix them.</p>
+                        <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">Common Issues We Resolve</h2>
+                        <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">Technical errors can silently kill your rankings. We find and fix them.</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-6">
                         {issuesWeFix.map((issue, index) => {
@@ -308,12 +306,12 @@ export default function TechnicalSEOPage() {
                                 <motion.div
                                     key={index}
                                     whileHover={{ y: -5 }}
-                                    className="flex items-center space-x-4 p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all"
+                                    className="flex items-center space-x-4 p-6 bg-white rounded-2xl border border-gray-100 hover:border-blue-200 hover:shadow-xl transition-all shadow-sm"
                                 >
-                                    <div className="bg-red-100 p-3 rounded-lg">
-                                        <Icon className="h-6 w-6 text-red-500" />
+                                    <div className="bg-blue-50 p-3 rounded-xl">
+                                        <Icon className="h-6 w-6 text-blue-600" />
                                     </div>
-                                    <span className="font-semibold text-gray-900">{issue.title}</span>
+                                    <span className="font-normal text-gray-900 tracking-tight uppercase text-xs">{issue.title}</span>
                                 </motion.div>
                             );
                         })}
@@ -324,10 +322,8 @@ export default function TechnicalSEOPage() {
             {/* Detailed Services Grid */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Comprehensive Technical Optimization</h2>
-                        <p className="text-lg text-gray-600">We handle the complex backend details so you don't have to.</p>
-                    </div>
+                    <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">Comprehensive Technical Optimization</h2>
+                    <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">We handle the complex backend details so you don't have to.</p>
 
                     <motion.div
                         variants={containerVariants}
@@ -342,13 +338,13 @@ export default function TechnicalSEOPage() {
                                 <motion.div
                                     key={index}
                                     variants={itemVariants}
-                                    className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+                                    className="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 group"
                                 >
                                     <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
                                         <Icon className="h-6 w-6 text-blue-600 group-hover:text-white transition-colors duration-300" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                                    <h3 className="text-xl font-normal text-gray-900 mb-3 tracking-tight uppercase text-lg">{feature.title}</h3>
+                                    <p className="text-gray-600 leading-relaxed font-normal text-sm">{feature.description}</p>
                                 </motion.div>
                             );
                         })}
@@ -360,22 +356,22 @@ export default function TechnicalSEOPage() {
             <section id="process" className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Audit Process</h2>
-                        <p className="text-lg text-gray-600">A systematic approach to technical perfection.</p>
+                        <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">Our Audit Process</h2>
+                        <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">A systematic approach to technical perfection.</p>
                     </div>
 
                     <div className="grid md:grid-cols-4 gap-8">
                         {auditProcess.map((step, index) => (
                             <div key={index} className="relative group">
                                 {index < auditProcess.length - 1 && (
-                                    <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-100 group-hover:bg-blue-100 transition-colors" />
+                                    <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-50 group-hover:bg-blue-50 transition-colors duration-500" />
                                 )}
-                                <div className="relative z-10 bg-white p-6 rounded-xl border border-gray-100 hover:border-blue-200 hover:shadow-lg transition-all text-center">
-                                    <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-6 shadow-lg">
+                                <div className="relative z-10 bg-white p-6 rounded-[2rem] border border-gray-50 hover:border-blue-100 hover:shadow-xl transition-all text-center">
+                                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl font-normal mx-auto mb-6 shadow-sm">
                                         {step.step}
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                                    <p className="text-gray-600 text-sm">{step.description}</p>
+                                    <h3 className="text-xl font-normal text-gray-900 mb-3 tracking-tight uppercase text-sm">{step.title}</h3>
+                                    <p className="text-gray-500 text-xs font-normal leading-relaxed">{step.description}</p>
                                 </div>
                             </div>
                         ))}
@@ -384,12 +380,12 @@ export default function TechnicalSEOPage() {
             </section>
 
             {/* Tech Stack Section */}
-            <section className="py-16 bg-gray-900 text-white">
+            <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-gray-400 mb-8 uppercase tracking-widest text-sm font-semibold">Powered By Industry-Leading Tools</p>
-                    <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                    <p className="text-gray-500 mb-8 uppercase tracking-widest text-[10px] font-normal">Powered By Industry-Leading Tools</p>
+                    <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-30 grayscale hover:grayscale-0 transition-all duration-700">
                         {techStack.map((tool, index) => (
-                            <span key={index} className="text-xl md:text-2xl font-bold hover:text-blue-400 transition-colors cursor-default">
+                            <span key={index} className="text-xl md:text-2xl font-normal text-gray-900 tracking-tight uppercase hover:text-blue-600 transition-colors cursor-default">
                                 {tool}
                             </span>
                         ))}
@@ -397,118 +393,172 @@ export default function TechnicalSEOPage() {
                 </div>
             </section>
 
-            {/* Before/After Comparison */}
-            <section className="py-20 bg-white">
+            {/* Expert Comparison Table */}
+            <section className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Real Results, Real Impact</h2>
-                        <p className="text-lg text-gray-600">See the difference technical optimization makes</p>
+                    <div className="mb-16 text-center">
+                        <h2 className="text-4xl font-normal tracking-tight uppercase mb-4 text-gray-900">The Technical Authority Index</h2>
+                        <p className="text-gray-500 font-normal uppercase tracking-widest text-[10px]"> Our Proprietary Framework vs. Industry Standard</p>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
-                            <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-2xl font-bold text-gray-900">Before</h3>
-                                <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-semibold">Poor Performance</span>
+
+                    <div className="overflow-x-auto rounded-[2.5rem] shadow-sm border border-gray-100 bg-white">
+                        <table className="w-full text-left border-collapse">
+                            <thead>
+                                <tr className="bg-white text-gray-900 border-b border-gray-50">
+                                    <th className="p-8 font-normal uppercase tracking-widest text-[10px] text-gray-500">Optimization Vector</th>
+                                    <th className="p-8 font-normal uppercase tracking-widest text-[10px] text-blue-600">One to Five Click (Elite)</th>
+                                    <th className="p-8 font-normal uppercase tracking-widest text-[10px] text-gray-400">Standard Agency</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-50 text-gray-600">
+                                <tr className="hover:bg-gray-50/50 transition-colors">
+                                    <td className="p-8 font-normal text-gray-900 uppercase tracking-tight text-sm">Semantic Schema Core</td>
+                                    <td className="p-8 text-blue-600 font-normal uppercase tracking-tight text-sm">NLP-Native & AI-Search Optimized</td>
+                                    <td className="p-8 text-gray-400 font-normal text-sm">Basic Generic JSON-LD</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50/50 transition-colors">
+                                    <td className="p-8 font-normal text-gray-900 uppercase tracking-tight text-sm">Server Response Time</td>
+                                    <td className="p-8 text-blue-600 font-normal uppercase tracking-tight text-sm flex items-center space-x-2">
+                                        <Zap className="h-4 w-4" />
+                                        <span>40ms - 100ms (Edge Cache)</span>
+                                    </td>
+                                    <td className="p-8 text-gray-400 font-normal text-sm">300ms - 800ms (Standard Host)</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50/50 transition-colors">
+                                    <td className="p-8 font-normal text-gray-900 uppercase tracking-tight text-sm">Core Web Vitals Pass</td>
+                                    <td className="p-8 text-blue-600 font-normal uppercase tracking-tight text-sm">100/100 Guaranteed (LCP/FID/CLS)</td>
+                                    <td className="p-8 text-gray-400 font-normal text-sm">Partial Pass (Varies)</td>
+                                </tr>
+                                <tr className="hover:bg-gray-50/50 transition-colors">
+                                    <td className="p-8 font-normal text-gray-900 uppercase tracking-tight text-sm">Bot Crawl Efficiency</td>
+                                    <td className="p-8 text-blue-600 font-normal uppercase tracking-tight text-sm">Smart-Indexing (0% Crawl Waste)</td>
+                                    <td className="p-8 text-gray-400 font-normal text-sm">Unoptimized Pathing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            {/* NLP & Semantic Factor Section */}
+            <section className="py-24 bg-white overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-20 items-center">
+                        <div className="relative">
+                            <div className="absolute -inset-10 bg-brand-blue/5 blur-3xl rounded-full" />
+                            <div className="relative bg-white rounded-[2.5rem] shadow-sm border border-gray-100 overflow-hidden">
+                                <div className="bg-gray-900 p-8 text-white flex justify-between items-center">
+                                    <span className="font-normal text-xl uppercase tracking-widest text-xs">Semantic Authority Score</span>
+                                    <RefreshCw className="h-5 w-5 text-blue-400" />
+                                </div>
+                                <div className="p-8 space-y-6">
+                                    <div className="flex justify-between items-center text-[10px] font-normal uppercase tracking-widest text-gray-500">
+                                        <span>NLP Keyword Density (Optimized)</span>
+                                        <span className="text-blue-600">98% Efficient</span>
+                                    </div>
+                                    <div className="w-full h-1.5 bg-gray-50 rounded-full overflow-hidden">
+                                        <motion.div
+                                            initial={{ width: 0 }}
+                                            whileInView={{ width: '98%' }}
+                                            className="h-full bg-blue-600"
+                                        />
+                                    </div>
+                                    <div className="flex justify-between items-center text-[10px] font-normal uppercase tracking-widest text-gray-500">
+                                        <span>Entity Relationship Mapping</span>
+                                        <span className="text-blue-600">High Authority</span>
+                                    </div>
+                                    <div className="w-full h-1.5 bg-gray-50 rounded-full overflow-hidden">
+                                        <motion.div
+                                            initial={{ width: 0 }}
+                                            whileInView={{ width: '92%' }}
+                                            className="h-full bg-blue-600"
+                                        />
+                                    </div>
+                                    <div className="mt-8 p-4 bg-blue-50/50 rounded-xl border border-blue-100/50 text-[10px] text-blue-800 leading-relaxed font-normal">
+                                        <span className="font-normal underline">Fact:</span> AI Search engines (Gemini, ChatGPT) prioritize sites with structured entity mapping over legacy keyword-optimized sites.
+                                    </div>
+                                </div>
                             </div>
-                            <ul className="space-y-4">
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Page load time: 8.5 seconds</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Mobile usability: 45/100</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">187 broken links</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">No SSL certificate</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Duplicate content issues</span>
-                                </li>
-                            </ul>
                         </div>
-                        <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
-                            <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-2xl font-bold text-gray-900">After</h3>
-                                <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">Optimized</span>
+
+                        <div>
+                            <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-8 tracking-tight uppercase leading-none">
+                                Beyond Simple <br />
+                                <span className="text-blue-600">Optimization.</span>
+                            </h2>
+                            <p className="text-sm text-gray-600 mb-10 leading-relaxed font-normal">
+                                Technical SEO in 2026 is about <span className="text-gray-900 font-normal">Semantic Integrity</span>. Our expert team ensures your site architecture is built to be understood by AI-driven search models instantly.
+                            </p>
+                            <div className="space-y-6">
+                                <div className="flex items-start space-x-4 p-4 hover:bg-gray-50/50 rounded-2xl transition-colors">
+                                    <div className="mt-1 bg-blue-50 p-2 rounded-xl text-blue-600">
+                                        <CheckCircle className="h-5 w-5" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-sm font-normal text-gray-900 uppercase tracking-widest">Proprietary Audit Engine</h4>
+                                        <p className="text-gray-500 text-xs font-normal">We use custom scripts that scan deeper than common market tools.</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-start space-x-4 p-4 hover:bg-gray-50/50 rounded-2xl transition-colors">
+                                    <div className="mt-1 bg-blue-50 p-2 rounded-xl text-blue-600">
+                                        <CheckCircle className="h-5 w-5" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-sm font-normal text-gray-900 uppercase tracking-widest">Global CDN Strategy</h4>
+                                        <p className="text-gray-500 text-xs font-normal">Automatic routing to the fastest edge node for every user, globally.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <ul className="space-y-4">
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Page load time: 1.8 seconds</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Mobile usability: 98/100</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">All links fixed and redirected</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">SSL implemented site-wide</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Canonical tags properly configured</span>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Case Study Highlight */}
-            <section className="py-20 bg-gradient-to-br from-blue-900 to-gray-900 text-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="py-24 bg-gray-900 text-white overflow-hidden relative">
+                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <div className="inline-block bg-blue-500/20 border border-blue-400/30 text-blue-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                            <div className="inline-block bg-blue-600/20 border border-blue-500/30 text-blue-400 px-4 py-2 rounded-full text-[10px] font-normal uppercase tracking-widest mb-6">
                                 Case Study
                             </div>
-                            <h2 className="text-4xl font-bold mb-6">How We Helped TechStore Increase Revenue by 230%</h2>
-                            <p className="text-gray-300 mb-8 leading-relaxed">
+                            <h2 className="text-4xl font-normal mb-6 tracking-tight">How We Helped TechStore Increase Revenue by 230%</h2>
+                            <p className="text-gray-400 mb-8 leading-relaxed font-normal">
                                 TechStore came to us with a slow, error-riddled website that was losing customers. After a comprehensive technical audit and implementation, we transformed their site into a high-performance machine.
                             </p>
                             <div className="grid grid-cols-2 gap-6 mb-8">
                                 <div>
-                                    <div className="text-4xl font-bold text-blue-400 mb-2">230%</div>
-                                    <div className="text-gray-400">Revenue Increase</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">230%</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">Revenue Increase</div>
                                 </div>
                                 <div>
-                                    <div className="text-4xl font-bold text-blue-400 mb-2">78%</div>
-                                    <div className="text-gray-400">Faster Load Time</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">78%</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">Faster Load Time</div>
                                 </div>
                                 <div>
-                                    <div className="text-4xl font-bold text-blue-400 mb-2">3x</div>
-                                    <div className="text-gray-400">More Organic Traffic</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">3x</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">More Organic Traffic</div>
                                 </div>
                                 <div>
-                                    <div className="text-4xl font-bold text-blue-400 mb-2">95%</div>
-                                    <div className="text-gray-400">Mobile Score</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">95%</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">Mobile Score</div>
                                 </div>
                             </div>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center bg-white text-blue-900 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all font-bold"
+                                className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-xl hover:brightness-110 transition-all font-normal uppercase tracking-widest text-[10px]"
                             >
                                 Get Similar Results
                                 <ArrowRight className="ml-2 h-5 w-5" />
                             </Link>
                         </div>
                         <div className="relative">
-                            <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl blur-3xl opacity-20" />
+                            <div className="absolute -inset-4 bg-blue-600/20 rounded-2xl blur-3xl" />
                             <img
                                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
                                 alt="Analytics Dashboard"
-                                className="relative rounded-2xl shadow-2xl"
+                                className="relative rounded-[2rem] shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-700"
                             />
                         </div>
                     </div>
@@ -519,8 +569,8 @@ export default function TechnicalSEOPage() {
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-                        <p className="text-lg text-gray-600">Don't just take our word for it</p>
+                        <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">What Our Clients Say</h2>
+                        <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">Real results from real businesses</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
                         {testimonials.map((testimonial, index) => (
@@ -539,10 +589,10 @@ export default function TechnicalSEOPage() {
                                         </svg>
                                     ))}
                                 </div>
-                                <p className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
+                                <p className="text-gray-600 mb-6 leading-relaxed font-normal text-sm">"{testimonial.quote}"</p>
                                 <div>
-                                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                                    <div className="text-sm text-gray-500">{testimonial.company}</div>
+                                    <div className="font-normal text-gray-900 uppercase tracking-tight text-lg leading-none">{testimonial.name}</div>
+                                    <div className="text-[10px] font-normal text-gray-500 uppercase tracking-widest">{testimonial.company}</div>
                                 </div>
                             </motion.div>
                         ))}
@@ -553,11 +603,11 @@ export default function TechnicalSEOPage() {
             {/* FAQ Section */}
             <section className="py-20 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Technical SEO FAQs</h2>
+                    <h2 className="text-3xl font-normal text-gray-900 mb-12 text-center tracking-tight">Technical SEO FAQs</h2>
                     <Accordion type="single" collapsible className="w-full">
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={`item-${index}`}>
-                                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-blue-600">
+                                <AccordionTrigger className="text-left text-lg font-normal text-gray-900 hover:text-blue-600 uppercase tracking-tight">
                                     {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-gray-600 leading-relaxed">
@@ -569,17 +619,16 @@ export default function TechnicalSEOPage() {
                 </div>
             </section>
 
-            {/* CTA Section */}
             <section className="py-24 bg-blue-600 relative overflow-hidden">
-                <div className="absolute inset-0 bg-grid-pattern opacity-[0.1]" />
+                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Is Your Website Technically Sound?</h2>
-                    <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+                    <h2 className="text-4xl md:text-6xl font-normal text-white mb-6 tracking-tight uppercase">Is Your Website Technically Sound?</h2>
+                    <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto font-normal">
                         Don't let hidden errors cost you rankings. Get a comprehensive technical audit today.
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-flex items-center bg-white text-blue-600 px-10 py-5 rounded-lg hover:bg-blue-50 transition-all font-bold text-lg shadow-xl"
+                        className="inline-flex items-center bg-white text-blue-600 px-10 py-5 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest shadow-sm text-sm"
                     >
                         Start Technical Audit
                         <ArrowRight className="ml-2 h-6 w-6" />

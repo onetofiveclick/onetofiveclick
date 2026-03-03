@@ -1,0 +1,20 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="60" rx="12" fill="none"/>
+  <!-- Symbol -->
+  <rect x="10" y="10" width="40" height="40" rx="10" fill="url(#brand_grad)"/>
+  <path d="M22 35V25H24L23 26V35H22Z" fill="white"/>
+  <path d="M26 25H30V27H28V30H29C29.5 30 30 30.4 30 31V34C30 34.6 29.5 35 29 35H26V34L29 34V32H27V25Z" fill="white"/>
+  
+  <!-- Text -->
+  <text x="65" y="40" font-family="Inter, sans-serif" font-weight="900" font-size="28" fill="currentColor">
+    <tspan fill="#662046">1 TO 5</tspan>
+    <tspan fill="#747F8A" dx="8">CLICK</tspan>
+  </text>
+  
+  <defs>
+    <linearGradient id="brand_grad" x1="10" y1="10" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#662046"/>
+      <stop offset="1" stop-color="#747F8A"/>
+    </linearGradient>
+  </defs>
+</svg>

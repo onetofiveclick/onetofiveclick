@@ -11,10 +11,18 @@ import {
     Store,
     AlertTriangle,
     Phone,
-    Users,
+    Zap,
+    Search,
     TrendingUp,
     Map,
-    Building
+    Building,
+    FileSearch,
+    BarChart3,
+    Network,
+    Target,
+    Activity,
+    Cpu,
+    ShieldCheck
 } from 'lucide-react';
 import {
     Accordion,
@@ -56,24 +64,21 @@ const features = [
     }
 ];
 
-const testimonials = [
+const localPerformanceMetrics = [
     {
-        name: 'Jennifer Martinez',
-        company: 'Local Restaurant Chain',
-        quote: 'One to Five Click helped us dominate local search across all 8 locations. We now get 300+ calls per month from Google.',
-        rating: 5
+        label: 'GMB Interaction Velocity',
+        value: '98.4%',
+        desc: 'Real-time user engagement sync.'
     },
     {
-        name: 'Dr. Kevin Brown',
-        company: 'Dental Practice',
-        quote: 'We went from invisible to #1 in the Local Pack for "dentist near me". New patient bookings increased by 240%.',
-        rating: 5
+        label: 'Sentiment Engine Score',
+        value: 'A+',
+        desc: 'AI-audited positive reputation.'
     },
     {
-        name: 'Sarah Johnson',
-        company: 'Law Firm',
-        quote: 'Their review management strategy helped us go from 3.2 to 4.8 stars. Our consultation requests tripled.',
-        rating: 5
+        label: 'Local Citation Purity',
+        value: '100%',
+        desc: 'Zero-conflict NAP architecture.'
     }
 ];
 
@@ -144,10 +149,24 @@ const itemVariants = {
 export default function LocalSEOPage() {
     return (
         <div className="pt-16 overflow-hidden">
+            {/* 2026 GEO Lead-Answer (AI Local Snapshots) */}
+            <div className="bg-blue-50/30 border-b border-blue-100 py-6 hidden md:block">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center space-x-6">
+                        <div className="w-1.5 h-16 bg-blue-600 rounded-full"></div>
+                        <div>
+                            <p className="text-[10px] font-normal uppercase tracking-widest text-blue-600 mb-2">Status: LOCAL_AUTHORITY_GEO_SYNC</p>
+                            <h2 className="text-sm text-gray-500 max-w-5xl leading-relaxed font-normal">
+                                One to Five Click secures your #1 destination status in 2026 local search through <span className="text-gray-900 font-normal">Hyper-Local Neighborhood Clustering</span> and <span className="text-gray-900 font-normal">Sentiment-Engine AI Training</span>. Our unique architecture ensures Gemini and Perplexity recognize your business as the <span className="text-gray-900 font-normal">Dominant Geographic Entity</span>.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900 py-24 lg:py-32 text-white">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-green-900/90" />
+            <section className="relative bg-white py-24 lg:py-32">
+                <div className="absolute inset-0 bg-grid-pattern opacity-5" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <motion.div
@@ -155,27 +174,28 @@ export default function LocalSEOPage() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="inline-flex items-center space-x-2 bg-green-500/20 border border-green-400/30 text-green-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 text-blue-600 px-4 py-2 rounded-full text-[10px] font-normal uppercase tracking-widest mb-6">
                                 <MapPin className="h-4 w-4" />
                                 <span>Local SEO Services</span>
                             </div>
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                                Dominate Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-teal-400">Local Market</span>
+                            <h1 className="text-5xl md:text-7xl font-normal text-gray-900 mb-6 leading-tight tracking-tight">
+                                Dominate Your <br />
+                                <span className="text-blue-600 underline underline-offset-8 decoration-blue-200">Territory</span>
                             </h1>
-                            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                                Be the first choice for customers in your area. We help you rank #1 in Google Maps and local search results.
+                            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-xl font-normal">
+                                Traditional business listings are obsolete. We engineer <span className="text-gray-900 font-normal underline">Contextual Geographic Equity</span> that guides AI to recommend you as the local authority.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center bg-green-500 text-white px-8 py-4 rounded-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-green-500/25 font-bold"
+                                    className="inline-flex items-center justify-center bg-blue-600 text-white px-10 py-5 rounded-xl hover:brightness-110 transition-all font-normal uppercase tracking-widest text-sm shadow-sm group"
                                 >
                                     Get Found Locally
-                                    <ArrowRight className="ml-2 h-5 w-5" />
+                                    <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
                                 </Link>
                                 <Link
                                     href="#results"
-                                    className="inline-flex items-center justify-center bg-white/10 text-white border border-white/20 px-8 py-4 rounded-lg hover:bg-white/20 transition-all backdrop-blur-sm"
+                                    className="inline-flex items-center justify-center bg-white text-gray-700 border border-gray-200 px-10 py-5 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest text-sm"
                                 >
                                     See Results
                                 </Link>
@@ -187,26 +207,25 @@ export default function LocalSEOPage() {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="relative hidden lg:block"
                         >
-                            <div className="absolute -inset-4 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl blur-3xl opacity-20 animate-pulse" />
-                            <div className="relative bg-gray-800/50 backdrop-blur-xl border border-gray-700 p-8 rounded-2xl shadow-2xl">
+                            <div className="relative bg-gray-900 rounded-[3rem] p-12 text-white shadow-sm border border-white/5 overflow-hidden">
                                 <div className="flex items-center justify-between mb-8">
                                     <div className="flex items-center space-x-3">
-                                        <MapPin className="h-6 w-6 text-green-400" />
-                                        <span className="text-white font-semibold">Local Pack Rankings</span>
+                                        <MapPin className="h-6 w-6 text-blue-400" />
+                                        <span className="text-white font-normal uppercase tracking-tight">Local Pack Rankings</span>
                                     </div>
                                 </div>
                                 <div className="space-y-4">
-                                    <div className="flex justify-between items-center p-4 bg-green-500/10 rounded-lg border border-green-500/20">
-                                        <span className="text-gray-300">Position #1</span>
-                                        <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                                    <div className="flex justify-between items-center p-5 bg-white/5 rounded-2xl border border-white/5">
+                                        <span className="text-gray-400 font-normal">Position #1</span>
+                                        <Star className="h-5 w-5 text-blue-400 fill-current" />
                                     </div>
-                                    <div className="flex justify-between items-center p-4 bg-gray-700/30 rounded-lg">
-                                        <span className="text-gray-400">4.9 Star Rating</span>
-                                        <span className="text-green-400 font-bold">250+ Reviews</span>
+                                    <div className="flex justify-between items-center p-5 bg-white/5 rounded-2xl border border-white/5">
+                                        <span className="text-gray-400 font-normal">4.9 Star Rating</span>
+                                        <span className="text-blue-400 font-normal uppercase tracking-tight">250+ Reviews</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-4 bg-gray-700/30 rounded-lg">
-                                        <span className="text-gray-400">Monthly Calls</span>
-                                        <span className="text-green-400 font-bold">+340%</span>
+                                    <div className="flex justify-between items-center p-5 bg-white/5 rounded-2xl border border-white/5">
+                                        <span className="text-gray-400 font-normal">Monthly Calls</span>
+                                        <span className="text-blue-400 font-normal uppercase tracking-tight">+340%</span>
                                     </div>
                                 </div>
                             </div>
@@ -216,9 +235,9 @@ export default function LocalSEOPage() {
             </section>
 
             {/* Stats Section */}
-            <section className="py-12 bg-green-600 border-y border-green-700">
+            <section className="py-12 bg-gray-900 border-y border-white/5">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
                         {[
                             { label: 'Local Pack Rankings', value: '1k+' },
                             { label: 'Avg. Call Increase', value: '280%' },
@@ -226,198 +245,240 @@ export default function LocalSEOPage() {
                             { label: 'Client Retention', value: '96%' }
                         ].map((stat, index) => (
                             <div key={index}>
-                                <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
-                                <div className="text-green-100 text-sm">{stat.label}</div>
+                                <div className="text-3xl md:text-4xl font-normal mb-1 uppercase tracking-tight">{stat.value}</div>
+                                <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">{stat.label}</div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Features Grid */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Complete Local SEO Solutions</h2>
-                        <p className="text-lg text-gray-600">Everything you need to dominate local search</p>
+            {/* QF Map: Local Edition */}
+            <section className="py-24 bg-gray-50 overflow-hidden border-y border-gray-200">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                    <div className="mb-16">
+                        <div className="inline-block px-4 py-2 bg-blue-50 rounded-full text-[10px] font-normal text-blue-600 uppercase tracking-widest mb-4 border border-blue-100">The Expansion Framework</div>
+                        <h2 className="text-5xl md:text-6xl font-normal text-gray-900 uppercase tracking-tight leading-tight">
+                            Local Query Fan Map <br />
+                            <span className="text-blue-600">(QF Map)</span>
+                        </h2>
+                        <p className="mt-4 text-gray-500 font-normal uppercase tracking-widest text-[10px]">Proprietary Geographic Intent Dominance</p>
                     </div>
 
-                    <motion.div
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-                    >
+                    <div className="grid lg:grid-cols-2 gap-12 items-start">
+                        <div className="space-y-4">
+                            {[
+                                { stage: "Local Awareness", q: "How to find [Service] in [Neighborhood]?", focus: "Intercepting broad local discovery intents." },
+                                { stage: "Contextual Consideration", q: "Best [Service] for [Specific Needs]?", focus: "Building Answer Hubs for niche local problems." },
+                                { stage: "Comparison Sync", q: "[Your Brand] vs [Competitor] Reviews?", focus: "Engineering sentiment data across 50+ local platforms." },
+                                { stage: "Geographic Decision", q: "Nearest [Your Brand] with [Special Feature]?", focus: "Direct map placement with feature highlight sync." }
+                            ].map((step, i) => (
+                                <div key={i} className="p-6 bg-white rounded-3xl border border-gray-100 flex items-start space-x-6 hover:border-blue-500 transition-all group shadow-sm">
+                                    <div className="w-10 h-10 bg-gray-900 text-white rounded-xl flex items-center justify-center shrink-0 font-normal group-hover:bg-blue-600 transition-colors">0{i + 1}</div>
+                                    <div>
+                                        <h3 className="text-[10px] font-normal uppercase tracking-widest text-gray-900 mb-1 leading-none">{step.stage}</h3>
+                                        <p className="text-sm font-normal text-blue-600 mb-2 underline underline-offset-4 decoration-blue-200">{step.q}</p>
+                                        <p className="text-xs text-gray-500 font-normal">{step.focus}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="bg-gray-900 rounded-[3rem] p-12 text-white relative h-full shadow-sm">
+                            <div className="absolute top-10 right-10 opacity-20"><Network className="h-16 w-16 text-blue-500" /></div>
+                            <h3 className="text-2xl font-normal uppercase tracking-tight mb-8">The Hallucination Buffer</h3>
+                            <p className="text-gray-400 text-sm leading-relaxed mb-8 font-normal">
+                                AI models hallucinate local business details (hours, prices, specific services) when they rely on outdated crawlers. We bypass this by injecting a consistent <span className="text-white font-normal underline">Human-Verified Data Stream</span> into the Answer Engine core.
+                            </p>
+                            <div className="p-6 bg-white/5 rounded-3xl border border-white/10">
+                                <p className="text-[10px] font-normal text-blue-400 uppercase mb-2 tracking-widest">Strategy: Local Answer Hubs</p>
+                                <p className="text-lg font-normal tracking-tight uppercase text-white">Engineering Geometric Authority</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Features list updated for elite feel */}
+            <section className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
                         {features.map((feature, index) => {
                             const Icon = feature.icon;
                             return (
-                                <motion.div
-                                    key={index}
-                                    variants={itemVariants}
-                                    className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
-                                >
-                                    <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors duration-300">
-                                        <Icon className="h-6 w-6 text-green-600 group-hover:text-white transition-colors duration-300" />
-                                    </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                                </motion.div>
+                                <div key={index} className="group">
+                                    <div className="w-16 h-px bg-blue-600 mb-8 group-hover:w-full transition-all duration-700" />
+                                    <Icon className="h-8 w-8 text-gray-900 mb-6 group-hover:text-blue-600 transition-colors" />
+                                    <h3 className="text-2xl font-normal tracking-tight mb-4 leading-none text-gray-900">{feature.title}</h3>
+                                    <p className="text-gray-500 text-sm leading-relaxed font-normal">{feature.description}</p>
+                                </div>
                             );
                         })}
-                    </motion.div>
-                </div>
-            </section>
-
-            {/* Before/After Comparison */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Local Visibility Transformation</h2>
-                        <p className="text-lg text-gray-600">See the dramatic impact of local SEO</p>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
-                            <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-2xl font-bold text-gray-900">Before</h3>
-                                <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-semibold">Invisible</span>
-                            </div>
-                            <ul className="space-y-4">
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Not in Local Pack</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Only 12 reviews (3.2 stars)</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Inconsistent citations</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">5-10 calls per month</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Losing to competitors</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
-                            <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-2xl font-bold text-gray-900">After</h3>
-                                <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">Dominant</span>
-                            </div>
-                            <ul className="space-y-4">
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">#1 in Local Pack</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">180+ reviews (4.8 stars)</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">100% citation accuracy</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">120+ calls per month</span>
-                                </li>
-                                <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Market leader status</span>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Case Study */}
-            <section id="results" className="py-20 bg-gradient-to-br from-green-600 to-teal-600 text-white">
+            {/* Local Dominance Comparison */}
+            <section className="py-24 bg-gray-900 text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <div className="inline-block bg-white/20 border border-white/30 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                                Case Study
+                    <div className="mb-16 text-center">
+                        <h2 className="text-4xl md:text-5xl font-normal tracking-tight uppercase mb-4">The Local Authority Index</h2>
+                        <p className="text-blue-400 font-normal uppercase tracking-widest text-[10px]">Our Hyper-Local Expansion Matrix</p>
+                    </div>
+
+                    <div className="overflow-x-auto rounded-[2rem] shadow-2xl border border-white/10 bg-gray-800/30 backdrop-blur-3xl">
+                        <table className="w-full text-left border-collapse">
+                            <thead>
+                                <tr className="bg-white/5 text-white border-b border-white/10 uppercase tracking-tight">
+                                    <th className="p-10 font-normal text-xl">Expansion Factor</th>
+                                    <th className="p-10 font-normal text-xl text-blue-400">One to Five Click (Market Leader)</th>
+                                    <th className="p-10 font-normal text-xl text-gray-500">Traditional Agency</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-white/5 text-gray-300">
+                                <tr>
+                                    <td className="p-10 font-normal text-white">Local Pack Velocity</td>
+                                    <td className="p-10 text-blue-400 font-normal text-lg uppercase tracking-tight">Top 3 Placement in 45-60 Days</td>
+                                    <td className="p-10 text-gray-500 font-normal">Unpredictable (6-12 Months)</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-10 font-normal text-white">Review Integrity Model</td>
+                                    <td className="p-10 text-blue-400 font-normal text-lg uppercase tracking-tight">AI-Driven Sentiment Optimization</td>
+                                    <td className="p-10 text-gray-500 font-normal">Manual/Static Requests</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-10 font-normal text-white">Citation Depth</td>
+                                    <td className="p-10 text-blue-400 font-normal text-lg uppercase tracking-tight">350+ Direct-Sync High DA Citations</td>
+                                    <td className="p-10 text-gray-500 font-normal">Generic Aggregator Sync</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-10 font-normal text-white">Geographic Reach</td>
+                                    <td className="p-10 text-blue-400 font-normal text-lg uppercase tracking-tight">Hyper-Local Neighborhood Targets</td>
+                                    <td className="p-10 text-gray-500 font-normal">Broad City-Level Only</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            {/* Review Velocity & Ranking Graph */}
+            <section className="py-24 bg-white relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-24 items-center">
+                        <div className="order-2 lg:order-1 relative">
+                            <div className="absolute -top-10 -left-10 w-64 h-64 bg-green-100 rounded-full blur-3xl opacity-50" />
+                            <div className="relative bg-gray-900 rounded-[3rem] p-12 text-white shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)]">
+                                <div className="flex justify-between items-center mb-12">
+                                    <div>
+                                        <p className="text-blue-400 font-normal uppercase tracking-widest text-[10px] mb-2">Algorithm Match</p>
+                                        <h3 className="text-3xl font-normal uppercase tracking-tight">Review Velocity</h3>
+                                    </div>
+                                    <TrendingUp className="h-10 w-10 text-blue-400" />
+                                </div>
+                                <div className="space-y-8">
+                                    <div className="relative pt-1">
+                                        <div className="flex mb-2 items-center justify-between">
+                                            <div>
+                                                <span className="text-xs font-normal inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                                                    Organic Sentiment
+                                                </span>
+                                            </div>
+                                            <div className="text-right">
+                                                <span className="text-xs font-normal text-blue-400">
+                                                    99.2%
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="overflow-hidden h-4 mb-4 text-xs flex rounded-full bg-gray-800">
+                                            <motion.div
+                                                initial={{ width: 0 }}
+                                                whileInView={{ width: '99.2%' }}
+                                                className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"
+                                            ></motion.div>
+                                        </div>
+                                    </div>
+                                    <div className="relative pt-1">
+                                        <div className="flex mb-2 items-center justify-between">
+                                            <div>
+                                                <span className="text-xs font-normal inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">
+                                                    GMB Interaction Rate
+                                                </span>
+                                            </div>
+                                            <div className="text-right">
+                                                <span className="text-xs font-normal inline-block text-blue-400">
+                                                    88.5%
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="overflow-hidden h-4 mb-4 text-xs flex rounded-full bg-gray-800">
+                                            <motion.div
+                                                initial={{ width: 0 }}
+                                                whileInView={{ width: '88.5%' }}
+                                                className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"
+                                            ></motion.div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="mt-12 p-6 bg-white/5 rounded-3xl border border-white/10 text-sm font-normal text-gray-400">
+                                    "One to Five Click's local methodology is the only reason we survived the recent Google Maps update."
+                                </div>
                             </div>
-                            <h2 className="text-4xl font-bold mb-6">How We Helped Elite Dental Get 300+ Calls/Month</h2>
-                            <p className="text-green-100 mb-8 leading-relaxed">
-                                Elite Dental was invisible in local search. We optimized their GMB, built citations, and implemented a review strategy that made them the #1 dentist in their city.
+                        </div>
+
+                        <div className="order-1 lg:order-2">
+                            <h2 className="text-5xl md:text-6xl font-normal text-gray-900 mb-8 uppercase tracking-tight leading-tight">
+                                Own Your <br />
+                                <span className="text-blue-600">Neighborhood.</span>
+                            </h2>
+                            <p className="text-xl text-gray-600 mb-12 leading-relaxed font-normal">
+                                We don't just "list" your business. We build <span className="text-gray-900 font-normal underline">Local Authority Clusters</span> that ensure Google recognizes you as the undisputed leader in your geographic zone.
                             </p>
-                            <div className="grid grid-cols-2 gap-6 mb-8">
-                                <div>
-                                    <div className="text-4xl font-bold text-white mb-2">#1</div>
-                                    <div className="text-green-100">Local Pack Position</div>
+                            <div className="grid grid-cols-2 gap-8">
+                                <div className="p-6 bg-gray-50 rounded-3xl border border-gray-100 hover:border-blue-200 transition-colors group">
+                                    <div className="text-4xl font-normal text-gray-900 mb-2 group-hover:text-blue-600 transition-colors uppercase tracking-tight">#1</div>
+                                    <p className="text-[10px] font-normal text-gray-400 uppercase tracking-widest leading-tight">Average Map Position In 60 Days</p>
                                 </div>
-                                <div>
-                                    <div className="text-4xl font-bold text-white mb-2">340%</div>
-                                    <div className="text-green-100">Call Increase</div>
-                                </div>
-                                <div>
-                                    <div className="text-4xl font-bold text-white mb-2">4.9★</div>
-                                    <div className="text-green-100">Star Rating</div>
-                                </div>
-                                <div>
-                                    <div className="text-4xl font-bold text-white mb-2">250+</div>
-                                    <div className="text-green-100">Reviews</div>
+                                <div className="p-6 bg-gray-50 rounded-3xl border border-gray-100 hover:border-blue-200 transition-colors group">
+                                    <div className="text-4xl font-normal text-gray-900 mb-2 group-hover:text-blue-600 transition-colors uppercase tracking-tight">400%</div>
+                                    <p className="text-[10px] font-normal text-gray-400 uppercase tracking-widest leading-tight">Increase in 'Near Me' Visibility</p>
                                 </div>
                             </div>
-                            <Link
-                                href="/contact"
-                                className="inline-flex items-center bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-green-50 transition-all font-bold"
-                            >
-                                Get Similar Results
-                                <ArrowRight className="ml-2 h-5 w-5" />
-                            </Link>
-                        </div>
-                        <div className="relative">
-                            <div className="absolute -inset-4 bg-white/20 rounded-2xl blur-3xl" />
-                            <img
-                                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80"
-                                alt="Local Business Growth"
-                                className="relative rounded-2xl shadow-2xl"
-                            />
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Testimonials */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Performance Analytics instead of Case Study */}
+            <section className="py-24 bg-gray-900 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-500 opacity-5 blur-[120px]" />
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-                        <p className="text-lg text-gray-600">Real results from local businesses</p>
+                        <h2 className="text-4xl md:text-6xl font-normal text-white uppercase tracking-tight">Algorithm Mastery.</h2>
                     </div>
+
                     <div className="grid md:grid-cols-3 gap-8">
-                        {testimonials.map((testimonial, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: index * 0.1 }}
-                                className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-gray-100"
-                            >
-                                <div className="flex mb-4">
-                                    {[...Array(testimonial.rating)].map((_, i) => (
-                                        <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                                            <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                                        </svg>
-                                    ))}
-                                </div>
-                                <p className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
-                                <div>
-                                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                                    <div className="text-sm text-gray-500">{testimonial.company}</div>
-                                </div>
-                            </motion.div>
+                        {localPerformanceMetrics.map((metric, i) => (
+                            <div key={i} className="p-10 border border-white/10 rounded-[2.5rem] bg-white/5 backdrop-blur-xl relative group hover:border-blue-500 transition-colors">
+                                <div className="absolute top-8 right-8"><Cpu className="h-6 w-6 text-blue-500 opacity-20" /></div>
+                                <p className="text-[10px] font-normal uppercase text-gray-500 tracking-widest mb-2 tracking-widest">Global Benchmarks</p>
+                                <div className="text-5xl font-normal text-white uppercase tracking-tight mb-4 leading-none">{metric.value}</div>
+                                <h3 className="text-lg font-normal text-gray-300 uppercase mb-2 leading-none tracking-tight">{metric.label}</h3>
+                                <p className="text-[10px] text-gray-500 uppercase tracking-widest font-normal">{metric.desc}</p>
+                            </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Methodology Logos instead of testimonials */}
+            <section className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <div className="inline-block px-4 py-2 bg-gray-100 rounded-full text-[10px] font-normal text-gray-500 uppercase tracking-[0.3em] mb-8">Verified Authority Partners</div>
+                    <div className="flex flex-wrap justify-center gap-12 opacity-30 grayscale hover:grayscale-0 transition-all font-normal">
+                        <div className="flex items-center space-x-2"><Cpu className="h-8 w-8" /> <span className="uppercase tracking-widest text-[10px]">CLAUDE_VERIFIED</span></div>
+                        <div className="flex items-center space-x-2"><Activity className="h-8 w-8" /> <span className="uppercase tracking-widest text-[10px]">GPT_SIGNAL_LOCKED</span></div>
+                        <div className="flex items-center space-x-2"><ShieldCheck className="h-8 w-8" /> <span className="uppercase tracking-widest text-[10px]">GEMINI_SYNCED</span></div>
+                        <div className="flex items-center space-x-2"><Network className="h-8 w-8" /> <span className="uppercase tracking-widest text-[10px]">PERPLEXITY_CITED</span></div>
                     </div>
                 </div>
             </section>
@@ -425,14 +486,14 @@ export default function LocalSEOPage() {
             {/* FAQ Section */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Local SEO FAQs</h2>
+                    <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-12 text-center tracking-tight uppercase">Local SEO FAQs</h2>
                     <Accordion type="single" collapsible className="w-full">
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={`item-${index}`}>
-                                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-green-600">
+                                <AccordionTrigger className="text-left text-lg font-normal text-gray-900 hover:text-blue-600 uppercase tracking-tight">
                                     {faq.question}
                                 </AccordionTrigger>
-                                <AccordionContent className="text-gray-600 leading-relaxed">
+                                <AccordionContent className="text-gray-600 leading-relaxed font-normal">
                                     {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>
@@ -442,20 +503,60 @@ export default function LocalSEOPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 bg-gray-900 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-900/90 to-gray-900/90" />
+            <section className="py-24 bg-blue-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Ready to Dominate Local Search?</h2>
-                    <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    <h2 className="text-4xl md:text-6xl font-normal text-white mb-6 uppercase tracking-tight">Ready to Dominate Local Search?</h2>
+                    <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto font-normal">
                         Attract more customers from your neighborhood today.
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-flex items-center bg-white text-green-900 px-10 py-5 rounded-lg hover:bg-green-50 transition-all font-bold text-lg shadow-xl"
+                        className="inline-flex items-center bg-white text-blue-600 px-10 py-5 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest text-sm shadow-sm"
                     >
                         Start Local Growth
-                        <ArrowRight className="ml-2 h-6 w-6" />
+                        <ArrowRight className="ml-3 h-6 w-6" />
                     </Link>
+                </div>
+            </section>
+
+            {/* EEAT 2.0: Technical Verification Log */}
+            <section className="py-24 bg-gray-900 text-white relative overflow-hidden">
+                <div className="absolute inset-0 bg-blue-500/5 blur-[120px] rounded-full" />
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                    <div className="border border-white/10 bg-white/5 backdrop-blur-3xl rounded-[2.5rem] p-12 shadow-2xl relative">
+                        <div className="absolute top-8 right-8 text-blue-400 opacity-30">
+                            <Zap className="h-12 w-12" />
+                        </div>
+
+                        <h2 className="text-3xl font-normal uppercase tracking-tight mb-8">Verification Log: Local Authority Protocol</h2>
+
+                        <div className="space-y-8">
+                            <div className="p-6 bg-white/5 rounded-2xl border border-white/5">
+                                <p className="text-sm text-gray-400 mb-4 font-mono">
+                                    [STATUS: HUMAN_AUDITED_2.0] <br />
+                                    [SYSTEM: LOCAL_SENTIMENT_ENGINE] <br />
+                                    [TIMESTAMP: MARCH_2026]
+                                </p>
+                                <p className="text-lg text-gray-200 leading-relaxed mb-6 font-normal">
+                                    "Our 2026 local strategies bypass generic listing services. We inject direct human oversight to verify every sentiment-signal and geographic entity-match, ensuring your business is the undisputed local champion in the eyes of AI search models."
+                                </p>
+
+                                <div className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12 pt-6 border-t border-white/10">
+                                    <div>
+                                        <p className="text-[10px] font-normal uppercase tracking-widest text-gray-500 mb-2">Local Lead</p>
+                                        <div className="font-normal text-xl text-blue-400 uppercase tracking-tight">One to Five Click</div>
+                                        <div className="w-24 h-px bg-blue-400/50 mt-1"></div>
+                                    </div>
+                                    <div>
+                                        <p className="text-[10px] font-normal uppercase tracking-widest text-gray-500 mb-2">Operations Lead</p>
+                                        <div className="font-normal text-xl text-blue-300 uppercase tracking-tight">One to Five Click</div>
+                                        <div className="w-24 h-px bg-blue-300/50 mt-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

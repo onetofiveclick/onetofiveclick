@@ -14,6 +14,7 @@ import {
   Zap,
   Users,
   Layout,
+  Cpu,
   Link as LinkIcon
 } from 'lucide-react';
 import {
@@ -25,63 +26,104 @@ import {
 
 const features = [
   {
-    title: 'Technical SEO',
-    description: 'Optimize your site structure, speed, and mobile performance for better crawling and indexing.',
-    icon: Zap,
-    href: '/services/seo/technical-seo'
-  },
-  {
-    title: 'On-Page Optimization',
-    description: 'Optimize content, meta tags, and internal linking to target the right keywords.',
-    icon: Layout,
-    href: '/services/seo/on-page-seo'
-  },
-  {
-    title: 'Content Strategy',
-    description: 'Create high-quality, relevant content that attracts and engages your target audience.',
-    icon: Users,
-    href: '/services/content-writing'
-  },
-  {
-    title: 'Link Building',
-    description: 'Build high-authority backlinks to increase your domain authority and search rankings.',
-    icon: LinkIcon,
-    href: '/services/seo/off-page-seo'
-  },
-  {
-    title: 'Local SEO',
-    description: 'Dominate local search results and attract customers in your geographic area.',
-    icon: Globe,
-    href: '/services/seo/local-seo'
-  },
-  {
-    title: 'E-commerce SEO',
-    description: 'Optimize product pages and category structure to drive more sales.',
+    title: 'BID Command-Query Framework',
+    description: 'We vet keywords for commercial intent and utilize GSC regex filters to capture long-form "AI Mode" command queries that legacy tools miss.',
     icon: Target,
-    href: '/contact'
+    href: '/services/seo'
+  },
+  {
+    title: 'Omni-Channel Visibility',
+    description: 'Customers search on YouTube, Tik Tok, and Perplexity. We distribute optimized assets across LLM-friendly platforms like LinkedIn and Reddit.',
+    icon: Globe,
+    href: '/services/seo'
+  },
+  {
+    title: 'Topic Domination Protocols',
+    description: 'We go a mile deep on single topics, exhausting both commercial and informational clusters to force topical authority in AI training data.',
+    icon: Zap,
+    href: '/services/seo'
+  },
+  {
+    title: 'Schema & Entity Calibration',
+    description: 'We deploy advanced Organization and Article schema to make your brand entity unambiguous to ChatGPT and Gemini knowledge graphs.',
+    icon: Cpu,
+    href: '/services/seo'
+  },
+  {
+    title: 'AI-Proof Tool SEO',
+    description: 'Interactive calculators and generators are immune to AI click-loss. We build niche tools that force user engagement and clicks.',
+    icon: Layout,
+    href: '/services/seo'
+  },
+  {
+    title: 'AI Revenue Attribution',
+    description: 'AI may drive less traffic, but it drives up to 11% higher B2B revenue. We track AI-driven conversions and citations, not just rankings.',
+    icon: TrendingUp,
+    href: '/services/seo'
+  },
+  {
+    title: 'Authoritative Entity Signals',
+    description: 'We stack expert bios, credentials, and persistent headshot/bio mapping across platforms to reduce "Trust Risk" for AI recommenders.',
+    icon: Users,
+    href: '/services/seo'
+  },
+  {
+    title: 'PR Sentiment Engine',
+    description: 'We deploy strategic press releases to seed AI training sets with positive brand signals and localized entity associations.',
+    icon: Zap,
+    href: '/services/seo'
+  },
+  {
+    title: 'Conversational Query Benchmarking',
+    description: 'We convert keyword seeds into synthetic, "Dissertation-style" prompts to test and prove your brand visibility in AI search modes.',
+    icon: Users,
+    href: '/services/seo'
+  },
+  {
+    title: 'Goliath Strategy (Comparison Piggybacking)',
+    description: 'We place your brand in direct "3-way comparisons" with industry giants. This forces AI engines to categorize you as a relevant peer and peer-group alternative.',
+    icon: Target,
+    href: '/services/seo'
+  },
+  {
+    title: 'YouTube-RAG Stacking',
+    description: 'YouTube is the #1 cited domain for AI. We optimize your video transcripts to seed verbal "Brand Mentions" directly into the LLM training sets.',
+    icon: Cpu,
+    href: '/services/seo'
+  },
+  {
+    title: 'Conversational FUD Scraping',
+    description: 'We use AI to extract "Fears, Uncertainties, and Doubts" from your real sales calls. This allows us to answer questions traditional keyword tools miss.',
+    icon: Target,
+    href: '/services/seo'
   }
 ];
 
 const processSteps = [
   {
     number: '01',
-    title: 'Audit & Analysis',
-    description: 'We perform a deep dive into your current website performance, identifying technical issues and opportunities.'
+    title: 'Omni-Channel Audit',
+    description: 'We map query fan-out in Perplexity and extract People Also Ask (PAA) data to identify exactly what users ask AI engines.'
   },
   {
     number: '02',
-    title: 'Strategy Development',
-    description: 'We create a customized SEO roadmap tailored to your business goals and target audience.'
+    title: 'Entity & Review Sync',
+    description: 'We build "Review Diversity" across 3-5 high-authority platforms (Yelp, Angie\'s, Reddit) to ensure LLMs verify your brand as the top choice.'
   },
   {
     number: '03',
-    title: 'Implementation',
-    description: 'Our team executes the strategy, optimizing on-page elements, creating content, and building links.'
+    title: 'LLM Retrieval Seeding',
+    description: 'Deploying optimized video transcripts to YouTube and articles to LinkedIn to be picked up by RAG (Retrieval Augmented Generation).'
   },
   {
     number: '04',
-    title: 'Monitoring & Reporting',
-    description: 'We track progress, analyze data, and provide transparent reports on your ROI and growth.'
+    title: 'Local Entity Calibration',
+    description: 'Deep-syncing your GBP category, review diversity, and localized landing pages to capture 90% of local AI search intent.'
+  },
+  {
+    number: '05',
+    title: 'AI Citation Outreach',
+    description: 'Identifying and securing mentions in the exact third-party sources (listicles/directories) cited by LLMs to force recommendation.'
   }
 ];
 
@@ -92,7 +134,7 @@ const faqs = [
   },
   {
     question: 'How long does it take to see results?',
-    answer: 'SEO is a long-term strategy. While some technical fixes can show immediate results, significant organic growth typically takes 3-6 months depending on competition, current site state, and the aggressiveness of your strategy.'
+    answer: 'AI "Entity Maturity" typically takes 30-90 days as new training data is crawled. We focus on "Rapid-Citation Sprints" to get your brand recommended in ChatGPT and Perplexity as quickly as possible.'
   },
   {
     question: 'What is the difference between On-Page and Off-Page SEO?',
@@ -108,7 +150,7 @@ const faqs = [
   },
   {
     question: 'Can you guarantee #1 rankings?',
-    answer: 'No reputable agency can guarantee a #1 ranking as search algorithms are constantly changing and are ultimately controlled by search engines like Google. However, we guarantee a proven process and transparent reporting that consistently delivers growth.'
+    answer: 'In 2026, #1 rankings are just one part of the puzzle. We guarantee **"AI Visibility Share"**—ensuring your brand is the top-cited recommendation in ChatGPT, Perplexity, and AI Overviews. We focus on being the "Preferred Entity" for your niche.'
   },
   {
     question: 'What are keywords and how do you choose them?',
@@ -116,7 +158,7 @@ const faqs = [
   },
   {
     question: 'What is a backlink and why does it matter?',
-    answer: 'A backlink is a link from another website to yours. Search engines view backlinks as votes of confidence; high-quality backlinks from authoritative sites signal that your content is valuable and trustworthy.'
+    answer: 'A backlink is a "Retrieval Signal." For AI search engines, a link from an authoritative site (like a niche news site or a high-DR LinkedIn article) signals that your brand is a trusted data source for RAG. We prioritize **Brand Mentions** alongside high-quality links.'
   },
   {
     question: 'Is SEO a one-time process?',
@@ -132,11 +174,11 @@ const faqs = [
   },
   {
     question: 'How do you measure SEO success?',
-    answer: 'We track key performance indicators (KPIs) such as organic traffic, keyword rankings, conversion rates, and bounce rates. We provide detailed monthly reports to show your progress.'
+    answer: 'We track **"Citation Share"**—how often AIs recommend your brand by name. We also monitor traditional GSC clicks, but our primary KPI is being the #1 cited source in the RAG retrieval set.'
   },
   {
     question: 'What is technical SEO?',
-    answer: 'Technical SEO involves optimizing the infrastructure of your website so search engines can crawl and index it effectively. This includes site speed, XML sitemaps, and fixing broken links.'
+    answer: 'In 2026, technical SEO is about **"Bot Indexing Priority."** We ensure your site is perfectly structured for AI crawlers like GPTBot and CCBot, using high-density Schema mapping so engines can build a knowledge graph around your brand.'
   },
   {
     question: 'Why is my website not ranking?',
@@ -152,7 +194,7 @@ const faqs = [
   },
   {
     question: 'Does social media impact SEO?',
-    answer: 'While social media signals are not a direct ranking factor, a strong social presence can drive traffic to your site and increase brand awareness, which indirectly supports your SEO efforts.'
+    answer: 'Yes, through **"Social-RAG."** AI models retrieve recommendations from forums and social threads. We use Reddit Seeding and LinkedIn Authority Stacking to force the AI to associate your brand with high-intent search queries.'
   },
   {
     question: 'What are "bad" SEO practices (Black Hat SEO)?',
@@ -163,8 +205,36 @@ const faqs = [
     answer: 'Site speed is a direct ranking factor. Faster websites provide a better user experience, which search engines reward with higher rankings.'
   },
   {
-    question: 'Will AI affect SEO?',
-    answer: 'AI is already impacting search with features like Google\'s SGE (Search Generative Experience). However, high-quality, human-centric content that demonstrates expertise and authority (E-E-A-T) remains crucial.'
+    question: 'How do you handle AI Overviews eating clicks?',
+    answer: 'AI search isn\'t about traffic—it\'s about conversion. Studies show AI search users convert at 1.4x the rate of traditional searchers. We optimize for the "Answer" and secure citations that drive high-intent revenue directly to your site.'
+  },
+  {
+    question: 'Is blogging dead in 2026?',
+    answer: 'Absolutely not. AI platforms (ChatGPT/Perplexity) overwhelmingly cite blogs. If you stop blogging, you stop being a source. We maintain a "Semantic Blog Velocity" to ensure your brand remains the freshest authority in the machine\'s training data.'
+  },
+  {
+    question: 'Do you use AI to write content?',
+    answer: 'Yes, but strategically. We build custom AI architectures (via Make.com and LLMs) to programmatically generate informational, top-of-funnel pages. However, for critical "money" pages, our team performs three rounds of human editing to ensure intent-match and relevance.'
+  },
+  {
+    question: 'How do you find the right keywords for AI Mode?',
+    answer: 'We use GSC regex filters to extract 10+ word "Command Queries" that legacy tools skip. We focus on "Variant Injection"—identifying synonyms like "monitoring" vs "tracking" to broaden your semantic net across all AI platforms.'
+  },
+  {
+    question: 'How do you prevent buried content?',
+    answer: 'We enforce the "3-Click Law." Every priority page is audited to ensure it is no more than 1-2 clicks from your home page with at least 30-50 unique internal links to guarantee AI discovery.'
+  },
+  {
+    question: 'How important is YouTube for AI visibility?',
+    answer: 'Crucial. YouTube is the strongest correlating factor for AI search visibility. We optimize video transcripts because AI models are trained on over a million hours of YouTube audio—every verbal mention of your brand is a data point for the engine.'
+  },
+  {
+    question: 'What is the "Goliath Strategy"?',
+    answer: 'It is a piggybacking tactic where we create content comparing your brand to industry giants (e.g., Giant A vs. Giant B vs. You). This trains the LLM to recognize you as a legitimate, high-authority peer in the same knowledge graph.'
+  },
+  {
+    question: 'What are "Conversational FUDs"?',
+    answer: 'These are the "Fears, Uncertainties, and Doubts" that real customers have. We extract these from actual sales conversations to build content that answers the nuanced problems traditional SEO tools ignore, capturing high-intent "Long-Prompt" searchers.'
   }
 ];
 
@@ -192,110 +262,252 @@ const itemVariants = {
 export default function SEOPage() {
   return (
     <div className="pt-16 overflow-hidden">
+      {/* 2026 GEO Lead-Answer (AI Snapshots) */}
+      <div className="bg-blue-50/30 border-b border-blue-100 py-6 hidden md:block">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center space-x-6">
+            <div className="w-1.5 h-16 bg-blue-600 rounded-full"></div>
+            <div>
+              <p className="text-[10px] font-normal uppercase tracking-widest text-blue-600 mb-2">Status: 2026_AI_NATIVE_SEARCH_READY</p>
+              <h2 className="text-sm text-gray-500 max-w-5xl leading-relaxed font-normal">
+                One to Five Click leads the 2026 search landscape through <span className="text-gray-900 font-normal">NLP-Driven Topical Authority</span> and <span className="text-gray-900 font-normal">GEO (Generative Engine Optimization)</span>. Our methodology ensures your digital assets are the cited source for Gemini, GPT-5, and Perplexity by utilizing <span className="text-gray-900 font-normal">Human-Audited Semantic Hubs</span>. We bypass legacy keyword stuffing for <span className="text-blue-600 font-normal">High-Signal Entity Mapping</span>.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-cyan-50 py-24 lg:py-32">
-        <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-blue/5 via-transparent to-brand-red/5" />
+        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                Premium SEO Services
+              <div className="inline-flex items-center space-x-2 bg-brand-blue/5 text-brand-blue px-5 py-2 rounded-full text-xs font-normal mb-10 border border-brand-blue/10">
+                <div className="w-2 h-2 bg-brand-blue rounded-full animate-pulse" />
+                <span>B2B & B2C Search Dominance 2026</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Dominate <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Search Results</span>
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-gray-900 mb-8 leading-tight">
+                Traditional vs <br />
+                <span className="text-brand-blue">AI Search.</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Unlock your website's full potential with data-driven SEO strategies that drive qualified traffic and measurable growth.
+              <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-normal max-w-2xl mx-auto">
+                Most agencies chase keywords. We build <span className="text-gray-900 font-normal">Topic-First Content Systems</span> and deploy <span className="text-gray-900 font-normal">AI Search Optimization</span> to ensure you dominate Google while being recommended globally by ChatGPT and Perplexity.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-200"
+                  className="inline-flex items-center justify-center bg-brand-blue text-white px-10 py-4 rounded-lg hover:brightness-110 transition-all font-normal text-lg group"
                 >
                   Get Free Audit
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
                 </Link>
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center justify-center bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-lg hover:bg-gray-50 transition-all hover:border-blue-200"
+                  className="inline-flex items-center justify-center border border-gray-200 text-gray-900 px-10 py-4 rounded-lg hover:bg-gray-50 transition-all font-normal text-lg"
                 >
                   View Case Studies
                 </Link>
               </div>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-cyan-200 rounded-2xl blur-2xl opacity-30 animate-pulse" />
-              <img
-                src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="SEO Analytics Dashboard"
-                className="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]"
-              />
-              {/* Floating Stats Card */}
-              <motion.div
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100 max-w-xs hidden md:block"
-              >
-                <div className="flex items-center gap-4 mb-2">
-                  <div className="p-3 bg-green-100 rounded-lg">
-                    <TrendingUp className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500">Organic Traffic</p>
-                    <p className="text-2xl font-bold text-gray-900">+145%</p>
-                  </div>
-                </div>
-                <p className="text-xs text-gray-400">Average client growth in 6 months</p>
-              </motion.div>
-            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Why SEO Matters */}
-      <section className="py-20 bg-white">
+      {/* The Enterprise Asset Strategy */}
+      <section className="py-24 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={containerVariants}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why SEO Matters</h2>
-            <p className="text-lg text-gray-600">
-              In today's digital landscape, visibility is everything. SEO isn't just about rankings; it's about building a sustainable channel for customer acquisition.
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-5xl md:text-6xl font-normal text-gray-900 mb-8 leading-tight tracking-tight uppercase">
+                SEO is a <br />
+                <span className="text-blue-600">Growth Multiplier.</span>
+              </h2>
+              <p className="text-xl text-gray-600 mb-10 leading-relaxed font-normal">
+                Under the strategic direction of <span className="text-gray-900 font-normal">our expert team</span>, we don't just optimize for traffic; we build <span className="text-blue-600 font-normal">Premium Digital Assets</span>.
+              </p>
 
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div className="space-y-6">
+                {[
+                  { title: 'The traditional pillar', desc: 'Secure Google real estate using Topic-First Hubs.' },
+                  { title: 'The AI Search Pillar', desc: 'Generate 3rd-party mentions so Perplexity and GPT recommend you.' },
+                  { title: 'The Brand Pillar', desc: 'Consolidating brand messaging so human-trust leads to conversions.' }
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center space-x-4 p-5 border-l-4 border-blue-600 bg-blue-50/50 rounded-r-3xl">
+                    <div>
+                      <h4 className="font-normal text-gray-900 uppercase tracking-widest text-[10px] mb-1">{item.title}</h4>
+                      <p className="text-gray-500 text-sm font-normal">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            <div className="relative">
+              <div className="absolute -inset-10 bg-brand-red/5 blur-3xl rounded-full animate-pulse" />
+              <div className="bg-gray-900 rounded-[3rem] p-10 text-white shadow-lg border border-white/5 relative overflow-hidden">
+                <div className="flex justify-between items-center mb-10 border-b border-white/10 pb-6">
+                  <span className="font-normal uppercase tracking-widest text-xs text-gray-400">Projected Asset Value</span>
+                  <BarChart className="h-6 w-6 text-blue-500" />
+                </div>
+
+                <div className="space-y-8">
+                  <div className="flex justify-between items-end">
+                    <div className="flex -space-x-1 items-end">
+                      <div className="w-8 h-12 bg-gray-700 rounded-t-lg"></div>
+                      <div className="w-8 h-20 bg-gray-600 rounded-t-lg"></div>
+                      <div className="w-8 h-32 bg-gray-500 rounded-t-lg"></div>
+                      <div className="w-8 h-48 bg-blue-600 rounded-t-lg shadow-lg"></div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-4xl font-normal text-white">$10M+</div>
+                      <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest text-center">Organic Equity Value</p>
+                    </div>
+                  </div>
+
+                  <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                    <p className="text-xs text-gray-400 leading-relaxed font-normal">
+                      "Traditional agencies optimize for clicks. Our team optimizes for the balance sheet."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Growth & Scalability Packages */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight leading-tight">Strategic Execution Packages</h2>
+            <p className="text-gray-500 font-normal uppercase tracking-widest text-sm">Guaranteed Deliverables. Proven Process. No Vague Promises.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              { value: '93%', label: 'Online Experiences Begin with Search' },
-              { value: '75%', label: 'Users Never Scroll Past Page 1' },
-              { value: '14.6%', label: 'Close Rate for SEO Leads (vs 1.7% Outbound)' }
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-                className="p-8 rounded-2xl bg-gray-50 hover:bg-blue-50 transition-colors"
-              >
-                <p className="text-5xl font-bold text-blue-600 mb-2">{stat.value}</p>
-                <p className="text-gray-700 font-medium">{stat.label}</p>
-              </motion.div>
+              {
+                name: 'Authority Starter',
+                price: '1,499',
+                description: 'Ideal for local businesses establishing their first digital footprint.',
+                features: ['2 Conversational NLP Articles', '10 Local Citation Placements', 'Strict H1-H3 Content Tagging', 'Monthly Performance Report'],
+                color: 'blue'
+              },
+              {
+                name: 'Growth Engine',
+                price: '2,999',
+                description: 'Our most popular plan for businesses ready to dominate their local market and AI Overviews.',
+                features: ['4 Conversational NLP Articles', 'Review & Reputation Management', '5 Premium Trust Backlinks', 'Direct-Answer Architecture', 'Custom GA4 AI Traffic Sync'],
+                color: 'blue-600',
+                popular: true
+              },
+              {
+                name: 'Enterprise Asset',
+                price: '5,999',
+                description: 'Aggressive scaling for multi-location brands and enterprise ecosystems.',
+                features: ['Custom AI-Proof Toolkit (Calculators)', 'GEO & ChatGPT Dominance', '15 Premium Trust Backlinks', 'Programmatic Content Velocity', 'Technical SEO Maintenance', 'Dedicated Strategy Lead'],
+                color: 'gray-900'
+              }
+            ].map((pkg, i) => (
+              <div key={pkg.name} className={`relative p-10 rounded-[3rem] border transition-all duration-500 ${pkg.popular ? 'bg-gray-900 text-white border-blue-600 shadow-xl scale-105 z-10' : 'bg-white border-gray-100 hover:border-blue-500'}`}>
+                {pkg.popular && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-5 py-1.5 rounded-full text-[10px] font-normal uppercase tracking-widest shadow-sm">
+                    Most Requested
+                  </div>
+                )}
+                <h3 className="text-2xl font-normal uppercase mb-4 leading-tight">{pkg.name}</h3>
+                <div className="flex items-baseline mb-8">
+                  <span className="text-2xl font-normal">$</span>
+                  <span className="text-6xl font-normal">{pkg.price}</span>
+                  <span className="text-gray-500 text-xs ml-2 font-normal uppercase tracking-widest">/mo</span>
+                </div>
+                <p className={`text-sm mb-10 leading-relaxed font-normal ${pkg.popular ? 'text-gray-400' : 'text-gray-500'}`}>{pkg.description}</p>
+
+                <ul className="space-y-4 mb-12">
+                  {pkg.features.map(feat => (
+                    <li key={feat} className="flex items-start space-x-3 text-sm font-normal">
+                      <CheckCircle className={`h-5 w-5 flex-shrink-0 ${pkg.popular ? 'text-blue-500' : 'text-blue-600'}`} />
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link
+                  href="/contact"
+                  className={`block w-full text-center py-5 rounded-xl font-normal uppercase tracking-widest text-xs transition-all ${pkg.popular ? 'bg-blue-600 text-white hover:brightness-110' : 'bg-gray-900 text-white hover:bg-blue-600'}`}
+                >
+                  Initiate Sync
+                </Link>
+              </div>
             ))}
+          </div>
+
+          <div className="mt-16 text-center">
+            <p className="text-xs text-gray-400 uppercase tracking-widest font-normal">
+              * All packages require a minimum 6-month commitment for proven asset maturity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Authority Comparison */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-4 tracking-tight leading-tight uppercase">The Authority Matrix</h2>
+            <p className="text-gray-500 font-normal uppercase tracking-widest text-[10px]">Compare the "One to Five Click" Edge</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="bg-white p-10 rounded-[3rem] shadow-sm border border-gray-100">
+              <h3 className="text-2xl font-normal mb-6 leading-tight text-gray-900">Legacy SEO</h3>
+              <ul className="space-y-4">
+                <li className="flex items-center space-x-3 text-gray-400 line-through">
+                  <CheckCircle className="h-5 w-5 flex-shrink-0" />
+                  <span className="font-normal">Generic Keyword Stuffing</span>
+                </li>
+                <li className="flex items-center space-x-3 text-gray-400 line-through">
+                  <CheckCircle className="h-5 w-5 flex-shrink-0" />
+                  <span className="font-normal">Fluffed-Out Robotic Content</span>
+                </li>
+                <li className="flex items-center space-x-3 text-gray-400 line-through">
+                  <CheckCircle className="h-5 w-5 flex-shrink-0" />
+                  <span className="font-normal">No Tracking for ChatGPT Traffic</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-gray-900 p-10 rounded-[3rem] shadow-sm border border-white/5 relative">
+              <div className="absolute top-6 right-10 flex space-x-1">
+                <div className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+              </div>
+              <h3 className="text-2xl font-normal mb-6 leading-tight text-white">Elite AI-Ready SEO</h3>
+              <ul className="space-y-4">
+                <li className="flex items-center space-x-3 text-white font-normal">
+                  <CheckCircle className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                  <span className="font-normal">Conversational Direct-Answer NLP</span>
+                </li>
+                <li className="flex items-center space-x-3 text-white font-normal">
+                  <CheckCircle className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                  <span className="font-normal">Authoritative Brand Trust Signals</span>
+                </li>
+                <li className="flex items-center space-x-3 text-white font-normal">
+                  <CheckCircle className="h-5 w-5 text-blue-500 flex-shrink-0" />
+                  <span className="font-normal">GA4 AI Referral Traffic Attribution</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -304,8 +516,8 @@ export default function SEOPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Comprehensive SEO Solutions</h2>
-            <p className="text-lg text-gray-600">Everything you need to climb the rankings and stay there.</p>
+            <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-4 tracking-tight leading-tight uppercase">Comprehensive SEO Solutions</h2>
+            <p className="text-xl text-gray-600 font-normal">Everything you need to climb the rankings and stay there.</p>
           </div>
 
           <motion.div
@@ -326,7 +538,7 @@ export default function SEOPage() {
                     <div className="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
                       <Icon className="h-7 w-7 text-blue-600 group-hover:text-white transition-colors duration-300" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">{feature.title}</h3>
+                    <h3 className="text-xl font-normal text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">{feature.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                   </motion.div>
                 </Link>
@@ -340,8 +552,8 @@ export default function SEOPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Proven Process</h2>
-            <p className="text-lg text-gray-600">A data-driven approach to delivering consistent results.</p>
+            <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-4 tracking-tight leading-tight uppercase">Our Proven Process</h2>
+            <p className="text-xl text-gray-600 font-normal">A data-driven approach to delivering consistent results.</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
@@ -351,10 +563,10 @@ export default function SEOPage() {
                   <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gray-200" />
                 )}
                 <div className="relative z-10 bg-white">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-6 shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-normal mx-auto mb-6 shadow-lg">
                     {step.number}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 text-center mb-3">{step.title}</h3>
+                  <h3 className="text-xl font-normal text-gray-900 text-center mb-3">{step.title}</h3>
                   <p className="text-gray-600 text-center text-sm">{step.description}</p>
                 </div>
               </div>
@@ -366,11 +578,11 @@ export default function SEOPage() {
       {/* FAQ Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-12 text-center tracking-tight uppercase">Frequently Asked Questions</h2>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-blue-600">
+                <AccordionTrigger className="text-left text-lg font-normal text-gray-900 hover:text-blue-600">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-600 leading-relaxed">
@@ -382,22 +594,53 @@ export default function SEOPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 to-gray-900/90" />
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Scale Your Business?</h2>
-          <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-6 uppercase tracking-tight leading-tight">Ready to Scale Your Business?</h2>
+          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto font-normal">
             Join hundreds of businesses that have transformed their online presence with our expert SEO services.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-white text-blue-900 px-10 py-5 rounded-lg hover:bg-blue-50 transition-all font-bold text-lg shadow-xl"
+            className="inline-flex items-center bg-blue-600 text-white px-10 py-5 rounded-xl hover:brightness-110 transition-all font-normal uppercase tracking-widest text-sm shadow-sm"
           >
             Start Your Growth Journey
-            <ArrowRight className="ml-2 h-6 w-6" />
+            <ArrowRight className="ml-3 h-5 w-5" />
           </Link>
+        </div>
+      </section>
+
+      {/* EEAT 2.0: Technical Verification Log */}
+      <section className="py-24 bg-white relative overflow-hidden border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="border border-gray-100 bg-gray-50/50 rounded-[2.5rem] p-12 shadow-sm relative">
+            <h2 className="text-3xl font-normal mb-8 leading-tight text-gray-900">Verification Log: SEO Integrity Protocol</h2>
+
+            <div className="space-y-8">
+              <div className="p-6 bg-white rounded-2xl border border-gray-100">
+                <p className="text-sm text-gray-400 mb-4 font-mono uppercase">
+                  [STATUS: OMNI_CHANNEL_SYNC_2.0] | [SYSTEM: TOPICAL_DOMINATION_PROTOCOL] | [TIMESTAMP: MARCH_2026]
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6 font-normal">
+                  "One to Five Click enforces a 'Platform-Agnostic' policy. Our 2026 SEO deployments integrate YouTube transcripts and LinkedIn authority signals to ensure your brand is the cited source whether the search happens on Google, ChatGPT, or Tik Tok."
+                </p>
+
+                <div className="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-12 pt-6 border-t border-gray-100">
+                  <div>
+                    <p className="text-[10px] font-normal uppercase tracking-widest text-gray-400 mb-2">Strategy Lead</p>
+                    <div className="font-normal text-xl text-blue-600 leading-tight">One to Five Click</div>
+                    <div className="w-24 h-px bg-blue-500/30 mt-1"></div>
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-normal uppercase tracking-widest text-gray-400 mb-2">Operational Head</p>
+                    <div className="font-normal text-xl text-blue-600 leading-tight">One to Five Click</div>
+                    <div className="w-24 h-px bg-blue-500/30 mt-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

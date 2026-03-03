@@ -143,9 +143,8 @@ export default function OffPageSEOPage() {
     return (
         <div className="pt-16 overflow-hidden">
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 py-24 lg:py-32 text-white">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900/90" />
+            <section className="relative bg-white py-24 lg:py-32">
+                <div className="absolute inset-0 bg-grid-pattern opacity-5" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <motion.div
@@ -153,26 +152,26 @@ export default function OffPageSEOPage() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="inline-block bg-purple-500/20 border border-purple-400/30 text-purple-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                            <div className="inline-block bg-blue-50 border border-blue-100 text-blue-600 px-4 py-2 rounded-full text-xs font-normal mb-6 uppercase tracking-widest">
                                 Off-Page SEO Services
                             </div>
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                                Build Authority & <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Dominate</span>
+                            <h1 className="text-5xl md:text-7xl font-normal text-gray-900 mb-6 leading-tight tracking-tight">
+                                Build Authority & <span className="text-blue-600">Dominate</span>
                             </h1>
-                            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                            <p className="text-xl text-gray-600 mb-8 leading-relaxed font-normal">
                                 Earn high-quality backlinks, build brand authority, and establish your reputation as an industry leader.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center justify-center bg-purple-600 text-white px-8 py-4 rounded-lg hover:bg-purple-700 transition-all shadow-lg hover:shadow-purple-500/25 font-bold"
+                                    className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-xl hover:brightness-110 transition-all shadow-sm font-normal uppercase tracking-widest text-sm"
                                 >
                                     Boost Domain Authority
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Link>
                                 <Link
                                     href="#strategy"
-                                    className="inline-flex items-center justify-center bg-white/10 text-white border border-white/20 px-8 py-4 rounded-lg hover:bg-white/20 transition-all backdrop-blur-sm"
+                                    className="inline-flex items-center justify-center bg-gray-50 text-gray-700 border border-gray-100 px-8 py-4 rounded-xl hover:bg-gray-100 transition-all font-normal uppercase tracking-widest text-sm"
                                 >
                                     See Our Strategy
                                 </Link>
@@ -184,11 +183,11 @@ export default function OffPageSEOPage() {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="relative hidden lg:block"
                         >
-                            <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur-3xl opacity-20 animate-pulse" />
+                            <div className="absolute -inset-4 bg-blue-200 rounded-2xl blur-3xl opacity-20 animate-pulse" />
                             <img
                                 src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80"
                                 alt="Link Building Strategy"
-                                className="relative rounded-2xl shadow-2xl w-full"
+                                className="relative rounded-[2.5rem] shadow-2xl w-full border border-gray-100"
                             />
                         </motion.div>
                     </div>
@@ -196,7 +195,7 @@ export default function OffPageSEOPage() {
             </section>
 
             {/* Stats Section */}
-            <section className="py-12 bg-purple-600 border-y border-purple-700">
+            <section className="py-12 bg-gray-50 border-y border-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         {[
@@ -206,8 +205,8 @@ export default function OffPageSEOPage() {
                             { label: 'Success Rate', value: '94%' }
                         ].map((stat, index) => (
                             <div key={index}>
-                                <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
-                                <div className="text-purple-100 text-sm">{stat.label}</div>
+                                <div className="text-3xl md:text-4xl font-normal text-gray-900 mb-1 uppercase leading-none tracking-tight">{stat.value}</div>
+                                <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">{stat.label}</div>
                             </div>
                         ))}
                     </div>
@@ -218,8 +217,8 @@ export default function OffPageSEOPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Beyond Your Website</h2>
-                        <p className="text-lg text-gray-600">Comprehensive strategies to build your reputation across the web</p>
+                        <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">Beyond Your Website</h2>
+                        <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">Comprehensive strategies to build your reputation across the web</p>
                     </div>
 
                     <motion.div
@@ -235,13 +234,13 @@ export default function OffPageSEOPage() {
                                 <motion.div
                                     key={index}
                                     variants={itemVariants}
-                                    className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+                                    className="bg-white p-8 rounded-[2rem] shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 border border-gray-100 group"
                                 >
-                                    <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors duration-300">
-                                        <Icon className="h-6 w-6 text-purple-600 group-hover:text-white transition-colors duration-300" />
+                                    <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
+                                        <Icon className="h-6 w-6 text-blue-600 group-hover:text-white transition-colors duration-300" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                                    <h3 className="text-xl font-normal text-gray-900 mb-3 tracking-tight leading-tight">{feature.title}</h3>
+                                    <p className="text-gray-600 leading-relaxed text-sm font-normal">{feature.description}</p>
                                 </motion.div>
                             );
                         })}
@@ -253,14 +252,14 @@ export default function OffPageSEOPage() {
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Authority Transformation</h2>
-                        <p className="text-lg text-gray-600">See the impact of strategic link building</p>
+                        <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">Authority Transformation</h2>
+                        <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">See the impact of strategic link building</p>
                     </div>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
+                        <div className="bg-red-50/50 border border-red-100 rounded-[2rem] p-8">
                             <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-2xl font-bold text-gray-900">Before</h3>
-                                <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-semibold">Low Authority</span>
+                                <h3 className="text-2xl font-normal text-gray-900 tracking-tight">Before</h3>
+                                <span className="text-red-600 px-4 py-1.5 rounded-full text-[10px] font-normal uppercase tracking-widest">Low Authority</span>
                             </div>
                             <ul className="space-y-4">
                                 <li className="flex items-start space-x-3">
@@ -281,14 +280,14 @@ export default function OffPageSEOPage() {
                                 </li>
                                 <li className="flex items-start space-x-3">
                                     <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Struggling to rank</span>
+                                    <span className="text-gray-600 text-sm font-normal">Struggling to rank</span>
                                 </li>
                             </ul>
                         </div>
-                        <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
+                        <div className="bg-blue-50/50 border border-blue-100 rounded-[2rem] p-8 shadow-sm">
                             <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-2xl font-bold text-gray-900">After</h3>
-                                <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">High Authority</span>
+                                <h3 className="text-2xl font-normal text-gray-900 tracking-tight">After</h3>
+                                <span className="text-blue-600 px-4 py-1.5 rounded-full text-[10px] font-normal uppercase tracking-widest">High Authority</span>
                             </div>
                             <ul className="space-y-4">
                                 <li className="flex items-start space-x-3">
@@ -308,8 +307,8 @@ export default function OffPageSEOPage() {
                                     <span className="text-gray-700">Industry authority status</span>
                                 </li>
                                 <li className="flex items-start space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-gray-700">Page 1 rankings</span>
+                                    <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                                    <span className="text-gray-600 text-sm font-normal uppercase">Page 1 rankings</span>
                                 </li>
                             </ul>
                         </div>
@@ -318,38 +317,39 @@ export default function OffPageSEOPage() {
             </section>
 
             {/* Case Study */}
-            <section className="py-20 bg-gradient-to-br from-purple-600 to-indigo-600 text-white">
+            <section className="py-24 bg-gray-900 text-white overflow-hidden relative">
+                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <div className="inline-block bg-white/20 border border-white/30 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <div className="relative z-10">
+                            <div className="inline-block bg-blue-600/20 border border-blue-500/30 text-blue-400 px-4 py-2 rounded-full text-[10px] font-normal uppercase tracking-widest mb-6">
                                 Case Study
                             </div>
-                            <h2 className="text-4xl font-bold mb-6">How We Helped TechCorp Earn 200+ Backlinks</h2>
-                            <p className="text-purple-100 mb-8 leading-relaxed">
+                            <h2 className="text-4xl font-normal mb-6 tracking-tight leading-tight">How We Helped TechCorp Earn 200+ Backlinks</h2>
+                            <p className="text-gray-400 mb-8 leading-relaxed font-normal">
                                 TechCorp had great products but zero online authority. We implemented a strategic link building campaign that earned them backlinks from Forbes, TechCrunch, and 200+ industry sites.
                             </p>
                             <div className="grid grid-cols-2 gap-6 mb-8">
                                 <div>
-                                    <div className="text-4xl font-bold text-white mb-2">200+</div>
-                                    <div className="text-purple-100">Quality Backlinks</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">200+</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">Quality Backlinks</div>
                                 </div>
                                 <div>
-                                    <div className="text-4xl font-bold text-white mb-2">DA 52</div>
-                                    <div className="text-purple-100">From DA 18</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">DA 52</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">From DA 18</div>
                                 </div>
                                 <div>
-                                    <div className="text-4xl font-bold text-white mb-2">450%</div>
-                                    <div className="text-purple-100">Traffic Increase</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">450%</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">Traffic Increase</div>
                                 </div>
                                 <div>
-                                    <div className="text-4xl font-bold text-white mb-2">15</div>
-                                    <div className="text-purple-100">Media Features</div>
+                                    <div className="text-4xl font-normal text-white mb-2 uppercase tracking-tight">15</div>
+                                    <div className="text-gray-500 text-[10px] font-normal uppercase tracking-widest">Media Features</div>
                                 </div>
                             </div>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center bg-white text-purple-600 px-8 py-4 rounded-lg hover:bg-purple-50 transition-all font-bold"
+                                className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-xl hover:brightness-110 transition-all font-normal uppercase tracking-widest text-xs"
                             >
                                 Get Similar Results
                                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -360,7 +360,7 @@ export default function OffPageSEOPage() {
                             <img
                                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
                                 alt="Link Building Results"
-                                className="relative rounded-2xl shadow-2xl"
+                                className="relative rounded-[3rem] shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-700"
                             />
                         </div>
                     </div>
@@ -371,8 +371,8 @@ export default function OffPageSEOPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-                        <p className="text-lg text-gray-600">Proven results from businesses like yours</p>
+                        <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">What Our Clients Say</h2>
+                        <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">Proven results from businesses like yours</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-8">
                         {testimonials.map((testimonial, index) => (
@@ -391,10 +391,10 @@ export default function OffPageSEOPage() {
                                         </svg>
                                     ))}
                                 </div>
-                                <p className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
+                                <p className="text-gray-600 mb-6 leading-relaxed font-normal">"{testimonial.quote}"</p>
                                 <div>
-                                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                                    <div className="text-sm text-gray-500">{testimonial.company}</div>
+                                    <div className="font-normal text-gray-900 uppercase tracking-tight text-lg">{testimonial.name}</div>
+                                    <div className="text-[10px] font-normal text-gray-500 uppercase tracking-widest">{testimonial.company}</div>
                                 </div>
                             </motion.div>
                         ))}
@@ -405,11 +405,11 @@ export default function OffPageSEOPage() {
             {/* FAQ Section */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Off-Page SEO FAQs</h2>
+                    <h2 className="text-4xl font-normal text-gray-900 mb-12 text-center tracking-tight uppercase">Off-Page SEO FAQs</h2>
                     <Accordion type="single" collapsible className="w-full">
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={`item-${index}`}>
-                                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-purple-600">
+                                <AccordionTrigger className="text-left text-lg font-normal text-gray-900 hover:text-blue-600 uppercase tracking-tight">
                                     {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-gray-600 leading-relaxed">
@@ -421,17 +421,16 @@ export default function OffPageSEOPage() {
                 </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="py-24 bg-gray-900 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-900/90 to-gray-900/90" />
+            <section className="py-24 bg-blue-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-10" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Ready to Build Authority?</h2>
-                    <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    <h2 className="text-4xl md:text-6xl font-normal text-white mb-6 tracking-tight uppercase">Ready to Build Authority?</h2>
+                    <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto font-normal">
                         Start earning the high-quality backlinks your website deserves.
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-flex items-center bg-white text-purple-900 px-10 py-5 rounded-lg hover:bg-purple-50 transition-all font-bold text-lg shadow-xl"
+                        className="inline-flex items-center bg-white text-blue-600 px-10 py-5 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest shadow-sm text-sm"
                     >
                         Start Link Building
                         <ArrowRight className="ml-2 h-6 w-6" />

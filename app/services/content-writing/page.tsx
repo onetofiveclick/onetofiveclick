@@ -3,17 +3,24 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-  ArrowRight,
-  CheckCircle,
   PenTool,
-  BookOpen,
-  FileText,
-  AlertTriangle,
-  Target,
-  Users,
+  CheckCircle,
   TrendingUp,
-  Edit,
-  Sparkles
+  Target,
+  Network,
+  ArrowRight,
+  BookOpen,
+  Users,
+  Briefcase,
+  MessageSquare,
+  Award,
+  BarChart,
+  Cpu,
+  ShieldCheck,
+  Activity,
+  Layers,
+  Sparkles,
+  Search
 } from 'lucide-react';
 import {
   Accordion,
@@ -24,395 +31,251 @@ import {
 
 const features = [
   {
-    title: 'Blog Writing',
-    description: 'Engaging, SEO-optimized blog posts that drive traffic and establish thought leadership.',
-    icon: BookOpen
+    title: 'Executive Ghostwriting',
+    description: 'We capture your unique voice and turn your industry expertise into high-converting LinkedIn content.',
+    icon: PenTool
   },
   {
-    title: 'Website Copywriting',
-    description: 'Persuasive web copy that converts visitors into customers and clearly communicates your value.',
-    icon: FileText
-  },
-  {
-    title: 'SEO Content',
-    description: 'Keyword-rich content designed to rank high in search engines while providing real value.',
+    title: 'B2B Lead Generation',
+    description: 'Transform organic engagement into qualified sales calls through strategic DM outreach and profiling.',
     icon: Target
   },
   {
-    title: 'Social Media Content',
-    description: 'Scroll-stopping posts that engage your audience and build brand awareness.',
+    title: 'Authority Newsletters',
+    description: 'Build a direct-to-human owned audience with deep-dive technical and strategic newsletters.',
+    icon: BookOpen
+  },
+  {
+    title: 'Founder Branding',
+    description: 'Position leadership as the undeniable voice of the industry, creating an inbound gravity well.',
+    icon: Briefcase
+  },
+  {
+    title: 'Community Building',
+    description: 'Foster genuine conversations and relationships within your B2B ecosystem.',
     icon: Users
   },
   {
-    title: 'Email Campaigns',
-    description: 'Compelling email copy that drives opens, clicks, and conversions.',
-    icon: Edit
-  },
-  {
-    title: 'Product Descriptions',
-    description: 'Persuasive descriptions that highlight benefits and drive purchase decisions.',
-    icon: Sparkles
-  }
-];
-
-const testimonials = [
-  {
-    name: 'Rachel Green',
-    company: 'Fashion E-commerce',
-    quote: 'One to Five Click transformed our product descriptions. Our conversion rate increased by 67% and returns decreased significantly.',
-    rating: 5
-  },
-  {
-    name: 'Tom Anderson',
-    company: 'Tech Startup',
-    quote: 'Their blog writing service helped us establish authority in our niche. We now get 10k+ monthly visitors from organic search.',
-    rating: 5
-  },
-  {
-    name: 'Maria Santos',
-    company: 'Consulting Firm',
-    quote: 'The website copy they wrote perfectly captures our brand voice and has increased our lead generation by 180%.',
-    rating: 5
+    title: 'Conversion Copywriting',
+    description: 'Sales pages, funnels, and VSL scripts that leverage psychological triggers to close high-ticket deals.',
+    icon: MessageSquare
   }
 ];
 
 const faqs = [
   {
-    question: 'What types of content do you write?',
-    answer: 'We write all types of content including blog posts, website copy, product descriptions, email campaigns, social media posts, white papers, case studies, and more.'
+    question: 'Why focus on LinkedIn and Executive Branding?',
+    answer: 'In 2026, B2B buyers don\'t trust corporate logos—they trust people. Founders and executives who build personal brands command higher prices, attract better talent, and close deals faster. It\'s the ultimate organic leverage.'
   },
   {
-    question: 'How do you ensure content is SEO-optimized?',
-    answer: 'We conduct thorough keyword research, optimize headers and meta tags, use proper formatting, include internal/external links, and ensure content satisfies search intent while remaining natural and engaging.'
+    question: 'How do you capture my voice as a founder?',
+    answer: 'We don\'t use templates. We conduct deep-dive interviews, analyze your past communications, and use proprietary frameworks to extract your unique perspective, ensuring every post sounds exactly like you—just more refined.'
   },
   {
-    question: 'What is your content creation process?',
-    answer: 'We start with research and strategy, create an outline, write the first draft, optimize for SEO, revise based on feedback, and deliver polished, ready-to-publish content.'
+    question: 'How long does it take to see inbound leads?',
+    answer: 'While authority builds over time, our strategic outreach and high-signal content typically generate the first qualified inbound conversations within 45 to 60 days of consistent execution.'
   },
   {
-    question: 'Can you match our brand voice?',
-    answer: 'Absolutely. We study your existing content, brand guidelines, and target audience to ensure every piece we create aligns perfectly with your brand voice and tone.'
+    question: 'Do you guarantee viral posts?',
+    answer: 'No. "Going viral" to unqualified audiences is a vanity metric. We guarantee high-signal engagement from decision-makers in your target market. Revenue over reach.'
   },
   {
-    question: 'How long does it take to create content?',
-    answer: 'Timeline varies by project. Blog posts typically take 3-5 days, website pages 5-7 days, and larger projects like white papers 2-3 weeks. Rush delivery is available.'
-  },
-  {
-    question: 'Do you provide revisions?',
-    answer: 'Yes, we include 2 rounds of revisions with every project to ensure you\'re completely satisfied with the final content.'
-  },
-  {
-    question: 'What makes your content different?',
-    answer: 'Our content is research-driven, SEO-optimized, and conversion-focused. We don\'t just write—we create strategic content that drives business results.'
-  },
-  {
-    question: 'Can you write for technical industries?',
-    answer: 'Yes, our team includes writers with expertise in various industries including technology, healthcare, finance, and more. We research thoroughly to ensure accuracy.'
-  },
-  {
-    question: 'Do you offer content strategy services?',
-    answer: 'Yes, we can develop a comprehensive content strategy including topic ideation, keyword targeting, content calendar, and distribution plan.'
-  },
-  {
-    question: 'How do you measure content success?',
-    answer: 'We track metrics like organic traffic, rankings, time on page, bounce rate, conversions, and engagement to measure content performance and ROI.'
+    question: 'How much time do I need to commit?',
+    answer: 'As a founder, your time is your most valuable asset. We require just 60 minutes of your time per month for a strategic brain-dump. We handle the 99% of execution, writing, and community management.'
   }
 ];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5
-    }
-  }
-};
 
 export default function ContentWritingPage() {
   return (
     <div className="pt-16 overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-50 via-white to-amber-50 py-24 lg:py-32">
-        <div className="absolute inset-0 bg-grid-pattern opacity-[0.05]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-blue/5 via-transparent to-brand-red/5" />
+        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                Content Writing Services
+              <div className="inline-flex items-center space-x-2 bg-brand-blue/5 text-brand-blue px-5 py-2 rounded-full text-xs font-normal mb-10 border border-brand-blue/10">
+                <div className="w-2 h-2 bg-brand-blue rounded-full animate-pulse" />
+                <span>B2B Organic & Executive Branding</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Words That <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-500">Convert & Inspire</span>
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-gray-900 mb-8 leading-tight">
+                People Buy From <br />
+                <span className="text-brand-blue">People.</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Expert content that engages your audience, ranks in search engines, and drives real business results.
+              <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-normal max-w-2xl mx-auto">
+                The silent goldmine of 2026. We turn founders into industry <span className="text-gray-900 font-normal">Monopolies</span> through high-signal LinkedIn authority and written organic ecosystems.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition-all shadow-lg hover:shadow-orange-200 font-bold"
+                  className="inline-flex items-center justify-center bg-brand-blue text-white px-10 py-4 rounded-lg hover:brightness-110 transition-all font-normal text-lg group"
                 >
-                  Get Content Strategy
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Become The Authority
+                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
                 </Link>
-                <Link
-                  href="#portfolio"
-                  className="inline-flex items-center justify-center bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-lg hover:bg-gray-50 transition-all"
-                >
-                  View Samples
-                </Link>
+                <div className="text-gray-500 font-normal text-sm">
+                  *Limited to Founders doing $1M+
+                </div>
               </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative hidden lg:block"
-            >
-              <div className="absolute -inset-4 bg-gradient-to-r from-orange-200 to-amber-200 rounded-2xl blur-2xl opacity-30 animate-pulse" />
-              <img
-                src="https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Content Writing"
-                className="relative rounded-2xl shadow-2xl w-full"
-              />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-12 bg-orange-600 border-y border-orange-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { label: 'Content Pieces', value: '10k+' },
-              { label: 'Avg. Engagement', value: '85%' },
-              { label: 'Client Satisfaction', value: '99%' },
-              { label: 'Industries Served', value: '50+' }
-            ].map((stat, index) => (
-              <div key={index}>
-                <div className="text-3xl md:text-4xl font-bold text-white mb-1">{stat.value}</div>
-                <div className="text-orange-100 text-sm">{stat.label}</div>
+      {/* The Gold Rush Concept */}
+      <section className="py-24 bg-gray-50 overflow-hidden border-y border-gray-100 relative">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-orange-100 blur-[100px] opacity-50" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-normal text-gray-900 uppercase tracking-tight leading-tight mb-6">
+                The B2B <br />
+                <span className="text-blue-600">Trust Deficit.</span>
+              </h2>
+              <p className="text-lg text-gray-600 mb-6 font-normal leading-relaxed">
+                In a world drowning in AI-generated fluff and automated sales pitches, trust is at an all-time low. Decision-makers don't read generic blog posts or reply to automated cold emails anymore.
+              </p>
+              <p className="text-lg text-gray-600 mb-8 font-normal leading-relaxed">
+                They buy from <span className="text-gray-900 font-normal">Founders they know, like, and trust.</span> By strategically commanding your personal brand on LinkedIn and across targeted newsletters, you build an inbound engine that rivals costly ad campaigns.
+              </p>
+              <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm w-max">
+                <Award className="h-8 w-8 text-blue-600" />
+                <div>
+                  <div className="text-xl font-normal text-gray-900 uppercase tracking-tight">"Sell Shovels"</div>
+                  <div className="text-[10px] font-normal text-gray-500 uppercase tracking-widest text-center">Provide absolute authority</div>
+                </div>
               </div>
-            ))}
+            </div>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {[
+                { metric: "300%", label: "Higher Conversion Rate vs Brand Pages", icon: TrendingUp },
+                { metric: "Zero", label: "Ad Spend Required for Inbound Deals", icon: BarChart },
+                { metric: "Top 1%", label: "Positioning in Your Industry Niche", icon: Target },
+                { metric: "7+", label: "Decision Layers Bypassed via Trust", icon: Network }
+              ].map((stat, i) => (
+                <div key={i} className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:border-blue-200 transition-all">
+                  <stat.icon className="h-8 w-8 text-blue-600 mb-6" />
+                  <div className="text-4xl font-normal text-gray-900 mb-2 tracking-tight">{stat.metric}</div>
+                  <div className="text-[10px] font-normal text-gray-500 uppercase tracking-widest leading-tight">{stat.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-20 bg-white">
+      {/* Services Grid */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Content Services</h2>
-            <p className="text-lg text-gray-600">From blogs to product descriptions, we've got you covered</p>
+            <h2 className="text-4xl font-normal text-gray-900 uppercase tracking-tight mb-4">Authority Infrastructure</h2>
+            <p className="text-gray-500 font-normal uppercase tracking-widest text-sm">The Written Engines of 2026</p>
           </div>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
+              const Icon = feature.icon || PenTool;
               return (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
-                >
-                  <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-600 transition-colors duration-300">
-                    <Icon className="h-6 w-6 text-orange-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                </motion.div>
+                <div key={index} className="group bg-gray-50 rounded-[2.5rem] p-10 hover:border-blue-200 border border-gray-100 transition-all">
+                  <div className="w-16 h-1 bg-blue-600 mb-8 rounded-full" />
+                  <Icon className="h-8 w-8 text-blue-600 mb-6 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-2xl font-normal uppercase tracking-tight mb-4 leading-tight">{feature.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed font-normal">{feature.description}</p>
+                </div>
               );
             })}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Before/After Comparison */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Content That Makes a Difference</h2>
-            <p className="text-lg text-gray-600">See the transformation from generic to compelling</p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl font-bold text-gray-900">Before</h3>
-                <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-semibold">Generic</span>
-              </div>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3">
-                  <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Bland, feature-focused copy</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">No clear value proposition</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Poor readability and structure</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">No SEO optimization</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Weak call-to-action</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-8">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-2xl font-bold text-gray-900">After</h3>
-                <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">Compelling</span>
-              </div>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Benefit-driven, persuasive copy</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Clear, compelling value proposition</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Scannable, engaging format</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Keyword-optimized for search</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Strong, action-oriented CTA</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Case Study */}
-      <section className="py-20 bg-gradient-to-br from-orange-600 to-amber-600 text-white">
+      {/* Success Packages */}
+      <section className="py-24 bg-gray-900 text-white border-y border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-block bg-white/20 border border-white/30 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                Case Study
-              </div>
-              <h2 className="text-4xl font-bold mb-6">How We Helped FashionHub Increase Sales by 210%</h2>
-              <p className="text-orange-100 mb-8 leading-relaxed">
-                FashionHub had great products but boring descriptions. We rewrote 500+ product descriptions with compelling, benefit-focused copy that drove conversions.
-              </p>
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div>
-                  <div className="text-4xl font-bold text-white mb-2">210%</div>
-                  <div className="text-orange-100">Sales Increase</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-white mb-2">67%</div>
-                  <div className="text-orange-100">Higher Conversion</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-white mb-2">40%</div>
-                  <div className="text-orange-100">Lower Returns</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-white mb-2">4.8</div>
-                  <div className="text-orange-100">Avg. Product Rating</div>
-                </div>
-              </div>
-              <Link
-                href="/contact"
-                className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg hover:bg-orange-50 transition-all font-bold"
-              >
-                Get Similar Results
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-white/20 rounded-2xl blur-3xl" />
-              <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-                alt="Content Results"
-                className="relative rounded-2xl shadow-2xl"
-              />
-            </div>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-normal mb-4 uppercase tracking-tight leading-tight">Growth <span className="text-blue-400">Packages.</span></h2>
+            <p className="text-gray-400 font-normal uppercase tracking-widest text-sm">Engineered for Founders & Executives.</p>
           </div>
-        </div>
-      </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-            <p className="text-lg text-gray-600">Trusted by businesses worldwide</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-gray-100"
-              >
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Authority Base',
+                price: '999',
+                desc: 'Establish your voice and dominate your industry niche with consistent, high-signal posting.',
+                features: ['12 High-Value LinkedIn Posts', 'Profile Optimization', 'Basic Comment Engagement', 'Monthly Analytics Review'],
+                highlight: false
+              },
+              {
+                name: 'Inbound Engine',
+                price: '2,499',
+                desc: 'Our most popular protocol. Turn your brand into an automated lead generation machine.',
+                features: ['20 High-Signal LinkedIn Posts', 'Strategic DM Protocol (Sales)', 'Custom Newsletter (2x/mo)', 'Executive Positioning Strategy', 'Bi-Weekly Zoom Sync'],
+                highlight: true
+              },
+              {
+                name: 'The Monopoly',
+                price: '4,999',
+                desc: 'Absolute semantic and social dominance. You become the definitive voice of your industry.',
+                features: ['Daily Platform Domination', 'C-Suite Networking Protocol', 'Ghostwritten Viral Threads', 'Webinar/VSL Scripting', 'Priority 24/7 Access'],
+                highlight: false
+              }
+            ].map((pkg) => (
+              <div key={pkg.name} className={`relative p-10 rounded-[3rem] border transition-all duration-500 ${pkg.highlight ? 'bg-white text-gray-900 border-blue-600 shadow-sm scale-105 z-10' : 'bg-gray-800 border-white/10 hover:border-blue-500'}`}>
+                {pkg.highlight && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-5 py-1.5 rounded-full text-[10px] font-normal uppercase tracking-widest shadow-sm">
+                    Most Selected
+                  </div>
+                )}
+                <h3 className="text-2xl font-normal uppercase mb-4 leading-tight">{pkg.name}</h3>
+                <div className="flex items-baseline mb-8">
+                  <span className="text-2xl font-normal">$</span>
+                  <span className="text-6xl font-normal">{pkg.price}</span>
+                  <span className={`text-xs ml-2 font-normal uppercase tracking-widest ${pkg.highlight ? 'text-gray-500' : 'text-gray-400'}`}>/mo</span>
+                </div>
+
+                <p className={`text-sm mb-10 leading-relaxed font-normal ${pkg.highlight ? 'text-gray-600' : 'text-gray-400'}`}>{pkg.desc}</p>
+
+                <ul className="space-y-4 mb-12">
+                  {pkg.features.map(feat => (
+                    <li key={feat} className="flex items-start space-x-3 text-sm font-normal">
+                      <CheckCircle className={`h-5 w-5 flex-shrink-0 ${pkg.highlight ? 'text-blue-600' : 'text-blue-400'}`} />
+                      <span>{feat}</span>
+                    </li>
                   ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
-                <div>
-                  <div className="font-bold text-gray-900">{testimonial.name}</div>
-                  <div className="text-sm text-gray-500">{testimonial.company}</div>
-                </div>
-              </motion.div>
+                </ul>
+
+                <Link
+                  href="/contact"
+                  className={`block w-full text-center py-5 rounded-xl font-normal uppercase tracking-widest text-xs transition-all ${pkg.highlight ? 'bg-blue-600 text-white hover:brightness-110' : 'bg-white/10 text-white hover:bg-blue-600'}`}
+                >
+                  Initiate Sync
+                </Link>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Content Writing FAQs</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-normal text-gray-900 mb-4 uppercase tracking-tight leading-tight">Foundational Logic</h2>
+            <p className="text-blue-600 font-normal uppercase tracking-widest text-[10px] text-center">Briefing Protocol</p>
+          </div>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-orange-600">
+              <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-100">
+                <AccordionTrigger className="text-left py-6 text-lg font-normal text-gray-900 hover:text-blue-600 uppercase tracking-tight leading-tight">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 leading-relaxed">
+                <AccordionContent className="text-gray-500 leading-relaxed font-normal pb-6">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -422,19 +285,19 @@ export default function ContentWritingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-orange-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-[0.1]" />
+      <section className="py-24 bg-blue-600 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Tell Your Story?</h2>
-          <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto">
-            Let's create content that connects with your audience and drives results.
+          <h2 className="text-4xl md:text-6xl font-normal text-white mb-8 tracking-tight uppercase">Own The Narrative.</h2>
+          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto font-normal">
+            Stop competing on pricing and features. Shift the battlefield to trust and authority—the only assets AI can't replicate.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-white text-orange-600 px-10 py-5 rounded-lg hover:bg-orange-50 transition-all font-bold text-lg shadow-xl"
+            className="inline-flex items-center bg-white text-blue-600 px-12 py-6 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest text-sm shadow-sm"
           >
-            Get Content Strategy
-            <ArrowRight className="ml-2 h-6 w-6" />
+            Start Your Reign
+            <ArrowRight className="ml-3 h-6 w-6" />
           </Link>
         </div>
       </section>

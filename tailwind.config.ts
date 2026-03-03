@@ -20,6 +20,46 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        brand: {
+          blue: '#662046', // Qatar Airways Burgundy / Maroon
+          red: '#333366',  // Qatar Airways Deep Navy
+        },
+        blue: {
+          50: '#F5E4EB',
+          100: '#EBD1DC',
+          200: '#D6A8BD',
+          300: '#C1809E',
+          400: '#A7527D',
+          500: '#662046',
+          600: '#662046',   // Primary Qatar Burgundy (using 600 as the primary target class throughout app)
+          700: '#5C0632',   // Secondary Burgundy
+          800: '#4A0428',   // Deaper Maroon
+          900: '#35021B',
+        },
+        cyan: {
+          50: '#FDFCF7',
+          100: '#FBF8EF',
+          200: '#F3E9D0',
+          300: '#E8D5A9',
+          400: '#DAB877',
+          500: '#C7A254',   // Qatar Airways Gold/Sand (Maps to cyan-500)
+          600: '#A78138',
+          700: '#816127',
+          800: '#5F461D',
+          900: '#412F15',
+        },
+        gray: {
+          50: '#F2F3FA',    // Qatar Airways 'White Lilac'
+          100: '#E8EAEE',
+          200: '#d0d2d3',   // QR light grey
+          300: '#8E8F8B',   // QR grey 3
+          400: '#747F8A',   // Slate gray in logo shapes
+          500: '#818A8F',   // QR grey 1
+          600: '#5E6A71',   // QR grey 2
+          700: '#505967',   // 'Shuttle Gray' for dense text
+          800: '#4D4F53',   // Primary strict dark grey
+          900: '#222222',   // Sharp heading black/grey
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

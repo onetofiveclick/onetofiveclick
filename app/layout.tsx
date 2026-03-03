@@ -1,10 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +9,9 @@ export const metadata: Metadata = {
     template: '%s | One to Five Click'
   },
   description: 'Transform your brand with expert digital marketing services including Technical SEO, Local SEO, PPC, social media marketing, web development, and content writing. Get results in 1-5 clicks.',
+  icons: {
+    icon: '/icon.svg',
+  },
   keywords: ['digital marketing', 'SEO services', 'technical SEO', 'local SEO', 'on-page SEO', 'off-page SEO', 'PPC advertising', 'social media marketing', 'web development', 'content writing', 'digital marketing agency'],
   authors: [{ name: 'One to Five Click' }],
   creator: 'One to Five Click',
@@ -72,18 +72,19 @@ export default function RootLayout({
               name: 'One to Five Click',
               url: 'https://onetofiveclick.com',
               logo: 'https://onetofiveclick.com/logo.png',
-              description: 'Expert digital marketing agency specializing in SEO, PPC, social media marketing, web development, and content writing.',
-              email: 'info@onetofiveclick.com',
+              description: 'Expert digital marketing agency specializing in Next.js, WordPress, and Global SEO scaling.',
+              email: 'team@onetofiveclick.com',
+              contactPoint: {
+                '@type': 'ContactPoint',
+                contactType: 'customer service',
+                email: 'team@onetofiveclick.com'
+              },
               sameAs: [
                 'https://facebook.com/onetofiveclick',
                 'https://twitter.com/onetofiveclick',
                 'https://linkedin.com/company/onetofiveclick',
                 'https://instagram.com/onetofiveclick'
               ],
-              address: {
-                '@type': 'PostalAddress',
-                addressCountry: 'US'
-              },
               areaServed: 'Worldwide',
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
@@ -135,7 +136,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body>
         <Navbar />
         <main>{children}</main>
         <Footer />

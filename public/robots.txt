@@ -1,5 +1,19 @@
 User-agent: *
 Allow: /
 
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+
 # Sitemaps
 Sitemap: https://onetofiveclick.com/sitemap.xml

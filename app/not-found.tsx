@@ -15,13 +15,13 @@ export default function NotFound() {
                 >
                     {/* 404 Number */}
                     <div className="mb-8">
-                        <h1 className="text-9xl md:text-[12rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                        <h1 className="text-9xl md:text-[12rem] font-normal text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                             404
                         </h1>
                     </div>
 
                     {/* Message */}
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl md:text-4xl font-normal text-gray-900 mb-4">
                         Oops! Page Not Found
                     </h2>
                     <p className="text-lg text-gray-600 mb-8 max-w-md mx-auto">
@@ -32,14 +32,14 @@ export default function NotFound() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             href="/"
-                            className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl font-bold"
+                            className="inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl font-normal"
                         >
                             <Home className="mr-2 h-5 w-5" />
                             Go to Homepage
                         </Link>
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-lg hover:bg-gray-50 transition-all font-bold"
+                            className="inline-flex items-center justify-center bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-lg hover:bg-gray-50 transition-all font-normal"
                         >
                             Contact Support
                             <ArrowRight className="ml-2 h-5 w-5" />
@@ -52,28 +52,28 @@ export default function NotFound() {
                         <div className="flex flex-wrap gap-3 justify-center">
                             <Link
                                 href="/services/seo"
-                                className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                                className="text-blue-600 hover:text-blue-700 text-sm font-normal"
                             >
                                 SEO Services
                             </Link>
                             <span className="text-gray-300">•</span>
                             <Link
                                 href="/services/seo/local-seo"
-                                className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                                className="text-blue-600 hover:text-blue-700 text-sm font-normal"
                             >
                                 Local SEO
                             </Link>
                             <span className="text-gray-300">•</span>
                             <Link
                                 href="/services/content-writing"
-                                className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                                className="text-blue-600 hover:text-blue-700 text-sm font-normal"
                             >
                                 Content Writing
                             </Link>
                             <span className="text-gray-300">•</span>
                             <Link
                                 href="/blog"
-                                className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                                className="text-blue-600 hover:text-blue-700 text-sm font-normal"
                             >
                                 Blog
                             </Link>

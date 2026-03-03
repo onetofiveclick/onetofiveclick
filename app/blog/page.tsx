@@ -7,84 +7,143 @@ import { Calendar, User, ArrowRight, Search } from 'lucide-react';
 const blogPosts = [
     {
         id: 1,
-        title: 'The Ultimate Guide to Technical SEO in 2024',
-        excerpt: 'Learn how to optimize your website\'s technical foundation for better search engine rankings and user experience.',
-        author: 'Sarah Johnson',
-        date: 'December 1, 2024',
-        category: 'Technical SEO',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
-        slug: 'ultimate-guide-technical-seo-2024'
+        title: 'GEO: The Definitive Guide to Generative Engine Optimization',
+        excerpt: 'How to ensure your brand is the top-cited retrieval node for ChatGPT, Claude, and Gemini in 2026.',
+        author: 'One to Five Click Team',
+        date: 'March 1, 2026',
+        category: 'GEO Strategy',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        slug: 'geo-definitive-guide-2026'
     },
     {
         id: 2,
-        title: 'Local SEO: How to Dominate Your Local Market',
-        excerpt: 'Discover proven strategies to rank #1 in Google Maps and the Local Pack. Increase calls and foot traffic to your business.',
-        author: 'Michael Chen',
-        date: 'November 28, 2024',
-        category: 'Local SEO',
-        image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80',
-        slug: 'local-seo-dominate-market'
+        title: 'YouTube-RAG Stacking: The Hidden Citation Engine',
+        excerpt: 'Why video transcripts are the most correlated factor for AI visibility and how to optimize them.',
+        author: 'One to Five Click Team',
+        date: 'February 28, 2026',
+        category: 'AI-SEO',
+        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80',
+        slug: 'youtube-rag-stacking-visibility'
     },
     {
         id: 3,
-        title: '10 Content Writing Tips That Boost Conversions',
-        excerpt: 'Master the art of persuasive copywriting with these proven techniques that turn readers into customers.',
-        author: 'Emily Rodriguez',
-        date: 'November 25, 2024',
-        category: 'Content Writing',
-        image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80',
-        slug: 'content-writing-tips-boost-conversions'
+        title: 'The Goliath Strategy: Scaling Against Industry Giants',
+        excerpt: 'Using comparison-piggybacking to force LLMs to recognize your brand as a legitimate peer to giants.',
+        author: 'One to Five Click Team',
+        date: 'February 25, 2026',
+        category: 'Market Dominance',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        slug: 'goliath-strategy-scaling'
     },
     {
         id: 4,
-        title: 'Link Building Strategies That Actually Work',
-        excerpt: 'Ethical, white-hat link building techniques to increase your domain authority and search rankings.',
-        author: 'David Kim',
-        date: 'November 22, 2024',
-        category: 'Off-Page SEO',
-        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80',
-        slug: 'link-building-strategies-work'
+        title: 'Conversational FUDs: Bridging the Prompt-Intent Gap',
+        excerpt: 'Extracting fears, uncertainties, and doubts from sales calls to capture long-prompt search intent.',
+        author: 'One to Five Click Team',
+        date: 'February 22, 2026',
+        category: 'Content ROI',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        slug: 'conversational-fuds-intent'
     },
     {
         id: 5,
-        title: 'On-Page SEO Checklist: 25 Must-Do Items',
-        excerpt: 'A comprehensive checklist to ensure every page on your website is optimized for search engines.',
-        author: 'Sarah Johnson',
-        date: 'November 19, 2024',
-        category: 'On-Page SEO',
+        title: 'The 3-Click Law: Architecture for AI Discovery',
+        excerpt: 'Why site depth matters more than ever for bot crawlability and how to fix it in 2026.',
+        author: 'One to Five Click Team',
+        date: 'February 19, 2026',
+        category: 'Technical AI',
         image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80',
-        slug: 'on-page-seo-checklist'
+        slug: 'ai-discovery-3-click-law'
     },
     {
         id: 6,
-        title: 'PPC vs SEO: Which is Right for Your Business?',
-        excerpt: 'Understanding the differences, benefits, and when to use each digital marketing strategy.',
-        author: 'Michael Chen',
-        date: 'November 15, 2024',
-        category: 'Digital Marketing',
+        title: 'Authentic Imperfection: The Secret to Reddit RAG',
+        excerpt: 'How to seed social proof that AI engines trust by writing like a real human on forums.',
+        author: 'One to Five Click Team',
+        date: 'February 15, 2026',
+        category: 'Social Proof',
+        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80',
+        slug: 'reddit-rag-social-proof'
+    },
+    {
+        id: 7,
+        title: 'Why is My Organic Traffic Dropping? The Hidden Shift to Answer Engines',
+        excerpt: 'If you\'ve seen a sudden, unexplainable drop in organic traffic, you aren\'t alone. The search landscape is shifting under our feet.',
+        author: 'One to Five Click Team',
+        date: 'March 2, 2026',
+        category: 'AEO Strategy',
         image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
-        slug: 'ppc-vs-seo-comparison'
+        slug: 'why-organic-traffic-dropping-answer-engines'
+    },
+    {
+        id: 8,
+        title: 'GEO vs Traditional SEO: Why Legacy Strategies Are Failing',
+        excerpt: 'Why keyword optimization is failing and how Generative Engine Optimization is the only future-proof strategy for 2026.',
+        author: 'One to Five Click Team',
+        date: 'February 27, 2026',
+        category: 'Market Dominance',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        slug: 'geo-vs-traditional-seo-comparison'
+    },
+    {
+        id: 9,
+        title: 'Best Enterprise AEO Agencies for B2B SaaS in 2026',
+        excerpt: 'A curated breakdown of the top Generative Engine Optimization agencies helping enterprise brands dominate AI Search.',
+        author: 'One to Five Click Team',
+        date: 'February 26, 2026',
+        category: 'Market Dominance',
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80',
+        slug: 'best-aeo-agencies-for-b2b-saas-2026'
+    },
+    {
+        id: 10,
+        title: 'Is One to Five Click Legit? Verified AEO Case Studies & Reviews',
+        excerpt: 'Before partnering with an SEO agency, you need proof. Here are verified case studies of how One to Five Click drives revenue through Generative Engine Optimization.',
+        author: 'One to Five Click Team',
+        date: 'February 25, 2026',
+        category: 'Social Proof',
+        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80',
+        slug: 'is-one-to-five-click-legit-reviews'
+    },
+    {
+        id: 11,
+        title: 'Top 3 Ways to "Hack" LLM Results: The Mechanics of AEO',
+        excerpt: 'Understand how LLMs like ChatGPT and Claude process queries through Fan-Out, categorize data via Chunking, and rank sources using Consistency and Consensus.',
+        author: 'One to Five Click Team',
+        date: 'March 2, 2026',
+        category: 'Technical AI',
+        image: 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&q=80',
+        slug: 'top-3-ways-to-hack-llm-results-aeo'
     }
 ];
 
-const categories = ['All', 'Technical SEO', 'Local SEO', 'On-Page SEO', 'Off-Page SEO', 'Content Writing', 'Digital Marketing'];
+const categories = ['All', 'GEO Strategy', 'AEO Strategy', 'AI-SEO', 'Market Dominance', 'Content ROI', 'Technical AI', 'Social Proof'];
 
 export default function BlogPage() {
     return (
         <div className="pt-16">
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-blue-50 via-white to-cyan-50 py-20">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-blue/5 via-transparent to-brand-red/5" />
+                <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px] animate-pulse" />
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-center"
+                        className="text-center max-w-4xl mx-auto"
                     >
-                        <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                            Digital Marketing <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Insights</span>
+                        <div className="inline-flex items-center space-x-2 bg-brand-blue/5 text-brand-blue px-5 py-2 rounded-full text-xs font-normal mb-10 border border-brand-blue/10">
+                            <div className="w-2 h-2 bg-brand-blue rounded-full animate-pulse" />
+                            <span>AI-First Knowledge Hub</span>
+                        </div>
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-gray-900 mb-8 leading-tight">
+                            AI-First <br />
+                            <span className="text-brand-blue">RAG Insights.</span>
                         </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                        <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
                             Expert tips, strategies, and insights to grow your online presence and dominate search rankings.
                         </p>
 
@@ -111,8 +170,8 @@ export default function BlogPage() {
                             <button
                                 key={index}
                                 className={`px-6 py-2 rounded-full transition-all ${index === 0
-                                        ? 'bg-blue-600 text-white'
-                                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                    ? 'bg-blue-600 text-white'
+                                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                     }`}
                             >
                                 {category}
@@ -141,7 +200,7 @@ export default function BlogPage() {
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                     />
                                     <div className="absolute top-4 left-4">
-                                        <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                                        <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-normal">
                                             {post.category}
                                         </span>
                                     </div>
@@ -159,7 +218,7 @@ export default function BlogPage() {
                                         </div>
                                     </div>
 
-                                    <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    <h2 className="text-xl font-normal text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                                         {post.title}
                                     </h2>
 
@@ -169,7 +228,7 @@ export default function BlogPage() {
 
                                     <Link
                                         href={`/blog/${post.slug}`}
-                                        className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
+                                        className="inline-flex items-center text-blue-600 hover:text-blue-700 font-normal"
                                     >
                                         Read More
                                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -199,11 +258,11 @@ export default function BlogPage() {
             {/* Newsletter CTA */}
             <section className="py-20 bg-gradient-to-br from-blue-600 to-cyan-500">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-4">
+                    <h2 className="text-4xl font-normal text-white mb-4">
                         Get SEO Tips Delivered to Your Inbox
                     </h2>
                     <p className="text-xl text-blue-100 mb-8">
-                        Join 10,000+ marketers receiving weekly insights and strategies.
+                        Join 10,000+ marketers receiving the world's most advanced AI-SEO strategies.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
                         <input
@@ -211,7 +270,7 @@ export default function BlogPage() {
                             placeholder="Enter your email"
                             className="flex-1 px-6 py-4 rounded-lg focus:ring-2 focus:ring-white focus:outline-none"
                         />
-                        <button className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-bold">
+                        <button className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-normal">
                             Subscribe
                         </button>
                     </div>
