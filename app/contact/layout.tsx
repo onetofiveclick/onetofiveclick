@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'تواصل معنا | ون تو فايف كليك',
   description: 'سواء كنت في الرياض أو جدة أو أي مكان في المملكة، فإن فريقنا من خبراء السيو المحلي هنا لمساعدتك على النمو والتوسع في السوق السعودي.',
   alternates: {
-    canonical: '/contact/',
+    canonical: 'https://onetofiveclick.com/contact/',
   },
 };
 

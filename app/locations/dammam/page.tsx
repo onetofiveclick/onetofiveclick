@@ -1,6 +1,4 @@
-'use client';
 
-import { motion } from 'framer-motion';
 import { Target, MapPin, TrendingUp, Users, ArrowLeft, CheckCircle, Star, Building2 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -42,11 +40,7 @@ export default function DammamLocationPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-3xl mr-0 ml-auto"
-          >
+          <div className="max-w-3xl mr-0 ml-auto opacity-100 translate-y-0">
             <div className="inline-flex items-center gap-2 bg-brand-green/20 text-brand-green px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8 border border-brand-green/30">
               <Building2 className="h-4 w-4" />
               <span>خدمات التسويق الرقمي في الدمام والخبر</span>
@@ -66,7 +60,7 @@ export default function DammamLocationPage() {
                 استشارة مجانية في المنطقة الشرقية
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

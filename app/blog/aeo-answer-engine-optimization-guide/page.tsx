@@ -1,7 +1,5 @@
-'use client';
-
+import { Metadata } from 'next';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
   Bot,
   Search,
@@ -18,15 +16,22 @@ import {
   Shield,
   Users,
   BookOpen,
-  ChevronDown,
   BrainCircuit,
   Layers,
 } from 'lucide-react';
-import { useState } from 'react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-const metadata = {
+export const metadata: Metadata = {
   title: 'ما هو AEO؟ دليل تحسين محركات الإجابة الشامل | ون تو فايف كليك',
   description: 'تعرّف على AEO (تحسين محركات الإجابة) وكيف تجعل أدوات الذكاء الاصطناعي مثل ChatGPT و Perplexity و Gemini توصي بعملك. دليل شامل مع خطوات عملية وأمثلة.',
+  alternates: {
+    canonical: 'https://onetofiveclick.com/blog/aeo-answer-engine-optimization-guide/',
+  },
 };
 
 const tableOfContents = [
@@ -191,8 +196,6 @@ const blogFaqs = [
 ];
 
 export default function AEOGuidePage() {
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-
   // FAQ Schema JSON-LD
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -250,9 +253,9 @@ export default function AEOGuidePage() {
         <div className="bg-brand-navy border-b border-white/5 py-8 hidden md:block">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-end gap-12">
-              <h2 className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-black uppercase tracking-wider">
+              <div className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-black uppercase tracking-wider">
                 دليل شامل — <span className="text-white">AEO: تحسين محركات الإجابة</span> — كيف تجعل ChatGPT و Perplexity و Claude يوصون بعملك
-              </h2>
+              </div>
               <div className="h-4 w-px bg-white/10 flex-shrink-0" />
               <div className="flex items-center gap-3 flex-shrink-0">
                 <p className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-green">AEO_GUIDE_2026</p>
@@ -268,12 +271,7 @@ export default function AEOGuidePage() {
           <div className="absolute -bottom-px left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
+            <div className="max-w-4xl mx-auto opacity-100 translate-y-0">
               <div className="inline-flex items-center gap-3 bg-white/5 text-brand-green px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-white/10 backdrop-blur-md">
                 <Bot className="h-4 w-4" />
                 <span>دليل AEO الشامل — تحسين محركات الإجابة</span>
@@ -301,7 +299,7 @@ export default function AEOGuidePage() {
                   خدماتنا في AEO & SEO
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -331,11 +329,7 @@ export default function AEOGuidePage() {
         {/* What is AEO */}
         <section id="what-is-aeo" className="py-32 bg-white relative overflow-hidden">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
+            <div className="opacity-100 translate-y-0">
               <div className="inline-flex items-center gap-2 text-brand-green font-black uppercase tracking-widest text-[10px] mb-8">
                 <Bot className="h-4 w-4" />
                 <span>المفهوم الأساسي</span>
@@ -367,7 +361,7 @@ export default function AEOGuidePage() {
                   الفكرة بسيطة: كبشر، لا نريد أن نتصفح عشرات المواقع للعثور على إجابة. نريد الإجابة مباشرة. وأدوات الذكاء الاصطناعي تقدم هذا بالضبط. لذلك، إذا لم يكن محتواك مُهيئاً ليكون "الإجابة"، فأنت تفقد فرصة هائلة.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -420,11 +414,7 @@ export default function AEOGuidePage() {
         <section id="why-aeo-matters" className="py-32 bg-white relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-24 items-center">
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
+              <div className="opacity-100 translate-x-0">
                 <div className="inline-flex items-center gap-2 text-brand-green font-black uppercase tracking-widest text-[10px] mb-8">
                   <Zap className="h-4 w-4" />
                   <span>لماذا الآن؟</span>
@@ -448,13 +438,13 @@ export default function AEOGuidePage() {
                         <CheckCircle className="h-6 w-6 text-brand-green group-hover:text-brand-navy" />
                       </div>
                       <div>
-                        <h4 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h4>
+                        <h3 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h3>
                         <p className="text-slate-500 text-sm font-bold leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
 
               <div className="relative">
                 <div className="absolute -inset-10 bg-brand-green/5 blur-[100px] rounded-full" />
@@ -502,7 +492,7 @@ export default function AEOGuidePage() {
             </div>
 
             {/* Schema Code Example */}
-            <div className="bg-slate-900 rounded-[2.5rem] p-10 border border-white/10 mb-16 overflow-x-auto">
+            <div className="bg-slate-900 rounded-[2.5rem] p-10 border border-white/10 mb-16 overflow-x-auto text-right">
               <p className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-green mb-6">مثال على FAQPage Schema Markup</p>
               <pre className="text-sm text-slate-300 leading-relaxed font-mono text-left direction-ltr" dir="ltr">
 {`{
@@ -523,7 +513,7 @@ export default function AEOGuidePage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/5 rounded-[2.5rem] p-10 border border-white/10 backdrop-blur-sm">
+              <div className="bg-white/5 rounded-[2.5rem] p-10 border border-white/10 backdrop-blur-sm shadow-sm">
                 <div className="w-12 h-12 bg-brand-green/20 rounded-2xl flex items-center justify-center mb-6">
                   <Shield className="h-6 w-6 text-brand-green" />
                 </div>
@@ -532,7 +522,7 @@ export default function AEOGuidePage() {
                   أنت تكتب أسئلة وأجوبة عادية. لكن أدوات الذكاء الاصطناعي تحتاج لـ "تخمين" أن هذا سؤال وهذه إجابة. النتيجة: فرص أقل للظهور.
                 </p>
               </div>
-              <div className="bg-brand-green/10 rounded-[2.5rem] p-10 border border-brand-green/30 backdrop-blur-sm">
+              <div className="bg-brand-green/10 rounded-[2.5rem] p-10 border border-brand-green/30 backdrop-blur-sm shadow-sm">
                 <div className="w-12 h-12 bg-brand-green rounded-2xl flex items-center justify-center mb-6">
                   <CheckCircle className="h-6 w-6 text-brand-navy" />
                 </div>
@@ -546,7 +536,7 @@ export default function AEOGuidePage() {
         </section>
 
         {/* Question Format Section */}
-        <section id="question-format" className="py-32 bg-white relative overflow-hidden">
+        <section id="question-format" className="py-32 bg-white relative overflow-hidden text-right">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-7xl font-black text-brand-navy mb-8 tracking-tighter">
@@ -562,13 +552,9 @@ export default function AEOGuidePage() {
               {questionCategories.map((cat, i) => {
                 const Icon = cat.icon;
                 return (
-                  <motion.div
+                  <div
                     key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                    className="bg-slate-50 rounded-[3rem] p-12 border border-slate-100 hover:border-brand-green transition-all group"
+                    className="bg-slate-50 rounded-[3rem] p-12 border border-slate-100 hover:border-brand-green transition-all group opacity-100 translate-y-0 shadow-sm"
                   >
                     <div className="flex items-center gap-4 flex-row-reverse mb-8">
                       <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm group-hover:bg-brand-green transition-colors">
@@ -586,7 +572,7 @@ export default function AEOGuidePage() {
                         </div>
                       ))}
                     </div>
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
@@ -598,7 +584,7 @@ export default function AEOGuidePage() {
                   <Lightbulb className="h-6 w-6 text-brand-navy" />
                 </div>
                 <div>
-                  <h4 className="font-black text-brand-navy text-lg mb-3">نصيحة ذهبية: استخدم AI لاكتشاف الأسئلة</h4>
+                  <h3 className="font-black text-brand-navy text-lg mb-3">نصيحة ذهبية: استخدم AI لاكتشاف الأسئلة</h3>
                   <p className="text-slate-600 font-bold leading-relaxed">
                     اذهب إلى ChatGPT واكتب: "أنا أستعد للتعاقد مع وكالة تسويق رقمي في الرياض. ما هي الأسئلة التي يجب أن أطرحها قبل التعاقد؟" — ستحصل على قائمة ذهبية من الأسئلة التي يطرحها عملاؤك المحتملون فعلاً. استخدم هذه الأسئلة في صفحة FAQ الخاصة بك.
                   </p>
@@ -639,13 +625,9 @@ export default function AEOGuidePage() {
                   icon: FileQuestion,
                 },
               ].map((pillar, i) => (
-                <motion.div
+                <div
                   key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.15 }}
-                  className={`relative p-14 rounded-[3.5rem] border overflow-hidden text-right transition-all hover:shadow-2xl ${
+                  className={`relative p-14 rounded-[3.5rem] border overflow-hidden text-right transition-all hover:shadow-2xl opacity-100 translate-y-0 ${
                     i === 2 ? 'bg-brand-navy text-white border-brand-green' : 'bg-white border-slate-100 hover:border-brand-green'
                   }`}
                 >
@@ -656,7 +638,7 @@ export default function AEOGuidePage() {
                     <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-10 shadow-sm ${
                       i === 2 ? 'bg-brand-green/20' : 'bg-brand-mint/50'
                     }`}>
-                      <pillar.icon className={`h-8 w-8 ${i === 2 ? 'text-brand-green' : 'text-brand-green'}`} />
+                      <pillar.icon className="h-8 w-8 text-brand-green" />
                     </div>
                     <h3 className={`text-2xl font-black mb-6 tracking-tighter ${i === 2 ? 'text-brand-green' : 'text-brand-navy'}`}>
                       {pillar.title}
@@ -665,7 +647,7 @@ export default function AEOGuidePage() {
                       {pillar.desc}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -688,13 +670,9 @@ export default function AEOGuidePage() {
               {actionableSteps.map((step, i) => {
                 const Icon = step.icon;
                 return (
-                  <motion.div
+                  <div
                     key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                    className="relative p-12 bg-slate-50 rounded-[3rem] border border-slate-100 hover:border-brand-green transition-all group hover:shadow-2xl text-right"
+                    className="relative p-12 bg-slate-50 rounded-[3rem] border border-slate-100 hover:border-brand-green transition-all group hover:shadow-2xl text-right opacity-100 translate-y-0"
                   >
                     <div className="absolute top-8 left-8">
                       <span className="text-6xl font-black text-slate-100 tracking-tighter group-hover:text-brand-mint transition-colors">{step.step}</span>
@@ -706,7 +684,7 @@ export default function AEOGuidePage() {
                       <h3 className="text-lg font-black text-brand-navy mb-4 tracking-tight group-hover:text-brand-green transition-colors">{step.title}</h3>
                       <p className="text-slate-500 text-sm font-bold leading-relaxed">{step.description}</p>
                     </div>
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
@@ -715,7 +693,7 @@ export default function AEOGuidePage() {
 
         {/* FAQ Section with Schema */}
         <section id="faq" className="py-32 bg-slate-50 relative overflow-hidden">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-right">
             <div className="text-center mb-20">
               <div className="inline-flex items-center gap-2 bg-brand-navy/5 text-brand-navy px-4 py-2 rounded-full text-xs font-bold mb-6">
                 <FileQuestion className="h-4 w-4" />
@@ -727,35 +705,18 @@ export default function AEOGuidePage() {
               </h2>
             </div>
 
-            <div className="space-y-4">
+            <Accordion type="single" collapsible className="w-full space-y-4">
               {blogFaqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="border border-slate-100 rounded-[2rem] overflow-hidden transition-all bg-white"
-                >
-                  <button
-                    onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                    className="w-full p-8 flex items-center justify-between text-right gap-4 hover:bg-slate-50 transition-colors"
-                  >
-                    <span className="text-lg font-black text-brand-navy leading-tight">
-                      {faq.q}
-                    </span>
-                    <ChevronDown className={`h-6 w-6 text-brand-green transition-transform duration-300 flex-shrink-0 ${openFaqIndex === index ? 'rotate-180' : ''}`} />
-                  </button>
-
-                  <motion.div
-                    initial={false}
-                    animate={{ height: openFaqIndex === index ? 'auto' : 0, opacity: openFaqIndex === index ? 1 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden"
-                  >
-                    <div className="p-8 pt-0 text-slate-500 font-bold leading-relaxed text-base border-t border-slate-100/50">
-                      {faq.a}
-                    </div>
-                  </motion.div>
-                </div>
+                <AccordionItem key={index} value={`blog-faq-${index}`} className="border border-slate-100 rounded-[2rem] px-8 bg-white shadow-sm overflow-hidden">
+                  <AccordionTrigger className="text-right text-lg font-black text-brand-navy hover:text-brand-green transition-colors no-underline py-8 leading-tight">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-500 font-bold leading-relaxed text-base pb-8 border-t border-slate-50 mt-2 pt-6">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
           </div>
         </section>
 

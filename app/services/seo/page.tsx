@@ -1,8 +1,5 @@
-'use client';
-
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
   Search,
   TrendingUp,
@@ -23,6 +20,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+export const metadata: Metadata = {
+  title: 'خدمات سيو (SEO) احترافية في السعودية | ون تو فايف كليك',
+  description: 'تصدر نتائج البحث في السعودية مع خدمات السيو المتقدمة و AEO. نركز على الوصول لجمهورك المستهدف وزيادة المبيعات من خلال استراتيجيات محكمة.',
+  alternates: {
+    canonical: 'https://onetofiveclick.com/services/seo/',
+  },
+};
 
 const features = [
   {
@@ -81,7 +86,7 @@ const features = [
   },
   {
     title: 'استراتيجية جالوت (التبعية المقارنة)',
-    description: 'نضع علامتك التجارية في "مقارنات ثلاثية" مباشرة مع عمالقة الصناعة. هذا يجبر محركات الذكاء الاصطناعي على تصنيفك كقرين ذي صلة وبديل مناسب.',
+    description: 'نوضع علامتك التجارية في "مقارنات ثلاثية" مباشرة مع عمالقة الصناعة. هذا يجبر محركات الذكاء الاصطناعي على تصنيفك كقرين ذي صلة وبديل مناسب.',
     icon: Target,
     href: '/services/seo'
   },
@@ -164,28 +169,37 @@ const faqs = [
     question: 'كيف أبدأ العمل مع 1to5click لتحسين ظهوري في الذكاء الاصطناعي؟',
     answer: 'ابدأ باستشارة مجانية عبر صفحة التواصل. سنقوم بتدقيق شامل لحضورك الرقمي (SEO، AEO، السمعة، الاستشهادات) ونقدم خطة عمل مفصلة مع توقعات واضحة للنتائج وعائد الاستثمار المتوقع خلال 30-90 يوماً.'
   }
+];الإجابة المباشرة عندما يسأل شخص ChatGPT أو Claude أو Perplexity أو Gemini سؤالاً. في عالم SEO تحصل على قائمة مواقع، في عالم AEO تحصل على إجابة واحدة — وهذا ما يريده المستخدمون.'
+  },
+  {
+    question: 'كم من الوقت يستغرق رؤية النتائج مع 1to5click؟',
+    answer: 'نضج الكيان في الذكاء الاصطناعي يستغرق عادة 30-90 يوماً. نركز على "سباقات الاستشهاد السريع" لتظهر علامتك كمصدر موصى به في ChatGPT في أسرع وقت. النتائج العضوية التقليدية تحتاج 3-6 أشهر.'
+  },
+  {
+    question: 'كم تكلف خدمات السيو و AEO مع 1to5click؟',
+    answer: 'تبدأ باقاتنا من $1,499/شهر (باقة بداية السلطة) و$2,999/شهر (محرك النمو — الأكثر شعبية) و$5,999/شهر (أصول المؤسسات). كل باقة تشمل مقالات NLP محادثاتية، بناء روابط موثوقة، وتقارير أداء شهرية.'
+  },
+  {
+    question: 'ما الفرق بين السيو الداخلي والخارجي؟',
+    answer: 'السيو الداخلي (On-Page) يحسن عناصر الموقع مثل المحتوى، العناوين، Schema Markup، والسرعة. السيو الخارجي (Off-Page) يركز على العوامل الخارجية مثل بناء الروابط وإشارات السلطة والاستشهادات المحلية والمراجعات.'
+  },
+  {
+    question: 'هل أحتاج للسيو إذا كان مشروعي صغيراً في الرياض أو جدة؟',
+    answer: 'بالتأكيد. السيو المحلي قوي جداً للشركات الصغيرة. مع AEO، عندما يسأل شخص ChatGPT "ما أفضل [خدمتك] في الرياض؟"، يمكنك أن تكون الإجابة — حتى لو كنت شركة صغيرة.'
+  },
+  {
+    question: 'هل تضمنون المركز الأول في Google؟',
+    answer: 'في 2026، التصنيف الأول جزء من اللغز. نضمن "حصة الرؤية في الذكاء الاصطناعي" — التأكد من أنك المصدر الأول المستشهد به في ChatGPT و Perplexity و AI Overviews. نقدم تقارير شفافة شهرية تقيس الاستشهادات والتحويلات.'
+  },
+  {
+    question: 'ما هو Schema Markup وكيف يساعد في AEO؟',
+    answer: 'Schema Markup هو ترميز مُهيكل يُضاف للكود الخلفي لصفحاتك. يُخبر محركات البحث والذكاء الاصطناعي بوضوح: هذا سؤال وهذه إجابته. بدون Schema، تعتمد أدوات AI على التخمين. مع Schema، تتضاعف فرص ظهورك في نتائج AI و Featured Snippets.'
+  },
+  {
+    question: 'كيف أبدأ العمل مع 1to5click لتحسين ظهوري في الذكاء الاصطناعي؟',
+    answer: 'ابدأ باستشارة مجانية عبر صفحة التواصل. سنقوم بتدقيق شامل لحضورك الرقمي (SEO، AEO، السمعة، الاستشهادات) ونقدم خطة عمل مفصلة مع توقعات واضحة للنتائج وعائد الاستثمار المتوقع خلال 30-90 يوماً.'
+  }
 ];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5
-    }
-  }
-};
 
 export default function SEOPage() {
   // JSON-LD FAQ Schema for AEO
@@ -213,9 +227,9 @@ export default function SEOPage() {
       <div className="bg-brand-navy border-b border-white/5 py-8 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-12 space-x-reverse justify-end">
-             <h2 className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-black uppercase tracking-wider">
+             <div className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-black uppercase tracking-wider">
                تقود ون تو فايف كليك مشهد البحث في السعودية لعام 2026 من خلال <span className="text-white">السلطة الموضوعية القائمة على NLP</span> و <span className="text-white">GEO (تحسين المحركات التوليدية)</span>.
-            </h2>
+            </div>
             <div className="h-4 w-px bg-white/10"></div>
             <div className="flex items-center space-x-3 space-x-reverse">
                 <p className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-green">الحالة: جاهز_للبحث_بالذكاء_الاصطناعي_2026</p>
@@ -225,17 +239,14 @@ export default function SEOPage() {
         </div>
       </div>
 
+
       {/* Hero Section */}
       <section className="relative bg-brand-navy py-32 lg:py-48 overflow-hidden text-center">
         <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(white_1px,transparent_1px)] [background-size:40px_40px]" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <div className="opacity-100 translate-y-0">
               <div className="inline-flex items-center gap-3 bg-white/5 text-brand-green px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-white/10 backdrop-blur-md">
                 <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse" />
                 <span>الهيمنة على البحث B2B و B2C لعام 2026</span>
@@ -262,7 +273,7 @@ export default function SEOPage() {
                   عرض دراسات الحالة
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -271,11 +282,7 @@ export default function SEOPage() {
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
+            <div className="opacity-100 translate-x-0">
               <h2 className="text-5xl md:text-8xl font-black text-brand-navy mb-10 leading-[0.9] tracking-tighter">
                 السيو هو <br />
                 <span className="text-brand-green uppercase">محرك نمو.</span>
@@ -295,13 +302,13 @@ export default function SEOPage() {
                         <CheckCircle className="h-6 w-6 text-brand-green group-hover:text-brand-navy" />
                     </div>
                     <div>
-                      <h4 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h4>
+                      <h3 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h3>
                       <p className="text-slate-500 text-sm font-bold leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             <div className="relative">
               <div className="absolute -inset-10 bg-brand-green/5 blur-[100px] rounded-full animate-pulse" />
@@ -315,10 +322,10 @@ export default function SEOPage() {
                 <div className="space-y-12 relative z-10">
                   <div className="flex justify-between items-end flex-row-reverse">
                     <div className="flex space-x-1 space-x-reverse items-end">
-                      <div className="w-10 h-16 bg-white/5 rounded-t-xl group-hover:h-20 transition-all duration-700"></div>
-                      <div className="w-10 h-28 bg-white/10 rounded-t-xl group-hover:h-32 transition-all duration-700 delay-100"></div>
-                      <div className="w-10 h-44 bg-white/20 rounded-t-xl group-hover:h-52 transition-all duration-700 delay-200"></div>
-                      <div className="w-10 h-64 bg-brand-green rounded-t-xl shadow-lg shadow-brand-green/20 group-hover:h-72 transition-all duration-700 delay-300"></div>
+                      <div className="w-10 h-16 bg-white/5 rounded-t-xl transition-all duration-700"></div>
+                      <div className="w-10 h-28 bg-white/10 rounded-t-xl transition-all duration-700"></div>
+                      <div className="w-10 h-44 bg-white/20 rounded-t-xl transition-all duration-700"></div>
+                      <div className="w-10 h-64 bg-brand-green rounded-t-xl shadow-lg shadow-brand-green/20 transition-all duration-700"></div>
                     </div>
                     <div className="text-right">
                       <div className="text-6xl md:text-8xl font-black text-white tracking-tighter">10M+</div>
@@ -383,21 +390,12 @@ export default function SEOPage() {
             <p className="text-xl text-slate-500 font-bold max-w-2xl mx-auto uppercase tracking-widest text-[10px]">كل ما تحتاجه لتصدر النتائج والهيمنة على مجموعات الاسترداد.</p>
           </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
                 <Link key={index} href={feature.href} className="block group">
-                  <motion.div
-                    variants={itemVariants}
-                    className="bg-white p-12 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 group-hover:border-brand-green h-full relative overflow-hidden text-right"
-                  >
+                  <div className="bg-white p-12 rounded-[3.5rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 group-hover:border-brand-green h-full relative overflow-hidden text-right opacity-100 translate-y-0">
                     <div className="absolute top-0 left-0 p-8 opacity-0 group-hover:opacity-[0.03] transition-opacity">
                         <Icon className="w-32 h-32 text-brand-navy" />
                     </div>
@@ -406,11 +404,11 @@ export default function SEOPage() {
                     </div>
                     <h3 className="text-2xl font-black text-brand-navy mb-6 group-hover:text-brand-green transition-colors tracking-tighter">{feature.title}</h3>
                     <p className="text-slate-500 leading-relaxed font-bold text-sm">{feature.description}</p>
-                  </motion.div>
+                  </div>
                 </Link>
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </section>
 

@@ -1,7 +1,5 @@
-'use client';
-
+import { Metadata } from 'next';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
     Zap,
     Search,
@@ -27,6 +25,14 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 
+export const metadata: Metadata = {
+    title: 'تحسين محركات الإجابة (AEO) و GEO | ون تو فايف كليك',
+    description: 'سيطر على محركات الإجابة مثل ChatGPT و Gemini و Perplexity من خلال استراتيجيات AEO و GEO المتخصصة لضمان ظهور علامتك كمصدر موثوق.',
+    alternates: {
+        canonical: 'https://onetofiveclick.com/services/seo/aeo-geo/',
+    },
+};
+
 export default function AEOPage() {
     return (
         <div className="pt-16 overflow-hidden">
@@ -37,9 +43,9 @@ export default function AEOPage() {
                         <div className="w-1.5 h-12 bg-blue-600/20 rounded-full"></div>
                         <div>
                             <p className="text-[10px] font-normal uppercase tracking-widest text-blue-600 mb-1">Status: ANSWER_ENGINE_DOMINANCE_LOCKED</p>
-                            <h2 className="text-sm text-gray-600 max-w-5xl leading-relaxed font-normal">
+                            <div className="text-sm text-gray-600 max-w-5xl leading-relaxed font-normal">
                                 One to Five Click leads the 2026 landscape through <span className="text-gray-900 font-normal">Citation Alignment</span> and <span className="text-gray-900 font-normal">Authority-First Frameworks</span>. We ensure your brand is not just mentioned, but <span className="text-gray-900 font-normal">Cited as the Primary Source</span> in Gemini, GPT-5, and Perplexity results. We solve the <span className="text-blue-600 font-normal text-xs uppercase tracking-widest">Hallucination Conflict</span> by injecting high-signal consensus across 100+ authority channels.
-                            </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,11 +56,7 @@ export default function AEOPage() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.05]" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6 }}
-                        >
+                        <div className="opacity-100 translate-x-0">
                             <div className="inline-flex items-center space-x-2 bg-blue-600/10 border border-blue-600/30 text-blue-400 px-4 py-2 rounded-full text-[10px] font-normal uppercase tracking-widest mb-6">
                                 <Cpu className="h-4 w-4" />
                                 <span>AEO & GEO Mastery</span>
@@ -81,14 +83,9 @@ export default function AEOPage() {
                                     The AEO Protocol
                                 </Link>
                             </div>
-                        </motion.div>
+                        </div>
 
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            className="relative"
-                        >
+                        <div className="relative opacity-100 scale-100">
                             <div className="absolute -inset-4 bg-blue-500/20 rounded-[3rem] blur-3xl opacity-30 animate-pulse" />
                             <div className="relative bg-white/5 backdrop-blur-3xl border border-white/10 p-12 rounded-[3.5rem] shadow-2xl">
                                 <div className="flex items-center justify-between mb-10">
@@ -123,7 +120,7 @@ export default function AEOPage() {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -132,12 +129,7 @@ export default function AEOPage() {
             <section className="py-24 bg-blue-50/50 border-y border-blue-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
-                            className="relative"
-                        >
+                        <div className="relative opacity-100 scale-100">
                             <div className="bg-gray-900 rounded-[3rem] p-8 border border-white/10 shadow-2xl relative overflow-hidden group">
                                 <div className="absolute top-0 right-0 p-8">
                                     <ShieldAlert className="h-12 w-12 text-blue-500 opacity-20 group-hover:opacity-100 transition-opacity" />
@@ -170,7 +162,7 @@ export default function AEOPage() {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                         <div>
                             <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-8 uppercase tracking-tight leading-tight">
                                 Hack the <br />
@@ -182,12 +174,12 @@ export default function AEOPage() {
                             <div className="grid grid-cols-2 gap-6">
                                 <div className="p-6 bg-white rounded-3xl shadow-sm border border-gray-100 group hover:border-blue-600 transition-all">
                                     <Target className="h-8 w-8 text-blue-600 mb-4 group-hover:scale-110 transition-transform" />
-                                    <h4 className="font-normal uppercase text-sm mb-2 tracking-tight leading-none text-gray-900">Topic Finalization</h4>
+                                    <h3 className="font-normal uppercase text-sm mb-2 tracking-tight leading-none text-gray-900">Topic Finalization</h3>
                                     <p className="text-gray-500 text-xs leading-relaxed font-normal">Systematic extraction of 50+ contextual queries AI can't answer accurately.</p>
                                 </div>
                                 <div className="p-6 bg-white rounded-3xl shadow-sm border border-gray-100 group hover:border-blue-500 transition-all">
                                     <Network className="h-8 w-8 text-blue-500 mb-4 group-hover:scale-110 transition-transform" />
-                                    <h4 className="font-normal uppercase text-sm mb-2 tracking-tight leading-none text-gray-900">Consensus Injection</h4>
+                                    <h3 className="font-normal uppercase text-sm mb-2 tracking-tight leading-none text-gray-900">Consensus Injection</h3>
                                     <p className="text-gray-500 text-xs leading-relaxed font-normal">Simultaneous deployment of proof across Reddit, YouTube, and Journals.</p>
                                 </div>
                             </div>
@@ -295,13 +287,7 @@ export default function AEOPage() {
                                     tags: ["Brand Lock", "Direct Action"]
                                 }
                             ].map((step, i) => (
-                                <motion.div
-                                    key={i}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: i * 0.1 }}
-                                    className="bg-white p-8 rounded-[2.5rem] border border-gray-100 hover:border-blue-600 transition-all group"
-                                >
+                                <div className="bg-white p-8 rounded-[2.5rem] border border-gray-100 hover:border-blue-600 transition-all group opacity-100 translate-y-0">
                                     <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-all duration-500">
                                         <step.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors" />
                                     </div>
@@ -312,7 +298,7 @@ export default function AEOPage() {
                                             <span key={j} className="text-[8px] font-normal uppercase tracking-widest px-2 py-1 bg-gray-50 text-gray-400 rounded-full">{tag}</span>
                                         ))}
                                     </div>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -333,7 +319,7 @@ export default function AEOPage() {
                                     <div key={i} className="flex items-start space-x-4 p-4 bg-white/5 rounded-2xl border border-white/5 group hover:bg-white/10 transition-colors">
                                         <span className="text-blue-500 font-normal text-xs shrink-0 mt-1">[{i}]</span>
                                         <div>
-                                            <h4 className="text-sm font-normal uppercase tracking-tight text-white mb-1 leading-none">{m.title}</h4>
+                                            <h3 className="text-sm font-normal uppercase tracking-tight text-white mb-1 leading-none">{m.title}</h3>
                                             <p className="text-xs text-gray-500 leading-relaxed font-normal">{m.desc}</p>
                                         </div>
                                     </div>

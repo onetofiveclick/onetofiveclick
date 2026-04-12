@@ -1,5 +1,14 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, TrendingUp, Search, MapPin, Star, ArrowRight, CheckCircle2, BarChart3, Globe, Zap } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'دراسات الحالة | نتائج حقيقية من عملاء حقيقيين | ون تو فايف كليك',
+  description: 'استكشف كيف ساعدنا شركات في الرياض وجدة ولاهور ودبي على تحقيق نمو رقمي متسارع عبر السيو التقني وتحسين محركات الإجابة (AEO). نتائج مُثبتة بالأرقام.',
+  alternates: {
+    canonical: 'https://onetofiveclick.com/case-studies/',
+  },
+};
 
 const caseStudies = [
   {

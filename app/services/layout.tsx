@@ -24,9 +24,6 @@ export const metadata: Metadata = {
     locale: 'ar_SA',
     type: 'website',
   },
-  alternates: {
-    canonical: '/services/',
-  },
 };
 
 export default function ServicesLayout({

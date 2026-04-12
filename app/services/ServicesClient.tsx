@@ -1,5 +1,7 @@
-import { Metadata } from 'next';
+'use client';
+
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import {
   Search,
   MousePointer2,
@@ -17,14 +19,6 @@ import {
   Zap,
   ChevronLeft,
 } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'خدمات التسويق الرقمي | ون تو فايف كليك',
-  description: 'حلول متكاملة في السيو، AEO، وتطوير الويب للشركات في السعودية. اكتشف كيف نساعدك على تصدر نتائج البحث وزيادة التحويل.',
-  alternates: {
-    canonical: 'https://onetofiveclick.com/services/',
-  },
-};
 
 const services = [
   {
@@ -139,7 +133,17 @@ const stats = [
   { value: '2026', label: 'جاهزون لعصر الذكاء الاصطناعي' },
 ];
 
-export default function ServicesPage() {
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { staggerChildren: 0.08 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+export default function ServicesClient() {
   return (
     <div className="pt-24 bg-white overflow-hidden min-h-screen text-right">
 
@@ -165,7 +169,12 @@ export default function ServicesPage() {
         <div className="absolute -bottom-px left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto opacity-100 translate-y-0">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto"
+          >
             <div className="inline-flex items-center gap-3 bg-white/5 text-brand-green px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-white/10 backdrop-blur-md">
               <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse" />
               <span>9 خدمات متكاملة — منصة واحدة</span>
@@ -192,7 +201,7 @@ export default function ServicesPage() {
                 شاهد أعمالنا
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -201,13 +210,17 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
-              <div
+              <motion.div
                 key={i}
-                className="text-center opacity-100 translate-y-0"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="text-center"
               >
                 <div className="text-5xl md:text-7xl font-black text-brand-navy tracking-tighter mb-3">{stat.value}</div>
                 <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">{stat.label}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -227,13 +240,20 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+          >
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div
+                <motion.div
                   key={index}
-                  className={`relative group opacity-100 translate-y-0 ${service.isPopular ? 'md:col-span-2 lg:col-span-1' : ''}`}
+                  variants={itemVariants}
+                  className={`relative group ${service.isPopular ? 'md:col-span-2 lg:col-span-1' : ''}`}
                 >
                   <Link href={service.href} className="block h-full">
                     <div className={`h-full p-12 rounded-[3.5rem] border transition-all duration-500 relative overflow-hidden text-right
@@ -310,10 +330,10 @@ export default function ServicesPage() {
                       </div>
                     </div>
                   </Link>
-                </div>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -321,7 +341,11 @@ export default function ServicesPage() {
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
-            <div className="opacity-100 translate-x-0">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
               <h2 className="text-5xl md:text-8xl font-black text-brand-navy mb-10 leading-[0.9] tracking-tighter">
                 لماذا نحن <br />
                 <span className="text-brand-green uppercase">الاختيار الصحيح؟</span>
@@ -342,13 +366,13 @@ export default function ServicesPage() {
                       <Zap className="h-6 w-6 text-brand-green group-hover:text-brand-navy" />
                     </div>
                     <div>
-                      <h3 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h3>
+                      <h4 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h4>
                       <p className="text-slate-500 text-sm font-bold leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             {/* Locations */}
             <div className="space-y-8">

@@ -1,7 +1,5 @@
-'use client';
-
+import { Metadata } from 'next';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
   BrainCircuit,
   ArrowLeft,
@@ -10,6 +8,14 @@ import {
   TrendingUp,
   ShieldAlert,
 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'أدوات الذكاء التسويقي AEO & SEO | ون تو فايف كليك',
+  description: 'مجموعة من الأدوات المجانية لتحليل تحسين محركات الإجابة (AEO) وهلوسة الذكاء الاصطناعي. اكتشف كيف يرى الذكاء الاصطناعي عملك مجاناً.',
+  alternates: {
+    canonical: 'https://onetofiveclick.com/tools/',
+  },
+};
 
 const tools = [
   {
@@ -86,16 +92,6 @@ const tools = [
   },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.12 } },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
-
 export default function ToolsPage() {
   return (
     <div className="pt-24 bg-white overflow-hidden min-h-screen text-right">
@@ -104,10 +100,10 @@ export default function ToolsPage() {
       <div className="bg-brand-navy border-b border-white/5 py-8 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end gap-12">
-            <h2 className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-black uppercase tracking-wider">
+            <div className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-black uppercase tracking-wider">
               أدوات مجانية من ون تو فايف كليك مصممة لمساعدتك على فهم وتطبيق{' '}
               <span className="text-white">AEO و GEO</span> مباشرةً.
-            </h2>
+            </div>
             <div className="h-4 w-px bg-white/10 flex-shrink-0" />
             <div className="flex items-center gap-3 flex-shrink-0">
               <p className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-green">أدوات_مجانية</p>
@@ -123,12 +119,7 @@ export default function ToolsPage() {
         <div className="absolute -bottom-px left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto"
-          >
+          <div className="max-w-4xl mx-auto opacity-100 translate-y-0">
             <div className="inline-flex items-center gap-3 bg-white/5 text-brand-green px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-white/10 backdrop-blur-md">
               <div className="w-2 h-2 bg-brand-green rounded-full animate-pulse" />
               <span>أدوات مجانية — حصرياً من ون تو فايف كليك</span>
@@ -148,7 +139,7 @@ export default function ToolsPage() {
               جرّب محرك AEO الآن
               <ArrowLeft className="h-4 w-4 group-hover:-translate-x-2 transition-transform" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -166,19 +157,13 @@ export default function ToolsPage() {
             </p>
           </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 opacity-100">
             {tools.map((tool) => {
               const Icon = tool.icon;
               const isLive = tool.status === 'live';
 
               return (
-                <motion.div key={tool.id} variants={itemVariants} className="group">
+                <div key={tool.id} className="group opacity-100 translate-y-0">
                   <div className={`h-full relative rounded-[3.5rem] border transition-all duration-500 overflow-hidden text-right
                     ${isLive
                       ? 'bg-brand-navy border-brand-green shadow-2xl shadow-brand-navy/20'
@@ -253,10 +238,10 @@ export default function ToolsPage() {
                       )}
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -264,11 +249,7 @@ export default function ToolsPage() {
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
+            <div className="opacity-100 translate-x-0">
               <h2 className="text-5xl md:text-7xl font-black text-brand-navy mb-10 leading-[0.9] tracking-tighter">
                 لماذا <br />
                 <span className="text-brand-green uppercase">مجانية؟</span>
@@ -288,13 +269,13 @@ export default function ToolsPage() {
                       <Zap className="h-6 w-6 text-brand-green group-hover:text-brand-navy" />
                     </div>
                     <div>
-                      <h4 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h4>
+                      <h3 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h3>
                       <p className="text-slate-500 text-sm font-bold leading-relaxed">{item.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
             {/* CTA Card */}
             <div className="space-y-8">

@@ -1,10 +1,13 @@
-'use client';
-// fixed encoding
+import { Metadata } from 'next';
+import BlogClient from './BlogClient';
 
-import React, { useState, useEffect, useMemo } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Calendar, User, ArrowRight, Search, ArrowLeft } from 'lucide-react';
+export const metadata: Metadata = {
+  title: 'مدونة ون تو فايف كليك | رؤى التسويق الرقمي والسيو و AEO',
+  description: 'اكتشف أحدث استراتيجيات السيو وتحسين محركات الإجابة وأتمتة التسويق للشركات في السعودية لعام 2026. مقالات تعليمية ودراسات حالة حقيقية.',
+  alternates: {
+    canonical: 'https://onetofiveclick.com/blog/',
+  },
+};
 
 const blogPosts = [
     {

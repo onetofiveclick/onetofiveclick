@@ -1,8 +1,14 @@
-'use client';
-
-import { motion } from 'framer-motion';
+import { Metadata } from 'next';
 import { Target, MapPin, TrendingUp, ArrowLeft, CheckCircle, Star, Factory } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'سيو وأتمتة تسويقية في حي الشاطئ الدمام | ون تو فايف كليك',
+  description: 'وكالة تسويق رقمي متخصصة في السيو (SEO) والأتمتة للقطاع اللوجستي والصناعي في حي الشاطئ بالدمام. نساعدك على السيطرة على نتائج البحث في الشرقية.',
+  alternates: {
+    canonical: 'https://onetofiveclick.com/locations/dammam/ash-shati/',
+  },
+};
 
 export default function AshShatiDistrictPage() {
   return (
@@ -43,11 +49,7 @@ export default function AshShatiDistrictPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="max-w-3xl mr-0 ml-auto"
-          >
+          <div className="max-w-3xl mr-0 ml-auto opacity-100 translate-x-0">
             <div className="inline-flex items-center gap-2 bg-brand-green/20 text-brand-green px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest mb-8 border border-brand-green/30">
               <Factory className="h-4 w-4" />
               <span>خدماتنا في حي الشاطئ، الدمام</span>
@@ -67,7 +69,7 @@ export default function AshShatiDistrictPage() {
                 تواصل مع خبيرنا في الشرقية
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -98,9 +100,17 @@ export default function AshShatiDistrictPage() {
                 <h2 className="text-4xl md:text-6xl font-black text-brand-navy mb-8 leading-[1.1] tracking-tighter">
                    الدمام <br /><span className="text-brand-green">تنمو بذكاء.</span>
                 </h2>
-                <p className="text-slate-500 mb-8 font-bold leading-relaxed">
-                   حي الشاطئ هو قلب الأعمال الحديثة في الدمام. مع التوسع الصناعي الكبير، أصبح الحضور الرقمي هو الفارق بين الشركات التقليدية والشركات التي تقود المستقبل.
-                </p>
+                <div className="prose prose-slate max-w-none mb-8">
+                    <p className="text-slate-500 font-bold leading-relaxed mb-4">
+                       حي الشاطئ هو قلب الأعمال الحديثة في الدمام. مع التوسع الصناعي الكبير في المنطقة الشرقية، أصبح الحضور الرقمي هو الفارق الجوهري بين الشركات التقليدية والشركات التي تقود المستقبل اللوجستي للمملكة.
+                    </p>
+                    <p className="text-slate-500 font-bold leading-relaxed mb-4">
+                        نحن نفهم التعقيدات الفريدة للشركات التي تتخذ من الدمام مقراً لها، خاصة في قطاعات الطاقة وسلاسل الإمداد. استراتيجيات السيو (SEO) التي نطبقها في حي الشاطئ لا تستهدف الكلمات العامة، بل تركز على "الكلمات المفتاحية ذات النية التجارية العالية" التي يستخدمها صناع القرار في كبرى شركات المقاولات والصناعة.
+                    </p>
+                    <p className="text-slate-500 font-bold leading-relaxed">
+                        عبر دمج أدوات "أتمتة التسويق" و "الذكاء الاصطناعي"، نساعد شركتك في الدمام على تقليل تكلفة الاستحواذ على العميل وزيادة كفاءة قمع المبيعات. رؤيتنا هي تحويل حي الشاطئ إلى مركز ثقل رقمي ينافس كبرى المدن العالمية.
+                    </p>
+                </div>
                 <div className="p-8 bg-brand-navy rounded-[3rem] text-white overflow-hidden relative">
                    <div className="absolute top-0 right-0 w-full h-full bg-brand-green opacity-5 pointer-events-none" />
                    <div className="relative z-10">

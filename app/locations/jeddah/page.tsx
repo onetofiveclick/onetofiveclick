@@ -1,6 +1,4 @@
-'use client';
 
-import { motion } from 'framer-motion';
 import { Target, MapPin, TrendingUp, Users, ArrowLeft, CheckCircle, Star, Waves } from 'lucide-react';
 import Link from 'next/link';
 import DigitalMaturityQuiz from '@/components/sections/DigitalMaturityQuiz';
@@ -43,11 +41,7 @@ export default function JeddahLocationPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-3xl mr-0 ml-auto"
-          >
+          <div className="max-w-3xl mr-0 ml-auto opacity-100 translate-y-0">
             <div className="inline-flex items-center gap-2 bg-brand-green/20 text-brand-green px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8 border border-brand-green/30">
               <Waves className="h-4 w-4" />
               <span>خدمات التسويق الرقمي في جدة</span>
@@ -67,7 +61,7 @@ export default function JeddahLocationPage() {
                 تحدث مع خبيرنا في جدة
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 

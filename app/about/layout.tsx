@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'من نحن | ون تو فايف كليك',
   description: 'تعرف على الفريق والمنهجية خلف وكالة ون تو فايف كليك. نهجنا في السيو والأتمتة لإعادة تشغيل السوق السعودي.',
   alternates: {
-    canonical: '/about/',
+    canonical: 'https://onetofiveclick.com/about/',
   },
 };
 

@@ -1,7 +1,5 @@
-'use client';
-
+import { Metadata } from 'next';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
     ArrowRight,
     CheckCircle,
@@ -30,6 +28,14 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+
+export const metadata: Metadata = {
+    title: 'خدمات السيو المحلي (Local SEO) | ون تو فايف كليك',
+    description: 'سيطر على نتائج البحث المحلية والخرائط في منطقتك. استراتيجيات سيو محلي متقدمة لزيادة العملاء والظهور في Local Pack في السعودية.',
+    alternates: {
+        canonical: 'https://onetofiveclick.com/services/seo/local-seo/',
+    },
+};
 
 const features = [
     {
@@ -125,26 +131,7 @@ const faqs = [
     }
 ];
 
-const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.1
-        }
-    }
-};
 
-const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.5
-        }
-    }
-};
 
 export default function LocalSEOPage() {
     return (
@@ -156,9 +143,9 @@ export default function LocalSEOPage() {
                         <div className="w-1.5 h-16 bg-blue-600 rounded-full"></div>
                         <div>
                             <p className="text-[10px] font-normal uppercase tracking-widest text-blue-600 mb-2">Status: LOCAL_AUTHORITY_GEO_SYNC</p>
-                            <h2 className="text-sm text-gray-500 max-w-5xl leading-relaxed font-normal">
+                            <div className="text-sm text-gray-500 max-w-5xl leading-relaxed font-normal">
                                 One to Five Click secures your #1 destination status in 2026 local search through <span className="text-gray-900 font-normal">Hyper-Local Neighborhood Clustering</span> and <span className="text-gray-900 font-normal">Sentiment-Engine AI Training</span>. Our unique architecture ensures Gemini and Perplexity recognize your business as the <span className="text-gray-900 font-normal">Dominant Geographic Entity</span>.
-                            </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,11 +156,7 @@ export default function LocalSEOPage() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-5" />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6 }}
-                        >
+                        <div className="opacity-100 translate-x-0">
                             <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 text-blue-600 px-4 py-2 rounded-full text-[10px] font-normal uppercase tracking-widest mb-6">
                                 <MapPin className="h-4 w-4" />
                                 <span>Local SEO Services</span>
@@ -200,13 +183,8 @@ export default function LocalSEOPage() {
                                     See Results
                                 </Link>
                             </div>
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            className="relative hidden lg:block"
-                        >
+                            </div>
+                        <div className="relative hidden lg:block opacity-100 scale-100">
                             <div className="relative bg-gray-900 rounded-[3rem] p-12 text-white shadow-sm border border-white/5 overflow-hidden">
                                 <div className="flex items-center justify-between mb-8">
                                     <div className="flex items-center space-x-3">
@@ -229,7 +207,7 @@ export default function LocalSEOPage() {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -390,11 +368,9 @@ export default function LocalSEOPage() {
                                             </div>
                                         </div>
                                         <div className="overflow-hidden h-4 mb-4 text-xs flex rounded-full bg-gray-800">
-                                            <motion.div
-                                                initial={{ width: 0 }}
-                                                whileInView={{ width: '99.2%' }}
-                                                className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"
-                                            ></motion.div>
+                                            <div
+                                                className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600 w-[99.2%]"
+                                            ></div>
                                         </div>
                                     </div>
                                     <div className="relative pt-1">
@@ -411,11 +387,9 @@ export default function LocalSEOPage() {
                                             </div>
                                         </div>
                                         <div className="overflow-hidden h-4 mb-4 text-xs flex rounded-full bg-gray-800">
-                                            <motion.div
-                                                initial={{ width: 0 }}
-                                                whileInView={{ width: '88.5%' }}
-                                                className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"
-                                            ></motion.div>
+                                            <div
+                                                className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600 w-[88.5%]"
+                                            ></div>
                                         </div>
                                     </div>
                                 </div>

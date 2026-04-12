@@ -1,8 +1,14 @@
-'use client';
-
-import { motion } from 'framer-motion';
+import { Metadata } from 'next';
 import { Target, MapPin, TrendingUp, Users, ArrowLeft, CheckCircle, Waves, Star } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'سيو وتسويق رقمي في حي الشاطئ جدة | ون تو فايف كليك',
+  description: 'استهدف النخبة والجمهور الراقي في حي الشاطئ بجدة من خلال استراتيجيات سيو ومحتوى فاخرة. نحن شريكك للريادة الرقمية في عروس البحر الأحمر.',
+  alternates: {
+    canonical: 'https://onetofiveclick.com/locations/jeddah/al-shati/',
+  },
+};
 
 export default function AlShatiPage() {
   return (
@@ -43,11 +49,7 @@ export default function AlShatiPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-3xl mr-0 ml-auto"
-          >
+          <div className="max-w-3xl mr-0 ml-auto opacity-100 translate-y-0">
             <div className="inline-flex items-center gap-2 bg-brand-green/20 text-brand-green px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8 border border-brand-green/30">
               <Star className="h-4 w-4" />
               <span>استهداف النخبة في حي الشاطئ</span>
@@ -59,28 +61,41 @@ export default function AlShatiPage() {
             <p className="text-xl text-slate-300 mb-12 leading-relaxed font-bold">
               نحن نساعد العلامات التجارية الفاخرة في حي الشاطئ بجدة على الوصول إلى جمهورها المستهدف بدقة متناهية من خلال استراتيجيات سيو ومحتوى استثنائية.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Main Content Section: Deep Dive into Luxury Market */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-right">
+            <h2 className="text-4xl font-black text-brand-navy mb-8 tracking-tighter uppercase">الريادة الرقمية في عروس البحر</h2>
+            <div className="prose prose-lg max-w-none text-slate-600 font-bold leading-relaxed mb-16">
+                <p className="mb-6">
+                    يعتبر حي الشاطئ في جدة أحد أرقى الأحياء السكنية والتجارية في المملكة، حيث يجمع بين الهدوء الساحلي وحيوية الأعمال الراقية. نحن في "ون تو فايف كليك" ندرك أن التسويق لهذا القطاع يتطلب لغة بصرية وتقنية مختلفة تماماً عن التسويق التقليدي.
+                </p>
+                <p className="mb-6">
+                    استراتيجيتنا لسيو (SEO) في حي الشاطئ تعتمد على "التسويق الفاخر المبني على البيانات". نحن لا نكتفي بتحسين الكلمات المفتاحية، بل نهتم بتجربة المستخدم (UX) التي تعكس فخامة براندك. من خلال تحسين سرعة الأداء وتقنيات "الرندر" المتقدمة لصور المنتجات والعقارات، نضمن أن يكتمل الانطباع الأول لعميلك في أقل من ثانية.
+                </p>
+                <p>
+                    سواء كنت تدير فندقاً فاخراً، أو مطعماً عالمياً، أو علامة تجارية للأزياء الراقية في حي الشاطئ، فإن خدماتنا في "هندسة المحتوى" تساعدك على بناء سلطة موضوعية تجبر محركات البحث (والذكاء الاصطناعي) على تقديمك كأفضل خيار متاح. نحن لسنا مجرد وكالة، نحن شريكك الاستراتيجي في قلب جدة.
+                </p>
+            </div>
+
             <h2 className="text-4xl font-black text-brand-navy mb-8 tracking-tighter uppercase">لماذا اختيارنا في حي الشاطئ؟</h2>
             <div className="grid gap-8">
               {[
                 {
                   title: 'تحليل سلوك الفخامة',
-                  desc: 'نفهم كيف يبحث سكان حي الشاطئ عن الخدمات الراقية ونقوم بتحسين موقعك لتكون الخيار الأول لهم.'
+                  desc: 'نفهم كيف يبحث سكان حي الشاطئ والمترددون عليه عن الخدمات الراقية ونقوم بتحسين موقعك لتكون الخيار الأول والوحيد لهم.'
                 },
                 {
-                  title: 'سيو الصور والفيديو',
-                  desc: 'في منطقة بصرية مثل الشاطئ، نحسن أصولك المرئية لتتصدر نتائج البحث في جوجل وتيك توك.'
+                  title: 'سيو الصور والفيديو المتقدم',
+                  desc: 'في منطقة تعتمد على الجماليات البصرية مثل الشاطئ، نحسن أصولك المرئية وتقنيات "الشيما" الخاصة بها لتتصدر نتائج بحث الصور والفيديو في جوجل ومنصات التواصل.'
                 },
                 {
-                  title: 'بناء السلطة المحلية',
-                  desc: 'نجعل براندك مرتبطاً بالتميز والجودة التي يشتهر بها الحي.'
+                  title: 'بناء سلطة البراند المحلية',
+                  desc: 'نجعل علامتك التجارية مرتبطة عضوياً بمفاهيم التميز والجودة العالمية التي يشتهر بها حي الشاطئ في جدة.'
                 }
               ].map((item, i) => (
                 <div key={i} className="p-10 border border-slate-100 rounded-[3rem] bg-slate-50 hover:border-brand-green transition-colors flex flex-row-reverse items-start gap-6">

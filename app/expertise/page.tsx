@@ -1,6 +1,4 @@
-'use client';
-
-import { motion } from 'framer-motion';
+import { Metadata } from 'next';
 import {
     Search,
     Edit3,
@@ -21,6 +19,14 @@ import {
     Layout
 } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: 'خبراتنا في الهيمنة الرقمية والسيو المحلي | ون تو فايف كليك',
+    description: 'تعرف على خبرات ون تو فايف كليك في السيو المحلي، إدارة السمعة الرقمية، أتمتة التسويق، وصناعة المحتوى المتقدم لمحركات الإجابة والذكاء الاصطناعي.',
+    alternates: {
+        canonical: 'https://onetofiveclick.com/expertise/',
+    },
+};
 
 const expertiseCategories = [
     {
@@ -102,15 +108,12 @@ export default function ExpertisePage() {
             <div className="absolute top-0 left-0 w-1/2 h-full bg-brand-green/5 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2" />
             
             <div className="relative z-10 max-w-4xl mx-auto px-4">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                >
+                <div className="opacity-100 translate-y-0">
                     <div className="inline-flex items-center gap-2 bg-white/10 text-brand-green px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-10 border border-white/10 backdrop-blur-md">
                         <Zap className="h-3 w-3 fill-current" />
                         <span>منظومة القوة الرقمية</span>
                     </div>
-                </motion.div>
+                </div>
                 <h1 className="text-5xl md:text-9xl font-black text-white mb-8 leading-[0.85] tracking-tighter">
                     خبرة محلية <br /> <span className="text-brand-green">عميقة.</span>
                 </h1>
@@ -121,6 +124,19 @@ export default function ExpertisePage() {
         </section>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Detailed Content Section 1: Methodology */}
+            <section className="py-24 bg-white border-t border-slate-100">
+                <div className="max-w-4xl mx-auto text-right">
+                    <h2 className="text-4xl font-black text-brand-navy mb-8 tracking-tighter">منهجيتنا في السيطرة المحلية</h2>
+                    <p className="text-slate-600 leading-relaxed font-bold mb-6">
+                        في "ون تو فايف كليك"، نؤمن بأن السيو ليس مجرد ترقية للكلمات المفتاحية، بل هو هندسة دقيقة للحضور الرقمي على مستوى الحي. منهجيتنا تبدأ بتحليل عميق لسلوك البحث في المناطق المحددة، مما يتيح لنا بناء استراتيجيات "السيو المبرمج" التي تشمل آلاف نقاط البيانات المحلية.
+                    </p>
+                    <p className="text-slate-600 leading-relaxed font-bold mb-6">
+                        بفضل خبرتنا في السوق السعودي، قمنا بتطوير "خرائط الكيانات الدلالية" التي تربط علامتك التجارية جغرافياً وموضوعياً بالخدمات التي يبحث عنها عملاؤك في الرياض وجدة والدمام. نحن لا نكتفي بالظهور، بل نهيمن على "حزمة الخرائط" (Map Pack) لضمان أن تكون الخيار الأول والوحيد.
+                    </p>
+                </div>
+            </section>
+
             {/* Categories Grid */}
             <div className="grid lg:grid-cols-2 gap-10 py-32">
                 {[
@@ -129,21 +145,17 @@ export default function ExpertisePage() {
                     { title: 'محتوى محلي متقدم', icon: Edit3, color: 'text-brand-green', bgColor: 'bg-brand-navy', skills: expertiseCategories[2].skills, dark: true },
                     { title: 'أنظمة النمو', icon: Target, color: 'text-brand-navy', bgColor: 'bg-brand-mint', skills: expertiseCategories[3].skills }
                 ].map((category, idx) => (
-                    <motion.div
+                    <div
                         key={idx}
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: idx * 0.05 }}
-                        className={`${category.dark ? 'bg-brand-navy text-white border-white/5' : 'bg-white text-brand-navy border-slate-100'} rounded-[4rem] p-12 md:p-16 border shadow-sm hover:shadow-2xl transition-all duration-500 group relative overflow-hidden text-right`}
+                        className={`${category.dark ? 'bg-brand-navy text-white border-white/5' : 'bg-white text-brand-navy border-slate-100'} rounded-[4rem] p-12 md:p-16 border shadow-sm hover:shadow-2xl transition-all duration-500 group relative overflow-hidden text-right opacity-100 translate-y-0`}
                     >
                         <div className="flex items-center gap-8 mb-12 flex-row-reverse">
                             <div className={`w-20 h-20 ${category.bgColor} rounded-3xl flex items-center justify-center transition-transform group-hover:rotate-6 shadow-lg shadow-black/5`}>
                                 <category.icon className={`h-10 w-10 ${category.color}`} />
                             </div>
-                            <h2 className={`text-3xl md:text-4xl font-black tracking-tighter ${category.dark ? 'text-white' : 'text-brand-navy'}`}>
+                            <h3 className={`text-3xl md:text-4xl font-black tracking-tighter ${category.dark ? 'text-white' : 'text-brand-navy'}`}>
                                 {category.title}
-                            </h2>
+                            </h3>
                         </div>
 
                         <div className="grid sm:grid-cols-2 gap-y-6 gap-x-10 relative z-10">
@@ -156,17 +168,25 @@ export default function ExpertisePage() {
                                 </div>
                             ))}
                         </div>
-                    </motion.div>
+                    </div>
                 ))}
             </div>
 
+            {/* Detailed Content Section 2: AI & Future */}
+            <section className="py-24 bg-slate-50 rounded-[4rem] mb-32 border border-slate-100">
+                <div className="max-w-4xl mx-auto px-8 text-right">
+                    <h2 className="text-4xl font-black text-brand-navy mb-8 tracking-tighter">مستقبل البحث: AEO و GEO</h2>
+                    <p className="text-slate-600 leading-relaxed font-bold mb-6">
+                        مع تطور محركات البحث نحو أنظمة الإجابة المباشرة (AI Answer Engines)، أصبحت خبرتنا في "تحسين محركات الإجابة" (AEO) حجر الزاوية لكل مشروع. نحن نجهز علامتك التجارية لتفهمها ليس فقط جوجل، بل أيضاً ChatGPT و Gemini و Perplexity.
+                    </p>
+                    <p className="text-slate-600 leading-relaxed font-bold">
+                        من خلال تحويل محتواك إلى قطع معرفية مستقلة (Knowledge Chunks) وتحسين "إشارات الثقة الجغرافية" (GEO)، نضمن أن يتم التوصية بعملك عندما يسأل المستخدم عن أفضل مزود خدمة في منطقته. هذا ليس مجرد سيو تقني؛ إنه بناء سلطة مطلقة في عقل الذكاء الاصطناعي.
+                    </p>
+                </div>
+            </section>
+
             {/* Scale Section */}
-            <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="mb-40"
-            >
+            <div className="mb-40 opacity-100 translate-y-0">
                 <div className="bg-brand-green rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl shadow-brand-green/20">
                     <div className="absolute inset-0 bg-white/10 opacity-50 blur-3xl rounded-full translate-y-1/2" />
                     <h2 className="text-4xl md:text-8xl font-black text-brand-navy mb-8 tracking-tighter leading-[0.85]">توسع بما يتجاوز <br /> حدودك.</h2>
@@ -189,7 +209,7 @@ export default function ExpertisePage() {
                         </Link>
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </div>
     </main>
     );

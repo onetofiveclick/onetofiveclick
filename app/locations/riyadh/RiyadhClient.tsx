@@ -1,19 +1,13 @@
-import { Metadata } from 'next';
+'use client';
+
+import { motion } from 'framer-motion';
 import { Target, MapPin, TrendingUp, Users, ArrowLeft, CheckCircle, Star } from 'lucide-react';
 import Link from 'next/link';
 import DigitalMaturityQuiz from '@/components/sections/DigitalMaturityQuiz';
 
-export const metadata: Metadata = {
-  title: 'وكالة سيو في الرياض | سيطرة كاملة على نتائج البحث | 1-5 كليك',
-  description: 'أهم وكالة سيو وأتمتة أعمال في الرياض. نحن نساعد الشركات الكبرى في المملكة على السيطرة على نتائج البحث المحلية وزيادة التحويلات باستخدام الذكاء الاصطناعي.',
-  alternates: {
-    canonical: 'https://onetofiveclick.com/locations/riyadh/',
-  },
-};
-
-export default function RiyadhPage() {
+export default function RiyadhClient() {
   return (
-    <div className="bg-white min-h-screen text-right font-sans pt-24">
+    <div className="bg-white min-h-screen text-right font-sans">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -49,7 +43,11 @@ export default function RiyadhPage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="max-w-3xl mr-0 ml-auto opacity-100 translate-y-0">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-3xl mr-0 ml-auto"
+          >
             <div className="inline-flex items-center gap-2 bg-brand-green/20 text-brand-green px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8 border border-brand-green/30">
               <MapPin className="h-4 w-4" />
               <span>خدمات التسويق الرقمي في الرياض</span>
@@ -69,7 +67,7 @@ export default function RiyadhPage() {
                 احجز استشارة مجانية في الرياض
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 

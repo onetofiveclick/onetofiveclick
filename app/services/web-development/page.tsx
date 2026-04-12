@@ -1,8 +1,6 @@
-'use client';
 
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
   Code,
   Smartphone,
@@ -69,11 +67,7 @@ export default function WebDevelopmentPage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <div className="opacity-100 translate-y-0">
               <div className="inline-flex items-center gap-3 bg-white/5 text-brand-green px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-white/10 backdrop-blur-md">
                 <Zap className="h-4 w-4" />
                 <span>هندسة معتمدة على الأداء لعام 2026</span>
@@ -100,7 +94,7 @@ export default function WebDevelopmentPage() {
                     عرض البنية التحتية
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

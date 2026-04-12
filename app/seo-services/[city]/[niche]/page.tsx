@@ -1,7 +1,23 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { seoCities, seoNiches } from '@/lib/seo-data';
 import { ArrowLeft, CheckCircle2, MapPin, Building2, TrendingUp, Search } from 'lucide-react';
 import { notFound } from 'next/navigation';
+
+export async function generateMetadata({ params }: { params: { city: string; niche: string } }): Promise<Metadata> {
+  const city = seoCities.find(c => c.slug === params.city);
+  const niche = seoNiches.find(n => n.slug === params.niche);
+
+  if (!city || !niche) return {};
+
+  return {
+    title: `أفضل شركة سيو لقطاع ${niche.name} في ${city.name} | ون تو فايف كليك`,
+    description: `نساعد شركات ${niche.name} في ${city.name} على السيطرة على نتائج البحث العضوية وزيادة المبيعات من خلال التحويل الرقمي والسيو المتقدم.`,
+    alternates: {
+      canonical: `https://onetofiveclick.com/seo-services/${params.city}/${params.niche}/`,
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const params: { city: string; niche: string }[] = [];
