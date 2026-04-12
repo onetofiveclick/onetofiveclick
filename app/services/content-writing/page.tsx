@@ -1,7 +1,4 @@
-'use client';
-
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
   PenTool,
   CheckCircle,
@@ -98,10 +95,8 @@ export default function ContentWritingPage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+            <div
+              className="animate-in fade-in slide-in-from-bottom-8 duration-1000"
             >
               <div className="inline-flex items-center gap-3 bg-brand-navy/5 text-brand-navy px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-brand-navy/10 backdrop-blur-sm">
                 <div className="w-2 h-2 bg-brand-navy rounded-full animate-pulse" />
@@ -126,7 +121,7 @@ export default function ContentWritingPage() {
                   *مقتصر على المؤسسين الذين يحققون +1M$
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

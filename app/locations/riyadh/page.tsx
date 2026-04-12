@@ -17,7 +17,7 @@ export default function RiyadhLocationPage() {
             "name": "1-5 Click Riyadh | ون تو فايف كليك الرياض",
             "image": "https://onetofiveclick.com/riyadh_digital_marketing_authority_1775799453369.png",
             "url": "https://onetofiveclick.com/locations/riyadh",
-            "telephone": "+966XXXXXXXXX",
+            "telephone": "+966 57 580 6733",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Olaya View",

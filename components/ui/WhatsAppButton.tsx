@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppButton() {
-  const whatsappNumber = "+966XXXXXXXXX"; // Change this to the actual number
+  const whatsappNumber = "+966575806733"; // Change this to the actual number
   const message = "مرحباً، أود الاستفسار عن خدمات التسويق الرقمي لشركتي في السعودية.";
   const encodedMessage = encodeURIComponent(message);
   

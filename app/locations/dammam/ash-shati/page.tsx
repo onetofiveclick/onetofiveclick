@@ -16,7 +16,7 @@ export default function AshShatiDistrictPage() {
             "name": "1-5 Click Ash-Shati Dammam | ون تو فايف كليك حي الشاطئ",
             "image": "https://images.unsplash.com/photo-1541888941259-773a9417d741?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/dammam/ash-shati",
-            "telephone": "+966XXXXXXXXX",
+            "telephone": "+966 57 580 6733",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Ash-Shati District",

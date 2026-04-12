@@ -17,7 +17,7 @@ export default function JeddahLocationPage() {
             "name": "1-5 Click Jeddah | ون تو فايف كليك جدة",
             "image": "https://onetofiveclick.com/jeddah_marketing_excellence_1775799895344.png",
             "url": "https://onetofiveclick.com/locations/jeddah",
-            "telephone": "+966XXXXXXXXX",
+            "telephone": "+966 57 580 6733",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Jeddah Corniche",

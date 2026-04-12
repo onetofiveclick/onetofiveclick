@@ -1,6 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import { ArrowLeft, Zap, ShieldCheck, Database, LayoutGrid, Cpu, Target, Search, BrainCircuit, Bot, ChevronLeft, ShieldAlert, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import AEOFAQGroup from '@/components/aeo/AEOFAQ';
@@ -64,11 +61,9 @@ export default function MethodologyPage() {
         {/* Methodology Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-32">
           {methodology.map((step, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="p-10 rounded-[3rem] bg-slate-50 border border-slate-100 hover:shadow-2xl hover:shadow-brand-green/10 transition-all"
+              className="animate-in fade-in zoom-in duration-1000 p-10 rounded-[3rem] bg-slate-50 border border-slate-100 hover:shadow-2xl hover:shadow-brand-green/10 transition-all"
             >
               <div className={`w-16 h-16 ${step.color} rounded-2xl flex items-center justify-center text-white mb-8`}>
                 {step.icon}
@@ -79,7 +74,7 @@ export default function MethodologyPage() {
               <p className="text-slate-500 font-bold leading-relaxed">
                 {step.desc}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
 
@@ -264,10 +259,8 @@ export default function MethodologyPage() {
 
         {/* Benchmark Case Study Link */}
         <div className="mt-20 mb-32 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            className="inline-grid"
+          <div
+            className="animate-in fade-in zoom-in duration-1000 inline-grid"
           >
             <a 
               href="/case-studies/goldfish-summer-care"
@@ -284,7 +277,7 @@ export default function MethodologyPage() {
                 <ChevronLeft className="h-8 w-8 text-brand-green mr-8 hidden md:block" />
               </div>
             </a>
-          </motion.div>
+          </div>
         </div>
 
         {/* Closing Strategy */}

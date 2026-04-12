@@ -108,6 +108,29 @@ export default function RootLayout({
             })
           }}
         />
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "pic6m45h2z");
+            `
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-831K0CRKL4"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-831K0CRKL4');
+            `
+          }}
+        />
       </head>
       <body className="antialiased">
         <script
@@ -120,7 +143,7 @@ export default function RootLayout({
               "image": "https://onetofiveclick.com/logo.svg",
               "@id": "https://onetofiveclick.com",
               "url": "https://onetofiveclick.com",
-              "telephone": "+966XXXXXXXXX",
+              "telephone": "+966 57 580 6733",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Riyadh District",

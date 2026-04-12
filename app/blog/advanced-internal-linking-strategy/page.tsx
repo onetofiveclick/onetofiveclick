@@ -1,5 +1,3 @@
-'use client';
-
 import AEOArticle, { AEOChunk } from '@/components/aeo/AEOArticle';
 
 export default function AdvancedInternalLinkingStrategy2026() {

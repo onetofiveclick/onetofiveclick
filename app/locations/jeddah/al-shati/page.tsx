@@ -16,7 +16,7 @@ export default function AlShatiPage() {
             "name": "1-5 Click - حي الشاطئ جدة | ون تو فايف كليك",
             "image": "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/jeddah/al-shati/",
-            "telephone": "+966XXXXXXXXX",
+            "telephone": "+966 57 580 6733",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Al Shati District",

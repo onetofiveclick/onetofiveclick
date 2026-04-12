@@ -1,7 +1,4 @@
-'use client';
-
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
     ArrowRight,
     Cpu,
@@ -67,10 +64,8 @@ export default function NextJsServicePage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+            <div
+              className="animate-in fade-in slide-in-from-bottom-8 duration-1000"
             >
               <div className="inline-flex items-center gap-3 bg-white/5 text-brand-green px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-white/10 backdrop-blur-md">
                 <Cpu className="h-4 w-4" />
@@ -98,7 +93,7 @@ export default function NextJsServicePage() {
                   عرض دراسات الحالة
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -167,11 +162,8 @@ export default function NextJsServicePage() {
                       <span className="text-brand-green">1 نقرة (فوري)</span>
                     </div>
                     <div className="w-full h-3 bg-white/5 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: '100%' }}
-                        transition={{ duration: 1.5, ease: "easeOut" }}
-                        className="h-full bg-brand-green shadow-[0_0_20px_rgba(37,211,102,0.4)]"
+                      <div
+                        className="h-full bg-brand-green shadow-[0_0_20px_rgba(37,211,102,0.4)] animate-in slide-in-from-left duration-1000 fill-mode-forwards"
                       />
                     </div>
                   </div>
@@ -190,11 +182,9 @@ export default function NextJsServicePage() {
                       <span className="text-brand-green">+320% إيرادات</span>
                     </div>
                     <div className="w-full h-3 bg-white/5 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: '85%' }}
-                        transition={{ duration: 1.5, delay: 0.3, ease: "easeOut" }}
-                        className="h-full bg-brand-mint"
+                      <div
+                        style={{ width: '85%' }}
+                        className="h-full bg-brand-mint animate-in slide-in-from-left duration-[1500ms] fill-mode-forwards"
                       />
                     </div>
                   </div>
@@ -205,11 +195,8 @@ export default function NextJsServicePage() {
               </div>
             </div>
 
-            <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="text-right"
+            <div
+                className="text-right animate-in fade-in slide-in-from-left-8 duration-1000"
             >
               <h2 className="text-5xl md:text-8xl font-black text-brand-navy mb-10 tracking-tighter leading-[0.9]">
                 بني للـ <br />
@@ -234,7 +221,7 @@ export default function NextJsServicePage() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

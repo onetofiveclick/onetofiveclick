@@ -16,7 +16,7 @@ export default function AlMalazDistrictPage() {
             "name": "1-5 Click Al-Malaz Riyadh | ون تو فايف كليك الملز",
             "image": "https://onetofiveclick.com/riyadh_digital_marketing_authority_1775799453369.png",
             "url": "https://onetofiveclick.com/locations/riyadh/al-malaz",
-            "telephone": "+966XXXXXXXXX",
+            "telephone": "+966 57 580 6733",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Al-Malaz District",

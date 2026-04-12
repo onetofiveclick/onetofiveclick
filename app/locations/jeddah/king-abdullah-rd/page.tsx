@@ -16,7 +16,7 @@ export default function KingAbdullahRdPage() {
             "name": "1-5 Click King Abdullah Rd Jeddah | ون تو فايف كليك طريق الملك عبدالله",
             "image": "https://onetofiveclick.com/jeddah_marketing_excellence_1775799895344.png",
             "url": "https://onetofiveclick.com/locations/jeddah/king-abdullah-rd",
-            "telephone": "+966XXXXXXXXX",
+            "telephone": "+966 57 580 6733",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "King Abdullah Road",
