@@ -6,39 +6,12 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowRight, Search, ArrowLeft } from 'lucide-react';
 
-const blogPosts = [
-    {
-        id: 164,
-        title: 'دليل السيو لعام 2026: عصر الكيانات والوكلاء',
-        excerpt: 'اكتشف كيف تهيمن على محركات الإجابة وتتهيأ لعصر البحث الأرجنتي في السعودية والخليج.',
-        author: 'فريق ون تو فايف كليك',
-        date: '12 أبريل 2026',
-        category: 'استراتيجية 2026',
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
-        slug: 'seo-this-year-guide-2026'
-    },
-    {
-        id: 163,
-        title: 'استراتيجيات بناء الروابط في 2026: من الروابط إلى الاستشهادات',
-        excerpt: 'لماذا لم تعد الباك لينكس كافية؟ تعلم كيف تبني روابط سلطة تثق بها محركات الذكاء الاصطناعي.',
-        author: 'فريق ون تو فايف كليك',
-        date: '12 أبريل 2026',
-        category: 'بناء السلطة',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
-        slug: 'link-building-strategies-2026'
-    },
-    // ... (rest of the blog posts would go here, but I will truncate for the client wrapper)
-];
-
-// NOTE: This is a simplified wrapper for the blog content. 
-// I will keep the actual search and filter logic from the original file.
-
 export default function BlogClient({ posts }: { posts: any[] }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('الكل');
 
   const categories = useMemo(() => {
-    return ['الكل', ...new Set(posts.map((post) => post.category))];
+    return ['الكل', ...Array.from(new Set(posts.map((post) => post.category)))];
   }, [posts]);
 
   const filteredPosts = useMemo(() => {

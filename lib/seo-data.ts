@@ -45,3 +45,22 @@ export const seoNiches = [
         solution: 'نركز على تهيئة ظهور موقعكم في الاستعلامات الشرائية والسياحية عالية التردد محلياً وعالمياً.'
     }
 ];
+
+export const seoDistricts = {
+    riyadh: [
+        { slug: 'olaya', name: 'العليا' },
+        { slug: 'al-malaz', name: 'الملز' },
+        { slug: 'al-rawdah', name: 'الروضة' },
+        { slug: 'al-nakhil', name: 'النخيل' },
+        { slug: 'diplomatic-quarter', name: 'الحي الدبلوماسي' },
+    ],
+    jeddah: [
+        { slug: 'king-abdullah-rd', name: 'طريق الملك عبدالله' },
+        { slug: 'al-shati', name: 'الشاطئ' },
+        { slug: 'corniche', name: 'الكورنيش' },
+        { slug: 'al-rawdah', name: 'الروضة' },
+    ],
+    dammam: [
+        { slug: 'ash-shati', name: 'الشاطئ' },
+    ]
+};

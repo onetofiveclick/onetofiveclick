@@ -172,6 +172,19 @@ export default function ExpertisePage() {
                 ))}
             </div>
 
+            {/* Detailed Content Section: Saudi Market Context */}
+            <section className="py-24 bg-white">
+                <div className="max-w-4xl mx-auto text-right">
+                    <h2 className="text-4xl font-black text-brand-navy mb-8 tracking-tighter">خبرة وفهم للسوق السعودي</h2>
+                    <p className="text-slate-600 leading-relaxed font-bold mb-6">
+                        إن التسويق الرقمي في المملكة العربية السعودية يتطلب فهماً عميقاً للنسيج الاجتماعي والاقتصادي المحلي. في "ون تو فايف كليك"، لا نكتفي بتطبيق نظريات عالمية، بل نقوم بتطوير حلول تتناسب مع رؤية المملكة 2030 والتحول الرقمي المتسارع. نحن ندرك كيف يفضل العميل في الرياض الجودة، وكيف يبحث العميل في جدة عن التميز، ونعرف طبيعة القطاع الصناعي في المنطقة الشرقية.
+                    </p>
+                    <p className="text-slate-600 leading-relaxed font-bold">
+                        خبرتنا تمتد لتشمل إدارة "الإشارات والكيانات" (Entities) التي تضمن أن علامتك التجارية ليست مجرد اسم في دليل، بل هي وجهة موثوقة في نظر المنظومات الذكية. من خلال دمج تقنيات "السيو التقني" و "أتمتة العمليات"، نمنح مشروعك القدرة على المنافسة ليس فقط اليوم، بل في المستقبل الرقمي القادم.
+                    </p>
+                </div>
+            </section>
+
             {/* Detailed Content Section 2: AI & Future */}
             <section className="py-24 bg-slate-50 rounded-[4rem] mb-32 border border-slate-100">
                 <div className="max-w-4xl mx-auto px-8 text-right">
