@@ -1,0 +1,38 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'خدمات التسويق الرقمي في السعودية | ون تو فايف كليك',
+    template: '%s | ون تو فايف كليك'
+  },
+  description: 'نحن أفضل وكالة تسويق رقمي في السعودية، متخصصون في السيو (SEO)، وإعلانات جوجل، وتطوير المواقع، وإدارة السوشيال ميديا في الرياض وجدة وكافة أنحاء المملكة.',
+  keywords: [
+    'تسويق رقمي السعودية',
+    'أفضل شركة سيو في الرياض',
+    'شركة تسويق الكتروني جدة',
+    'خدمات ادارة حسابات السوشيال ميديا القوية',
+    'برمجة تطبيقات ومواقع السعودية',
+    'سيو محلي في المملكة',
+    'تحسين محركات البحث السعودية',
+    'وكالة تسويق الرياض'
+  ],
+  alternates: {
+    canonical: 'https://onetofiveclick.com/services',
+  },
+  openGraph: {
+    title: 'خدمات التسويق الرقمي الاحترافية في السعودية',
+    description: 'ارتقِ بعملك مع استراتيجيات التسويق الرقمي المتقدمة والسيو لعام 2026. نحن نضمن لك الظهور في النتائج الأولى في السعودية.',
+    url: 'https://onetofiveclick.com/services',
+    siteName: 'ون تو فايف كليك',
+    locale: 'ar_SA',
+    type: 'website',
+  },
+};
+
+export default function ServicesLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}

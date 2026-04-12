@@ -13,25 +13,26 @@ import {
     Target,
     Users,
     MousePointerClick,
-    ShieldCheck
+    ShieldCheck,
+    ArrowLeft
 } from 'lucide-react';
 
 const protocols = [
     {
-        title: 'Database Reactivation',
-        desc: 'Mining the gold in your current lead list. We convert "dormant" emails into instant revenue using high-frequency, low-friction sequences.',
+        title: 'تنشيط قاعدة البيانات',
+        desc: 'استخراج الذهب في قائمة عملائك الحاليين. نحن نحول رسائل البريد الإلكتروني "الخاملة" إلى إيرادات فورية باستخدام تسلسلات عالية التردد ومنخفضة الاحتكاك.',
         icon: TrendingUp,
         color: 'bg-indigo-600'
     },
     {
-        title: 'SMS Blast Velocity',
-        desc: '98% open rates that beat every other channel. We use SMS for flash sales, appointment reminders, and instant offer deployment.',
+        title: 'سرعة الرسائل النصية القصيرة',
+        desc: 'معدلات فتح تبلغ 98% تتفوق على كل قناة أخرى. نحن نستخدم الرسائل النصية المباشرة للمبيعات الخاطفة والتذكير بالمواعيد ونشر العروض الفورية.',
         icon: MessageSquare,
         color: 'bg-emerald-600'
     },
     {
-        title: 'Newsletter Authority',
-        desc: 'Turning subscribers into cult-like followers. Weekly deep-dives that build human-first trust markers for your brand.',
+        title: 'مرجعية النشرات الإخبارية',
+        desc: 'تحويل المشتركين إلى معجبين مخلصين. تعمق أسبوعي يبني علامات ثقة حقيقية مع البشر لعلامتك التجارية.',
         icon: Mail,
         color: 'bg-brand-red'
     }
@@ -39,37 +40,38 @@ const protocols = [
 
 export default function EmailSMSPage() {
     return (
-        <div className="pt-16 overflow-hidden">
+        <div className="pt-24 bg-white overflow-hidden text-right">
             {/* Hero Section */}
-            <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+            <section className="relative bg-white py-32 lg:py-48 overflow-hidden">
                 <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-blue/5 via-transparent to-brand-red/5" />
-                <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-pulse" />
-                <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-brand-navy/5 via-transparent to-brand-green/5" />
+                <div className="absolute top-1/4 -right-20 w-96 h-96 bg-brand-navy/10 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-brand-green/10 rounded-full blur-[120px] animate-pulse" />
+                
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center max-w-4xl mx-auto">
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <div className="inline-flex items-center space-x-2 bg-brand-blue/5 text-brand-blue px-5 py-2 rounded-full text-xs font-normal mb-10 border border-brand-blue/10">
+                            <div className="inline-flex items-center gap-3 bg-brand-navy/5 text-brand-navy px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-brand-navy/10 backdrop-blur-sm">
                                 <Zap className="h-4 w-4" />
-                                <span>Direct-to-Human Infrastructure</span>
+                                <span>أفضل بنية تحتية للتسويق المباشر في السعودية</span>
                             </div>
-                            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-gray-900 mb-8 leading-tight">
-                                Retention <br />
-                                <span className="text-brand-blue">Engines.</span>
+                            <h1 className="text-6xl md:text-9xl font-black text-brand-navy mb-8 leading-[0.85] tracking-tighter">
+                                محـرك <br />
+                                <span className="text-brand-green uppercase">الاستبقاء في الرياض.</span>
                             </h1>
-                            <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-normal max-w-2xl mx-auto">
-                                Social media is borrowed land. <span className="text-gray-900 font-normal">Your list is your asset.</span> We build the automated systems that capture, nurture, and monetize every lead you've ever paid for.
+                            <p className="text-xl md:text-2xl text-slate-500 mb-16 leading-relaxed font-bold max-w-2xl mx-auto">
+                                وسائل التواصل الاجتماعي أرض مستعارة في السعودية. <span className="text-brand-navy underline transition-colors hover:text-brand-green cursor-pointer uppercase">قائمتك هي أصلك الحقيقي في المملكة.</span> نحن نبني الأنظمة المؤتمتة التي تلتقط وتغذي وتستفيد من كل عميل محتمل في الرياض وجدة.
                             </p>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center bg-brand-blue text-white px-10 py-4 rounded-lg hover:brightness-110 transition-all font-normal text-lg group"
+                                className="inline-flex items-center justify-center bg-brand-navy text-white px-12 py-6 rounded-full hover:scale-105 transition-all font-black text-[10px] uppercase tracking-widest shadow-2xl shadow-brand-navy/20 group gap-3"
                             >
-                                Initiate List Audit
-                                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                                ابدأ تدقيق القائمة
+                                <ArrowLeft className="h-5 w-5 group-hover:-translate-x-2 transition-transform text-brand-green" />
                             </Link>
                         </motion.div>
                     </div>
@@ -77,20 +79,20 @@ export default function EmailSMSPage() {
             </section>
 
             {/* Why Direct-to-Human Wins */}
-            <section className="py-24 bg-gray-50 border-y border-gray-100">
+            <section className="py-32 bg-slate-50 border-y border-slate-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-normal text-gray-900 mb-4 uppercase tracking-tight leading-tight">Zero Borrowed Luck.</h2>
-                        <p className="text-gray-500 font-normal uppercase tracking-widest text-[10px]">Owning the relationship is the ultimate 2026 competitive advantage.</p>
+                    <div className="text-center mb-20 text-right">
+                        <h2 className="text-5xl md:text-7xl font-black text-brand-navy mb-6 uppercase tracking-tighter leading-tight">صفر حظ مستعار.</h2>
+                        <p className="text-[10px] text-brand-green font-black uppercase tracking-[0.3em]">امتلاك العلاقة هو الميزة التنافسية القصوى في 2026.</p>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-3 gap-10">
                         {protocols.map(p => (
-                            <div key={p.title} className="bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-sm group hover:border-blue-200 transition-all">
-                                <div className={`w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:rotate-12 transition-transform`}>
-                                    <p.icon className="h-7 w-7 text-blue-600" />
+                            <div key={p.title} className="bg-white p-12 rounded-[3.5rem] border border-slate-100 shadow-sm group hover:border-brand-green transition-all text-right">
+                                <div className={`w-16 h-16 bg-brand-mint rounded-2xl flex items-center justify-center mb-10 shadow-sm group-hover:rotate-12 transition-all mr-0 ml-auto group-hover:bg-brand-green`}>
+                                    <p.icon className="h-8 w-8 text-brand-green group-hover:text-brand-navy transition-colors" />
                                 </div>
-                                <h3 className="text-2xl font-normal uppercase tracking-tight text-gray-900 mb-4 leading-tight">{p.title}</h3>
-                                <p className="text-gray-500 text-sm leading-relaxed font-normal">{p.desc}</p>
+                                <h3 className="text-2xl font-black uppercase tracking-tighter text-brand-navy mb-6 leading-tight">{p.title}</h3>
+                                <p className="text-slate-500 text-sm leading-relaxed font-bold">{p.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -98,56 +100,56 @@ export default function EmailSMSPage() {
             </section>
 
             {/* Success Packages */}
-            <section className="py-24 bg-white">
+            <section className="py-32 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-4 uppercase tracking-tight leading-tight">Retention <span className="text-blue-600">Packages.</span></h2>
-                        <p className="text-gray-500 font-normal uppercase tracking-widest text-[10px]">Engineered for LTV, not just clicks.</p>
+                    <div className="text-center mb-24">
+                        <h2 className="text-5xl md:text-9xl font-black text-brand-navy mb-8 uppercase tracking-tighter leading-[0.85]">بـاقات <span className="text-brand-green">الاستبقاء.</span></h2>
+                        <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.3em]">مصممة للقيمة الدائمة، وليس فقط للنقرات.</p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-3 gap-12">
                         {[
                             {
-                                name: 'Base Node',
+                                name: 'العقدة الأساسية',
                                 price: '999',
-                                desc: 'Strategic reactivation for businesses with 1k - 5k dormant leads.',
-                                features: ['Bi-Weekly Email Blast', '1 Monthly SMS Flash Sale', 'Basic List Cleaning', 'Monthly Revenue Report'],
+                                desc: 'تنشيط استراتيجي للشركات التي لديها 1000 - 5000 مسمي خامل.',
+                                features: ['رسالة بريد إلكتروني كل أسبوعين', 'فلاش مبيعات SMS شهري واحد', 'تنظيف القائمة الأساسي', 'تقرير الإيرادات الشهري'],
                                 highlight: false
                             },
                             {
-                                name: 'Growth Protocol',
+                                name: 'بروتوكول النمو',
                                 price: '2,499',
-                                desc: 'Building a high-frequency brand asset for scaling businesses.',
-                                features: ['Weekly Authority Emails', '2 SMS Blasts / Month', 'Automated Welcome Flow', 'Abandoned Cart Recovery', 'Bi-Weekly Strategy Sync'],
+                                desc: 'بناء أصل علامة تجارية عالي التردد للشركات النامية.',
+                                features: ['رسائل سلطة أسبوعية', '2 فلاش مبيعات SMS / شهر', 'مسار ترحيب مؤتمت', 'استرداد العربات المهجورة', 'مزامنة استراتيجية كل أسبوعين'],
                                 highlight: true
                             },
                             {
-                                name: 'Enterprise Asset',
+                                name: 'أصل المؤسسة',
                                 price: '4,999',
-                                desc: 'Full retention infrastructure for 8-9 figure brands.',
-                                features: ['Daily Content Interaction', 'Omni-Channel Syncing', 'VIP-Only Private Blasts', 'Custom Funnel Engineering', 'Dedicated Retention Lead'],
+                                desc: 'بنية تحتية كاملة للاستبقاء للعلامات التجارية ذات الأرقام 8-9.',
+                                features: ['تفاعل محتوى يومي', 'مزامنة القنوات المتعددة', 'رسائل خاصة لكبار العملاء', 'هندسة القنوات المخصصة', 'مسؤول مخصص للاستبقاء'],
                                 highlight: false
                             }
                         ].map((pkg) => (
-                            <div key={pkg.name} className={`relative p-10 rounded-[3rem] border transition-all duration-500 ${pkg.highlight ? 'bg-gray-900 text-white border-blue-600 shadow-xl scale-105 z-10' : 'bg-white border-gray-100 hover:border-blue-500'}`}>
+                            <div key={pkg.name} className={`relative p-12 rounded-[4rem] border transition-all duration-500 text-right ${pkg.highlight ? 'bg-brand-navy text-white border-brand-green shadow-3xl scale-105 z-10' : 'bg-slate-50 border-slate-100 hover:border-brand-green'}`}>
                                 {pkg.highlight && (
-                                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-5 py-1.5 rounded-full text-[10px] font-normal uppercase tracking-widest shadow-sm">
-                                        Highest LTV
+                                    <div className="absolute -top-5 right-1/2 translate-x-1/2 bg-brand-green text-brand-navy px-8 py-2 rounded-full text-[10px] font-black uppercase tracking-widest shadow-xl">
+                                        أعلى قيمة دائمة
                                     </div>
                                 )}
-                                <h3 className="text-2xl font-normal uppercase mb-4 leading-tight">{pkg.name}</h3>
-                                <div className="flex items-baseline mb-8">
-                                    <span className="text-2xl font-normal">$</span>
-                                    <span className="text-6xl font-normal">{pkg.price}</span>
-                                    <span className="text-gray-500 text-xs ml-2 font-normal uppercase tracking-widest">/mo</span>
+                                <h3 className="text-3xl font-black uppercase mb-6 leading-tight tracking-tighter">{pkg.name}</h3>
+                                <div className="flex items-baseline mb-10 flex-row-reverse justify-end gap-3">
+                                    <span className="text-2xl font-black text-brand-green transition-all">$</span>
+                                    <span className="text-7xl font-black tracking-tighter leading-none">{pkg.price}</span>
+                                    <span className={`text-[10px] font-black uppercase tracking-widest mr-2 ${pkg.highlight ? 'text-slate-400' : 'text-slate-500'}`}>/شهرياً</span>
                                 </div>
 
-                                <p className={`text-sm mb-10 leading-relaxed font-normal ${pkg.highlight ? 'text-gray-400' : 'text-gray-500'}`}>{pkg.desc}</p>
+                                <p className={`text-sm mb-12 leading-relaxed font-bold ${pkg.highlight ? 'text-slate-400' : 'text-slate-500'}`}>{pkg.desc}</p>
 
-                                <ul className="space-y-4 mb-12">
+                                <ul className="space-y-6 mb-16">
                                     {pkg.features.map(feat => (
-                                        <li key={feat} className="flex items-start space-x-3 text-sm font-normal">
-                                            <CheckCircle className={`h-5 w-5 flex-shrink-0 ${pkg.highlight ? 'text-blue-500' : 'text-blue-600'}`} />
+                                        <li key={feat} className="flex items-start gap-4 text-sm font-bold flex-row-reverse justify-end">
+                                            <CheckCircle className={`h-6 w-6 flex-shrink-0 ${pkg.highlight ? 'text-brand-green' : 'text-brand-green/50'}`} />
                                             <span>{feat}</span>
                                         </li>
                                     ))}
@@ -155,9 +157,9 @@ export default function EmailSMSPage() {
 
                                 <Link
                                     href="/contact"
-                                    className={`block w-full text-center py-5 rounded-xl font-normal uppercase tracking-widest text-xs transition-all ${pkg.highlight ? 'bg-blue-600 text-white hover:brightness-110' : 'bg-gray-900 text-white hover:bg-blue-600'}`}
+                                    className={`block w-full text-center py-6 rounded-full font-black uppercase tracking-widest text-[10px] transition-all shadow-xl ${pkg.highlight ? 'bg-brand-green text-brand-navy hover:scale-105' : 'bg-brand-navy text-white hover:bg-brand-green hover:text-brand-navy'}`}
                                 >
-                                    Initiate Sync
+                                    بدء المزامنة
                                 </Link>
                             </div>
                         ))}
@@ -166,39 +168,39 @@ export default function EmailSMSPage() {
             </section>
 
             {/* Metric Section */}
-            <section className="py-24 bg-gray-900 text-white">
+            <section className="py-32 bg-brand-navy text-white border-y border-white/5">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-4 gap-8 text-center">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
                         {[
-                            { label: 'Avg ROI (Email)', value: '38x', icon: TrendingUp },
-                            { label: 'SMS Open Rate', value: '98%', icon: MessageSquare },
-                            { label: 'LTV Increase', value: '140%+', icon: Users },
-                            { label: 'Asset Stability', value: '100%', icon: ShieldCheck }
+                            { label: 'متوسط العائد (البريد)', value: '38x', icon: TrendingUp },
+                            { label: 'معدل فتح SMS', value: '98%', icon: MessageSquare },
+                            { label: 'زيادة القيمة الدائمة', value: '+140%', icon: Users },
+                            { label: 'استقرار الأصول', value: '100%', icon: ShieldCheck }
                         ].map(stat => (
-                            <div key={stat.label} className="p-8 border border-white/10 rounded-3xl bg-white/5 hover:border-blue-500 transition-all group">
-                                <stat.icon className="h-8 w-8 text-blue-500 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                                <div className="text-4xl font-normal mb-2 tracking-tight">{stat.value}</div>
-                                <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest">{stat.label}</p>
+                            <div key={stat.label} className="p-10 border border-white/10 rounded-[2.5rem] bg-white/5 hover:border-brand-green transition-all group">
+                                <stat.icon className="h-10 w-10 text-brand-green mx-auto mb-8 group-hover:scale-110 transition-transform" />
+                                <div className="text-5xl font-black mb-3 tracking-tighter">{stat.value}</div>
+                                <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">{stat.label}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="py-24 bg-blue-600 relative overflow-hidden">
+            {/* Final CTA */}
+            <section className="py-40 bg-brand-green relative overflow-hidden text-center">
                 <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-                    <h2 className="text-4xl md:text-6xl font-normal text-white mb-8 tracking-tight uppercase">Own Your Relationship.</h2>
-                    <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto font-normal">
-                        Don't let an algorithm change destroy your business. Build your retention moat today.
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <h2 className="text-5xl md:text-9xl font-black text-brand-navy mb-12 tracking-tighter uppercase leading-[0.85]">املك العلاقات <br /> الخاصـة بك.</h2>
+                    <p className="text-2xl text-brand-navy/70 mb-16 max-w-2xl mx-auto font-bold leading-relaxed">
+                        لا تدع تغييراً في الخوارزمية يدمر عملك. ابنِ خندق الاستبقاء الخاص بك اليوم.
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-flex items-center bg-white text-blue-600 px-12 py-6 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest shadow-sm"
+                        className="inline-flex items-center bg-brand-navy text-white px-16 py-8 rounded-full hover:scale-105 transition-all font-black uppercase tracking-widest text-[10px] shadow-3xl shadow-brand-navy/20 gap-4"
                     >
-                        Deploy Retention Protocol
-                        <ArrowRight className="ml-3 h-6 w-6" />
+                        نشر بروتوكول الاستبقاء
+                        <ArrowLeft className="h-6 w-6 text-brand-green" />
                     </Link>
                 </div>
             </section>

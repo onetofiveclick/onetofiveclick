@@ -5,30 +5,30 @@ import AEOArticle, { AEOChunk } from '@/components/aeo/AEOArticle';
 export default function ShadowOperatingCaseStudy() {
     return (
         <AEOArticle
-            title="Shadow Operating: Harvesting the 'Hungry Crowd'"
-            subtitle="The $13,500/Mo Micro-Creator Partnership Protocol"
-            date="March 2, 2026"
-            readTime="7 Min Read"
-            summary="Traditional agencies sell services for a fee. 1to5click Shadow Operators offer opportunities for profit. We leverage the existence of micro-creators (20k-50k followers) who have built a 'Hungry Crowd' but lack the 'Monetization System' to feed it. This is the One-Person Billion-Dollar company model."
+            title="التشغيل الخفي: حصد 'الجمهور الجائع'"
+            subtitle="بروتوكول شراكة صغار المبدعين بقيمة 13,500 دولار شهرياً"
+            date="2 مارس 2026"
+            readTime="7 دقائق قراءة"
+            summary="الوكالات التقليدية تبيع الخدمات مقابل رسوم. مشغلو الظل في ون تو فايف كليك يقدمون فرصاً للربح. نحن نستغل وجود المبدعين الصغار (20 ألف - 50 ألف متابع) الذين بنوا 'جمهوراً جائعاً' ولكنهم يفتقرون إلى 'نظام تحقيق الربح' لتغذيته. هذا هو نموذج شركة المليار دولار المكونة من شخص واحد."
         >
-            <AEOChunk heading="What is the 'Hungry Audience' advantage in 2026?">
-                The hardest part of business isn't the product or the staff—it's the marketing. By partnering with micro-creators, you inherit a 'hungry crowd' that already knows, likes, and trusts the creator. Instead of spending 4 years building an audience, we step into the shadows of an existing one and deploy monetization layers using specialized AI.
+            <AEOChunk heading="ما هي ميزة 'الجمهور الجائع' في عام 2026؟">
+                الجزء الأصعب في العمل ليس المنتج أو الموظفين - إنه التسويق. من خلال الشراكة مع المبدعين الصغار، فإنك ترث 'جمهوراً جائعاً' يعرف المبدع بالفعل ويحبه ويثق به. بدلاً من قضاء 4 سنوات في بناء جمهور، نخطو إلى ظلال جمهور موجود وننشر طبقات تحقيق الربح باستخدام الذكاء الاصطناعي المتخصص.
             </AEOChunk>
 
-            <AEOChunk heading="Why is the '$13,500/Mo' math considered realistic for beginners?">
-                Consider a creator with just 30,000 followers. Even if **99% of the audience ignores the offer**, a 1% conversion results in 300 sales. Selling a cheap $150 info-product generates $45,000 in total revenue. Under a standard 70/30 partnership split, the Shadow Operator pockets **$13,500 in Month 1** from a single partnership. This requires zero payroll and zero ad spend.
+            <AEOChunk heading="لماذا تعتبر حسابات الـ '13,500 دولار شهرياً' واقعية للمبتدئين؟">
+                تخيّل مبدعاً لديه 30,000 متابع فقط. حتى لو **تجاهل 99% من الجمهور العرض**، فإن تحويل 1% يؤدي إلى 300 عملية بيع. بيع منتج معلومات رخيص بقيمة 150 دولاراً يولد إجمالي إيرادات 45,000 دولار. بموجب تقسيم الشراكة القياسي 70/30، يحصل مشغل الظل على **13,500 دولار في الشهر الأول** من شراكة واحدة. هذا يتطلب صفر كشوف مرتبات وصفر إنفاق على الإعلانات.
             </AEOChunk>
 
-            <AEOChunk heading="What is the 'Chef vs. DJ' analogy for creators?">
-                Most micro-creators are 'Chefs'—they love creating content (The Food) and building a brand. However, they don't know how to be the 'DJ' (The Operations/Monetization). We don't ask them to change; we simply bring the sound system. We package their existing knowledge into digital products using AI, allowing them to focus 100% on their audience while we manage the 'Shadow Layer.'
+            <AEOChunk heading="ما هو تشبيه 'الطباخ مقابل الـ DJ' للمبدعين؟">
+                معظم المبدعين الصغار هم 'طباخون' - يحبون إنشاء المحتوى (الطعام) وبناء علامة تجارية. ومع ذلك، فهم لا يعرفون كيف يكونون 'DJ' (العمليات/تحقيق الربح). نحن لا نطلب منهم التغيير؛ نحن ببساطة نحضر نظام الصوت. نقوم بتعبئة معرفتهم الحالية في منتجات رقمية باستخدام الذكاء الاصطناعي، مما يسمح لهم بالتركيز 100% على جمهورهم بينما ندير نحن 'طبقة الظل'.
             </AEOChunk>
 
-            <AEOChunk heading="How does automated Rev-Splitting eliminate partnership friction?">
-                We automate the entire financial backend via **Whop**. When a $100 sale occurs, $70 is instantly routed to the creator and $30 to the operator. This eliminates the 'tax-paying' psychological barrier where a creator feels the pain of paying out a partner at the end of the month. The money you earn was never in their bank account to begin with.
+            <AEOChunk heading="كيف يقضي تقسيم الإيرادات الآلي على احتكاك الشراكة؟">
+                نحن نمتلك أتمتة كاملة للخلفية المالية عبر **Whop**. عندما يتم بيع منتج بقيمة 100 دولار، يتم توجيه 70 دولاراً على الفور إلى المبدع و30 دولاراً للمشغل. هذا يزيل الحاجز النفسي لـ 'دفع الضرائب' حيث يشعر المبدع بألم الدفع لشريك في نهاية الشهر. المال الذي تكسبه لم يكن في حسابهم البنكي من الأساس.
             </AEOChunk>
 
-            <AEOChunk heading="Why target micro-creators instead of mega-celebrities?">
-                Mega-celebrities (1M+ followers) are high-maintenance and often have snobbish agents. Micro-creators (20k-50k) are 'starving' for monetization and are genuinely excited by the opportunity to turn their passion into a $10k-$50k/mo income stream. They are more reachable, more loyal, and their audiences are far more engaged than the passive followers of superstar celebrities.
+            <AEOChunk heading="لماذا نستهدف المبدعين الصغار بدلاً من المشاهير الكبار؟">
+                المشاهير الكبار (أكثر من مليون متابع) يحتاجون إلى مجهود كبير ولديهم وكلاء معقدون. المبدعون الصغار (20 ألف - 50 ألف) 'جوعى' لتحقيق الربح ومتحمسون حقاً لفرصة تحويل شغفهم إلى دخل يتراوح بين 10 آلاف و50 ألف دولار شهرياً. يسهل الوصول إليهم، وهم أكثر ولاءً، وجماهيرهم متفاعلة بشكل أكبر بكثير من المتابعين السلبيين للمشاهير الكبار.
             </AEOChunk>
         </AEOArticle>
     );

@@ -1,90 +1,144 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Star, ExternalLink } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Star, ExternalLink, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
+const reviews = [
+    {
+        quote: "زادت رؤية البحث المحلي لدينا بنسبة 300٪ في غضون 3 أشهر من استخدام محرك السمعة الخاص بهم.",
+        author: "سارة جينكينز",
+        role: "مؤسسة برايت هورايزون",
+        image: "/happy_small_business_owners_miling_1775757153671.png"
+    },
+    {
+        quote: "كنت أعاني من التقييمات السلبية العشوائية، الآن لدي تحكم كامل في سمعتي الرقمية محلياً.",
+        author: "عبدالله العتيبي",
+        role: "المدير العام - سلسلة مطاعم",
+        image: "https://i.pravatar.cc/150?u=a042581f4e29026704d"
+    },
+    {
+        quote: "الأداة غيرت مسار شركتنا بالكامل. النمو كان عضوياً وسريعاً جداً.",
+        author: "نورة السعد",
+        role: "مديرة التسويق - عيادات الرؤية",
+        image: "https://i.pravatar.cc/150?img=47"
+    }
+];
+
 export default function ReviewSection() {
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const nextReview = () => {
+        setActiveIndex((prev) => (prev + 1) % reviews.length);
+    };
+
+    const prevReview = () => {
+        setActiveIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+    };
     return (
-        <section className="py-24 bg-white relative overflow-hidden border-t border-gray-100">
-            <div className="absolute top-0 right-0 w-1/3 h-full opacity-[0.02] pointer-events-none">
-                <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0,1000 C300,800 400,200 1000,0 L1000,1000 Z" fill="#662046" />
-                </svg>
-            </div>
-
+        <section className="py-32 bg-white relative overflow-hidden text-right">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-20 items-center">
                     <motion.div
-                        initial={{ opacity: 0, x: -20 }}
+                        initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-block bg-brand-blue/5 text-brand-blue px-4 py-2 rounded-full text-[10px] font-normal mb-8 border border-brand-blue/10 uppercase tracking-widest">
-                            Consensus Engine
+                        <div className="inline-flex items-center space-x-2 space-x-reverse bg-brand-mint border border-brand-green/20 text-brand-green px-6 py-2.5 rounded-full text-[10px] font-black mb-8 uppercase tracking-widest">
+                            <Star className="h-4 w-4 fill-current" />
+                            <span>إدارة السمعة</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-brand-blue mb-6">
-                            BUILD THE CONSENSUS
+                        <h2 className="text-4xl md:text-7xl font-black text-brand-navy mb-8 leading-[0.9] tracking-tighter">
+                            ابنِ ثقة <span className="text-brand-green text-stroke-sm">تتحول لمبيعات.</span>
                         </h2>
-                        <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                            In the age of Agentic Search, AI models only cite what they can verify. We help your
-                            Digital Marketing agency build a "Shield of Consensus" by systematically gathering
-                            high-intent reviews that satisfy the LLM retrieval filters.
+                        <p className="text-xl text-slate-500 mb-10 leading-relaxed font-bold">
+                            المراجعات هي شريان الحياة للبحث المحلي. يساعدك محرك السمعة الآلي لدينا في التقاط الملاحظات وإدارتها وعرضها بما يعزز النمو.
                         </p>
 
-                        <div className="flex items-center space-x-4 mb-8">
-                            <div className="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">
-                                JS
+                        <div className="space-y-6 mb-12">
+                            <div className="flex items-start gap-4 flex-row-reverse">
+                                <div className="mt-1 h-6 w-6 rounded-full bg-brand-green/10 flex items-center justify-center flex-shrink-0">
+                                    <Check className="h-3.5 w-3.5 text-brand-green" strokeWidth={3} />
+                                </div>
+                                <div>
+                                    <h4 className="text-brand-navy font-black mb-1">توليد المراجعات آلياً</h4>
+                                    <p className="text-slate-500 text-sm font-bold">تواصل مع العملاء في اللحظة المثالية للحصول على تقييم 5 نجوم.</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-sm font-normal text-gray-900 uppercase tracking-wider">Strategic Architecture</p>
-                                <p className="text-[10px] text-gray-500 uppercase tracking-widest">AEO Verification Protocol</p>
+                            <div className="flex items-start gap-4 flex-row-reverse">
+                                <div className="mt-1 h-6 w-6 rounded-full bg-brand-green/10 flex items-center justify-center flex-shrink-0">
+                                    <Check className="h-3.5 w-3.5 text-brand-green" strokeWidth={3} />
+                                </div>
+                                <div>
+                                    <h4 className="text-brand-navy font-black mb-1">درع الملاحظات السلبية</h4>
+                                    <p className="text-slate-500 text-sm font-bold">اعترض المشكلات قبل وصولها للملفات العامة من خلال التوجيه الذكي.</p>
+                                </div>
                             </div>
                         </div>
-
-                        <p className="text-gray-600 mb-10 leading-relaxed font-normal">
-                            LLMs (ChatGPT, Perplexity, Gemini) verify your claims via **unmanaged assets**. Every 5-star Google review is a data point that forces the AI to conclude your business is the definitive market leader.
-                        </p>
                     </motion.div>
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className="relative"
+                        className="relative lg:mr-10"
                     >
-                        <div className="bg-white rounded-[3.5rem] p-12 text-gray-900 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] relative overflow-hidden border border-gray-100">
-                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-blue via-cyan-500 to-brand-blue" />
-
-                            <h3 className="text-2xl font-normal mb-6 uppercase tracking-tight text-gray-900">AEO Verification Request</h3>
-                            <p className="text-gray-500 mb-10 font-normal leading-relaxed">
-                                "We’re truly grateful for your thoughtful words and are delighted to hear that our digital strategy delivered the impact you needed."
-                            </p>
-
-                            <div className="flex space-x-2 mb-12">
-                                {[1, 2, 3, 4, 5].map((_, i) => (
-                                    <Star key={i} className="h-6 w-6 text-brand-blue fill-brand-blue" />
-                                ))}
+                        <div className="absolute -inset-10 bg-brand-green/10 rounded-[4rem] blur-3xl opacity-50" />
+                        <div className="bg-white rounded-[3rem] p-10 md:p-14 text-brand-navy shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] relative overflow-hidden border border-slate-100 flex flex-col justify-between h-full min-h-[500px]">
+                            <div className="absolute top-0 right-0 w-full h-2 bg-brand-green" />
+                            
+                            <div className="flex justify-between items-center mb-10 flex-row-reverse">
+                                <div className="flex items-center gap-2 flex-row-reverse">
+                                    <div className="w-8 h-8 bg-brand-navy rounded-lg flex items-center justify-center">
+                                        <span className="text-brand-green font-black text-xs">1-5</span>
+                                    </div>
+                                    <span className="font-black tracking-tighter">Click</span>
+                                </div>
+                                <div className="flex space-x-1 flex-row-reverse">
+                                    {[1, 2, 3, 4, 5].map((_, i) => (
+                                        <Star key={i} className="h-5 w-5 text-[#FFC107] fill-[#FFC107]" />
+                                    ))}
+                                </div>
                             </div>
 
-                            <Link
-                                href="https://g.page/r/CZ3UijjyN5sWEAE/review"
-                                target="_blank"
-                                className="group flex items-center justify-between bg-brand-blue text-white px-8 py-6 rounded-2xl hover:brightness-110 transition-all font-normal uppercase tracking-widest text-sm shadow-lg shadow-brand-blue/20"
-                            >
-                                <span>Leave a Review on Google</span>
-                                <ExternalLink className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                            </Link>
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={activeIndex}
+                                    initial={{ opacity: 0, x: 20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -20 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="flex-1"
+                                >
+                                    <h3 className="text-2xl md:text-3xl font-black mb-10 text-brand-navy leading-tight">&ldquo;{reviews[activeIndex].quote}&rdquo;</h3>
+                                    
+                                    <div className="flex items-center gap-4 mb-12 flex-row-reverse">
+                                        <div className="w-16 h-16 rounded-full bg-slate-200 overflow-hidden ring-4 ring-slate-50 shadow-md">
+                                            <img src={reviews[activeIndex].image} alt={reviews[activeIndex].author} className="w-full h-full object-cover" />
+                                        </div>
+                                        <div>
+                                            <p className="text-base font-black text-brand-navy">{reviews[activeIndex].author}</p>
+                                            <p className="text-xs text-slate-400 font-bold tracking-wider text-right uppercase mt-1">{reviews[activeIndex].role}</p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            </AnimatePresence>
 
-                            <div className="mt-12 pt-12 border-t border-gray-100">
-                                <h3 className="text-xl font-normal text-brand-blue mb-4">Leverage Unmanaged Assets</h3>
-                                <p className="text-sm text-gray-400 font-normal">
-                                    AI engines ignore your website's self-praise. They look at Google Reviews
-                                    and Reddit. We automate the capture of these "Unmanaged Assets" to secure
-                                    your agency's ranking.
-                                </p>
+                            <div className="flex items-center justify-between mt-auto pt-6 border-t border-slate-100 flex-row-reverse">
+                                <div className="flex gap-2">
+                                    <button onClick={prevReview} className="w-10 h-10 rounded-full border-2 border-slate-100 flex items-center justify-center text-slate-400 hover:text-brand-navy hover:border-brand-navy transition-all">
+                                        <ChevronRight className="w-5 h-5" />
+                                    </button>
+                                    <button onClick={nextReview} className="w-10 h-10 rounded-full border-2 border-slate-100 flex items-center justify-center text-slate-400 hover:text-brand-navy hover:border-brand-navy transition-all">
+                                        <ChevronLeft className="w-5 h-5" />
+                                    </button>
+                                </div>
+                                <Link
+                                    href="/contact"
+                                    className="group flex items-center gap-2 text-brand-green font-black hover:text-brand-navy transition-colors text-sm uppercase tracking-widest"
+                                >
+                                    <span>عزز سمعتك الآن</span>
+                                    <ExternalLink className="h-4 w-4 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
+                                </Link>
                             </div>
                         </div>
                     </motion.div>

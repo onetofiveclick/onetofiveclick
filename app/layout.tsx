@@ -2,20 +2,21 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import WhatsAppButton from '@/components/ui/WhatsAppButton';
 
 export const metadata: Metadata = {
   title: {
-    default: 'One to Five Click - Expert Digital Marketing & SEO Services',
-    template: '%s | One to Five Click'
+    default: 'ون تو فايف كليك - أفضل وكالة تسويق رقمي في السعودية وسيو لعام 2026',
+    template: '%s | ون تو فايف كليك'
   },
-  description: 'Transform your brand with expert digital marketing services including Technical SEO, Local SEO, PPC, social media marketing, web development, and content writing. Get results in 1-5 clicks.',
+  description: 'ارتقِ بعلامتك التجارية في السعودية مع خدمات التسويق الرقمي الخبيرة في الرياض وجدة. متخصصون في السيو التقني، والسيو المحلي، وإعلانات الدفع لكل نقرة، وتطوير Next.js. احصل على نتائج ملموسة بنقرات بسيطة.',
   icons: {
     icon: '/icon.svg',
   },
-  keywords: ['digital marketing', 'SEO services', 'technical SEO', 'local SEO', 'on-page SEO', 'off-page SEO', 'PPC advertising', 'social media marketing', 'web development', 'content writing', 'digital marketing agency'],
-  authors: [{ name: 'One to Five Click' }],
-  creator: 'One to Five Click',
-  publisher: 'One to Five Click',
+  keywords: ['تسويق رقمي السعودية', 'وكالة سيو الرياض', 'خدمات سيو جدة', 'سيو تقني', 'سيو محلي المملكة', 'إعلانات جوجل السعودية', 'تسويق شبكات اجتماعية', 'تطوير مواقع Next.js', 'كتابة محتوى عربي', '1to5click'],
+  authors: [{ name: 'ون تو فايف كليك' }],
+  creator: 'ون تو فايف كليك',
+  publisher: 'ون تو فايف كليك',
   formatDetection: {
     email: false,
     address: false,
@@ -26,17 +27,17 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'One to Five Click - Expert Digital Marketing & SEO Services',
-    description: 'Transform your brand with expert digital marketing services. Specializing in Technical SEO, Local SEO, and comprehensive digital solutions.',
+    title: 'ون تو فايف كليك - وكالة خبيرة في التسويق الرقمي وسيو',
+    description: 'ارتقِ بعلامتك التجارية مع خدمات التسويق الرقمي الخبيرة. متخصصون في السيو التقني والمحلي وحلول التسويق الشاملة.',
     url: 'https://onetofiveclick.com',
-    siteName: 'One to Five Click',
-    locale: 'en_US',
+    siteName: 'ون تو فايف كليك',
+    locale: 'ar_SA',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'One to Five Click - Expert Digital Marketing & SEO Services',
-    description: 'Transform your brand with expert digital marketing services. Get results in 1-5 clicks.',
+    title: 'ون تو فايف كليك - وكالة خبيرة في التسويق الرقمي وسيو',
+    description: 'ارتقِ بعلامتك التجارية مع خدمات التسويق الرقمي الخبيرة. احصل على نتائج في 1-5 نقرات.',
     creator: '@onetofiveclick',
   },
   robots: {
@@ -50,9 +51,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
 };
 
 export default function RootLayout({
@@ -61,73 +59,46 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'One to Five Click',
+              name: 'ون تو فايف كليك',
               url: 'https://onetofiveclick.com',
               logo: 'https://onetofiveclick.com/logo.png',
-              description: 'Expert digital marketing agency specializing in Next.js, WordPress, and Global SEO scaling.',
+              description: 'أفضل وكالة تسويق رقمي في السعودية متخصصة في Next.js وتحسين محركات البحث المحلية (سيو) في الرياض وجدة.',
               email: 'team@onetofiveclick.com',
               contactPoint: {
                 '@type': 'ContactPoint',
-                contactType: 'customer service',
+                contactType: 'خدمة العملاء',
                 email: 'team@onetofiveclick.com'
               },
-              sameAs: [
-                'https://facebook.com/onetofiveclick',
-                'https://twitter.com/onetofiveclick',
-                'https://linkedin.com/company/onetofiveclick',
-                'https://instagram.com/onetofiveclick'
-              ],
-              areaServed: 'Worldwide',
+              areaServed: 'Saudi Arabia',
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
-                name: 'Digital Marketing Services',
+                name: 'خدمات التسويق الرقمي',
                 itemListElement: [
                   {
                     '@type': 'Offer',
                     itemOffered: {
                       '@type': 'Service',
-                      name: 'Technical SEO',
-                      description: 'Comprehensive technical SEO optimization services'
+                      name: 'سيو تقني',
+                      description: 'خدمات تحسين محركات البحث التقنية الشاملة'
                     }
                   },
                   {
                     '@type': 'Offer',
                     itemOffered: {
                       '@type': 'Service',
-                      name: 'Local SEO',
-                      description: 'Local search optimization to dominate your market'
-                    }
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'On-Page SEO',
-                      description: 'Content optimization for better rankings'
-                    }
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Off-Page SEO',
-                      description: 'Link building and authority development'
-                    }
-                  },
-                  {
-                    '@type': 'Offer',
-                    itemOffered: {
-                      '@type': 'Service',
-                      name: 'Content Writing',
-                      description: 'Professional content writing services'
+                      name: 'سيو محلي',
+                      description: 'تحسين البحث المحلي للسيطرة على سوقك'
                     }
                   }
                 ]
@@ -136,9 +107,70 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>
+      <body className="antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "1-5 Click | ون تو فايف كليك",
+              "image": "https://onetofiveclick.com/logo.svg",
+              "@id": "https://onetofiveclick.com",
+              "url": "https://onetofiveclick.com",
+              "telephone": "+966XXXXXXXXX",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Riyadh District",
+                "addressLocality": "Riyadh",
+                "addressRegion": "Riyadh Province",
+                "postalCode": "11111",
+                "addressCountry": "SA"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 24.7136,
+                "longitude": 46.6753
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Sunday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://www.facebook.com/1to5click",
+                "https://twitter.com/1to5click",
+                "https://www.instagram.com/1to5click",
+                "https://www.linkedin.com/company/1to5click"
+              ],
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Riyadh"
+                },
+                {
+                  "@type": "City",
+                  "name": "Jeddah"
+                },
+                {
+                  "@type": "City",
+                  "name": "Dammam"
+                }
+              ],
+              "description": "The premier digital growth agency in Saudi Arabia, specializing in SEO, GEO (Generative Engine Optimization), and marketing automation for large enterprises."
+            })
+          }}
+        />
         <Navbar />
         <main>{children}</main>
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

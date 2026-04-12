@@ -2,146 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 :root {
-  --primary-brand: #662046;
-  /* Qatar Airways Burgundy / Maroon */
-  --text-main: rgb(34, 34, 34);
-  /* Sleek dark grey */
-  --text-secondary: rgb(102, 102, 102);
-  --font-heading: "Jotia", "Arial", sans-serif;
-  --font-body: "Jotia", "Arial", sans-serif;
+  --primary: #00D665;
+  --primary-dark: #00B153;
+  --navy: #001C3D;
+  --navy-light: #002A5C;
+  --mint: #F2FAF6;
+  --slate-900: #001C3D; /* Syncing slate-900 with brand navy */
+  --slate-800: #002A5C;
+  --slate-100: #f1f5f9;
+  --slate-50: #f8fafc;
 }
 
-/* ===== NUCLEAR: Kill ALL italic everywhere ===== */
-*,
-*::before,
-*::after {
-  font-style: normal !important;
-}
-
-/* ===== NUCLEAR: Kill all Tailwind weight utility classes ===== */
-.font-bold,
-.font-semibold,
-.font-medium,
-.font-black,
-.font-extrabold,
-.font-light,
-.font-thin,
-.font-extralight {
-  font-weight: 400 !important;
-}
-
-.italic,
-.not-italic {
-  font-style: normal !important;
-}
-
-/* ===== BODY ===== */
 body {
-  background-color: #ffffff !important;
-  color: var(--text-main);
-  font-family: var(--font-body);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0;
+  @apply bg-white text-slate-900;
+  font-family: 'Tajawal', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
-/* ===== HEADINGS: font-family + weight only ===== */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading) !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
+/* Base Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-black tracking-tighter text-slate-900;
+  line-height: 1.1;
 }
 
-/* ===== BODY TEXT: font-family + weight only ===== */
-/* Do NOT force font-size or line-height — Tailwind handles those */
-p,
-span,
-li,
-a,
-label,
-small,
-b,
-strong,
-i,
-em,
-blockquote,
-figcaption,
-td,
-th,
-dt,
-dd {
-  font-family: var(--font-body) !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
+/* Custom Utilities */
+@layer utilities {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-brand-green {
+    color: var(--primary);
+  }
+  .bg-brand-green {
+    background-color: var(--primary);
+  }
+  .border-brand-green {
+    border-color: var(--primary);
+  }
+  
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20;
+  }
+  
+  .shadow-premium {
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.08);
+  }
+
+  /* Grid standards */
+  .grid-standard {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
 }
 
-/* ===== FORM INPUTS ===== */
-input,
-textarea,
-select,
-option {
-  font-family: var(--font-body) !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-/* ===== CTA LINK BUTTONS ===== */
-/* Only target actual CTA-style links that have bg-blue-600 or bg-gray-900 + text-white */
-a[class*="bg-blue-600"],
-a[class*="bg-brand-blue"],
-a[class*="bg-gray-900"][class*="text-white"] {
-  background-color: var(--primary-brand) !important;
-  color: #ffffff !important;
-  font-family: var(--font-body) !important;
-  font-weight: 400 !important;
+::-webkit-scrollbar-track {
+  @apply bg-slate-50;
 }
 
-/* CTA button children stay white */
-a[class*="bg-blue-600"] *,
-a[class*="bg-brand-blue"] *,
-a[class*="bg-gray-900"][class*="text-white"] * {
-  color: #ffffff !important;
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full border-4 border-transparent bg-clip-content hover:bg-slate-300 transition-colors;
 }
 
-/* ===== BRAND COLORS ===== */
-.bg-brand-red {
-  background-color: var(--primary-brand) !important;
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
-.text-brand-red {
-  color: var(--primary-brand) !important;
+.animate-float {
+  animation: float 5s ease-in-out infinite;
 }
 
-.text-blue-600 {
-  color: var(--primary-brand) !important;
-}
-
-.border-brand-red {
-  border-color: var(--primary-brand) !important;
-}
-
-.hover\:text-blue-600:hover {
-  color: var(--primary-brand) !important;
-}
-
-/* ===== GRID PATTERN ===== */
-.bg-grid-pattern {
-  background-image:
-    linear-gradient(to right, rgba(102, 32, 70, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(102, 32, 70, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
-/* ===== SMOOTH SCROLL ===== */
+/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Button Reset (Handling some legacy button styles if needed) */
+button:focus {
+  outline: none;
+}
+
+/* Typography Overrides to ensure the User's "Black font" request is honored */
+.font-black {
+  font-weight: 900 !important;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em !important;
+}
+
+/* Mobile font size adjustment */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }

@@ -2,144 +2,84 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Search, MousePointerClick, Share2, Code, PenTool, ArrowRight, Zap, Users, Mail, BrainCircuit, TrendingUp, Cpu } from 'lucide-react';
+import { Search, MousePointerClick, Star, Target, Cpu, Users, ArrowLeft, BarChart3, MapPin } from 'lucide-react';
 
 const services = [
   {
     icon: Search,
-    title: 'AI-Powered SEO & Growth Systems',
-    description: 'Autonomous visibility via Semantic Entity Calibration and RAG-driven authority across SearchGPT, Claude, and Gemini.',
-    href: '/services/seo',
-    color: 'from-brand-blue to-brand-red',
+    title: 'توسّع محلياً',
+    description: 'سيطر على حصة مدينتك التسويقية.',
   },
   {
-    icon: TrendingUp,
-    title: 'Smart Performance Marketing Solutions',
-    description: 'Precision-engineered acquisition via AI-optimized bidding and Agentic Lead Recovery protocols.',
-    href: '/services/ppc',
-    color: 'from-gray-600 to-gray-400',
+    icon: BarChart3,
+    title: 'تضاعف النمو',
+    description: 'زيادة مستدامة في الزيارات.',
+  },
+  {
+    icon: MapPin,
+    title: 'تحوّل للواقع',
+    description: 'ترجمة البحث إلى زيارات فعلية.',
+  },
+  {
+    icon: Star,
+    title: 'إدارة السمعة',
+    description: 'راقب المراجعات وقم بالرد عليها عبر جميع المنصات.',
   },
   {
     icon: Cpu,
-    title: 'AI-Driven Data & Conversion Optimization',
-    description: 'Generative Engine Optimization to force your brand into ChatGPT and Perplexity citations as the definitive answer.',
-    href: '/services/geo',
-    color: 'from-cyan-600 to-cyan-400',
-  },
-  {
-    icon: Share2,
-    title: 'AI Automation for Lead Generation',
-    description: 'Autonomous content structuring and native transaction ecosystems that turn social search into revenue.',
-    href: '/services/social-media',
-    color: 'from-brand-blue to-gray-600',
-  },
-  {
-    icon: Code,
-    title: 'Autonomous Web Systems',
-    description: 'High-conversion Next.js ecosystems built via agentic workflows for high-ticket service dominance.',
-    href: '/services/web-development',
-    color: 'from-gray-800 to-brand-blue',
-  },
-  {
-    icon: Mail,
-    title: 'Email & SMS Retention',
-    description: 'Own your audience. Direct-to-human high-ROI sequences that monetize your data in perpetuity.',
-    href: '/services/email-sms-marketing',
-    color: 'from-cyan-700 to-cyan-500',
+    title: 'رؤى الذكاء الاصطناعي',
+    description: 'توصيات ذكية لتصدر النتائج.',
   },
   {
     icon: Users,
-    title: 'Creator Shadow Operating',
-    description: 'We build the backend ecosystems for micro-creators, handling monetization while they create.',
-    href: '/services/creator-strategy',
-    color: 'from-brand-red to-gray-700',
+    title: 'استعادة العملاء',
+    description: 'حول الفرص الضائعة إلى عملاء دائمين.',
   },
 ];
 
 export default function Services() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20 relative z-10"
-        >
-          <div className="inline-block bg-brand-blue/5 text-brand-blue px-4 py-2 rounded-full text-[10px] font-normal mb-6 border border-brand-blue/10 uppercase tracking-widest">
-            The 2026 Agency Stack
-          </div>
-          <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-6 leading-tight">
-            Engineered for <span className="text-brand-blue">Revenue.</span>
+    <section className="py-32 bg-slate-50 relative overflow-hidden text-right">
+      <div className="absolute top-0 left-0 w-1/3 h-2/3 bg-brand-green/5 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20">
+          <span className="inline-block text-xs uppercase tracking-[0.2em] font-black text-brand-navy bg-white px-5 py-2 rounded-full border border-slate-200 shadow-sm mb-6">كيف يمكننا مساعدتك</span>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-brand-navy mb-8 tracking-tighter leading-[1.2]">
+            هندسة <span className="text-brand-green">النمو</span> في السعودية.
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-normal">
-            We don't do "Marketing." We build the <span className="text-gray-900 font-normal underline">Boring Infrastructure</span> that solves the only problem businesses actually pay for: <span className="text-gray-900 font-normal">New Customers.</span>
+          <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto font-bold leading-relaxed">
+            أدوات قابلة للتوسع لكل بصمة تجارية في المملكة. من المتاجر الفردية في الرياض إلى آلاف المواقع للشركات الكبرى في جدة والدمام.
           </p>
-        </motion.div>
+        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {services.map((service, index) => {
-            const Icon = service.icon;
             return (
               <motion.div
-                key={service.href}
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -10 }}
+                className="bg-white rounded-[2rem] p-8 border border-slate-100 hover:border-brand-green/30 transition-all shadow-sm hover:shadow-2xl hover:shadow-brand-green/10 text-right group flex flex-col items-center cursor-pointer"
               >
-                <Link
-                  href={service.href}
-                  className="group block bg-white border border-gray-100 rounded-[2.5rem] p-10 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden h-full shadow-sm"
-                >
-                  <div className={`w-14 h-14 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:rotate-12 transition-transform`}>
-                    <Icon className="h-7 w-7 text-white" />
+                <div className="w-24 h-24 mb-6 relative">
+                  <div className="absolute inset-0 bg-brand-green/10 rounded-3xl rotate-6 group-hover:rotate-12 transition-transform duration-500 scale-105" />
+                  <div className="absolute inset-0 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center justify-center transform group-hover:-translate-y-2 transition-transform duration-500">
+                    <service.icon className="h-10 w-10 text-brand-green" />
                   </div>
-
-                  <h3 className="text-2xl font-normal text-gray-900 mb-4 group-hover:text-brand-blue transition-colors leading-tight">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-gray-500 mb-8 leading-relaxed text-sm font-normal">
-                    {service.description}
-                  </p>
-
-                  <div className="flex items-center text-brand-blue font-normal text-sm group-hover:gap-2 transition-all">
-                    Initiate Protocol
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </Link>
+                </div>
+                <h3 className="text-2xl font-black text-brand-navy mb-4 group-hover:text-brand-green transition-colors leading-relaxed tracking-tighter text-center">
+                  {service.title}
+                </h3>
+                <p className="text-slate-500 text-base font-bold leading-relaxed text-center">
+                  {service.description}
+                </p>
               </motion.div>
             );
           })}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center mt-16 relative z-10"
-        >
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-16">
-            <Link
-              href="/expertise"
-              className="inline-flex items-center text-brand-blue border border-brand-blue/20 bg-brand-blue/5 px-10 py-5 rounded-2xl hover:bg-brand-blue hover:text-white transition-all font-normal uppercase tracking-widest text-sm"
-            >
-              Explore Full AI Portfolio
-              <ArrowRight className="ml-3 h-5 w-5" />
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center bg-gray-900 text-white px-10 py-5 rounded-2xl hover:bg-brand-blue transition-all hover:shadow-2xl font-normal uppercase tracking-widest text-sm"
-            >
-              Start Your Growth Sync
-              <ArrowRight className="ml-3 h-5 w-5" />
-            </Link>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

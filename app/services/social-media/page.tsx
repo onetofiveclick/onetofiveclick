@@ -17,25 +17,26 @@ import {
   Network,
   BarChart3,
   DollarSign,
-  Cpu
+  Cpu,
+  ArrowLeft
 } from 'lucide-react';
 
 const socialSEOPlatforms = [
   {
-    name: 'B2C Search Domination',
-    description: 'Instagram, TikTok, and YouTube process billions of searches daily. We engineer your videos to capture visual intent before users ever open Google.',
+    name: 'سيطرة البحث B2C',
+    description: 'Instagram و TikTok و YouTube تعالج مليارات عمليات البحث يومياً. نحن نهندس فيديوهاتك لالتقاط النية البصرية قبل أن يفتح المستخدمون جوجل.',
     icon: Search,
     color: 'bg-blue-600'
   },
   {
-    name: 'B2B Network SEO',
-    description: 'LinkedIn and YouTube optimization for high-intent decision makers. Answering complex operational questions directly in the feed.',
+    name: 'سيو شبكات B2B',
+    description: 'تحسين LinkedIn و YouTube لصناع القرار ذوي النية العالية. الإجابة على الأسئلة التشغيلية المعقدة مباشرة في التغذية الإخبارية (Feed).',
     icon: Network,
     color: 'bg-blue-500'
   },
   {
-    name: 'AI Engine Referencing',
-    description: 'We structure your social footprint on platforms like Reddit and YouTube so it gets cited by ChatGPT and Perplexity answers.',
+    name: 'مرجعية محركات AI',
+    description: 'نحن نهندس بصمتك الاجتماعية على منصات مثل Reddit و YouTube بحيث يتم الاستشهاد بها من قبل ChatGPT و Perplexity.',
     icon: Cpu,
     color: 'bg-gray-900'
   }
@@ -43,56 +44,57 @@ const socialSEOPlatforms = [
 
 const discoveryProtocol = [
   {
-    title: 'Question-Based Intent',
-    desc: 'People search in full sentences ("How do I fix..."). We map your content to the exact questions users type.'
+    title: 'النية القائمة على السؤال',
+    desc: 'الناس يبحثون بجمل كاملة ("كيف أصلح..."). نحن نرسم خرائط لمحتواك لتتطابق مع الأسئلة الدقيقة التي يكتبها المستخدمون.'
   },
   {
-    title: 'Indexable Metadata',
-    desc: 'Algorithms skim content. We structure your titles, captions, and on-screen text so AI can instantly extract meaning.'
+    title: 'Metadata قابلة للفهرسة',
+    desc: 'الخوارزميات تتصفح المحتوى. نحن نهندس العناوين والتعليقات التوضيحية والنصوص التي تظهر على الشاشة حتى يتمكن الذكاء الاصطناعي من استخراج المعنى فورا.'
   },
   {
-    title: 'Native Transactions',
-    desc: 'Platforms reward retention. We use native lead forms and DM flows (ManyChat) to keep users in-app, boosting your organic reach.'
+    title: 'معاملات أصلية',
+    desc: 'المنصات تكافئ البقاء. نحن نستخدم نماذج العملاء الأصلية وتدفقات الرسائل المباشرة (ManyChat) لإبقاء المستخدمين داخل التطبيق، مما يعزز وصولك العضوي.'
   },
   {
-    title: 'Feed Discovery',
-    desc: 'We don\'t wait for search. We create content that interrupts the scroll and solves problems before users even realize they need them.'
+    title: 'اكتشاف التغذية الإخبارية',
+    desc: 'نحن لا ننتظر البحث. نحن نصنع محتوى يقاطع التصفح ويحل المشكلات قبل أن يدرك المستخدمون حاجتهم إليها.'
   }
 ];
 
 export default function SocialMediaPage() {
   return (
-    <div className="pt-16 overflow-hidden">
+    <div className="pt-24 bg-white overflow-hidden text-right">
       {/* Hero Section */}
-      <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-white py-32 lg:py-48 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-blue/5 via-transparent to-brand-red/5" />
-        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-brand-navy/5 via-transparent to-brand-green/5" />
+        <div className="absolute top-1/4 -right-20 w-96 h-96 bg-brand-navy/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-brand-green/10 rounded-full blur-[120px] animate-pulse" />
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center space-x-2 bg-brand-blue/5 text-brand-blue px-5 py-2 rounded-full text-xs font-normal mb-10 border border-brand-blue/10">
+              <div className="inline-flex items-center gap-3 bg-brand-navy/5 text-brand-navy px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-brand-navy/10 backdrop-blur-sm">
                 <Search className="h-4 w-4" />
-                <span>Social Media SEO 2026</span>
+                <span>أفضل سيو وسائل تواصل اجتماعي في السعودية 2026</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-gray-900 mb-8 leading-tight">
-                Social <br />
-                <span className="text-brand-blue">Search.</span>
+              <h1 className="text-6xl md:text-9xl font-black text-brand-navy mb-8 leading-[0.85] tracking-tighter">
+                البـحث <br />
+                <span className="text-brand-green uppercase">الاجتماعـي في السعودية.</span>
               </h1>
-              <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-normal max-w-2xl mx-auto">
-                Social platforms are the new search engines. We engineer your content to answer the exact questions your audience is typing into Instagram, TikTok, and YouTube <span className="text-gray-900 font-normal">before they ever open Google.</span>
+              <p className="text-xl md:text-2xl text-slate-500 mb-16 leading-relaxed font-bold max-w-2xl mx-auto">
+                المنصات الاجتماعية هي محركات البحث الجديدة في المملكة. نحن نهندس محتواك للإجابة على الأسئلة الدقيقة التي يكتبها جمهورك في الرياض وجدة في Instagram و TikTok و YouTube <span className="text-brand-navy underline transition-colors hover:text-brand-green cursor-pointer uppercase">قبل أن يفتحوا جوجل.</span>
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-brand-blue text-white px-10 py-4 rounded-lg hover:brightness-110 transition-all font-normal text-lg group"
+                className="inline-flex items-center justify-center bg-brand-navy text-white px-12 py-6 rounded-full hover:scale-105 transition-all font-black text-[10px] uppercase tracking-widest shadow-2xl shadow-brand-navy/20 group gap-3"
               >
-                Initiate Social SEO
-                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                بدء سيو التواصل الاجتماعي
+                <ArrowLeft className="h-5 w-5 group-hover:-translate-x-2 transition-transform text-brand-green" />
               </Link>
             </motion.div>
           </div>
@@ -100,23 +102,23 @@ export default function SocialMediaPage() {
       </section>
 
       {/* Platform Strategy Grid */}
-      <section className="py-24 bg-gray-50 border-y border-gray-100">
+      <section className="py-32 bg-slate-50 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-gray-900 mb-4 tracking-tight">The Modern Search Horizon</h2>
-            <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">Match your platform to your demographic's search intent.</p>
+          <div className="text-center mb-24 text-right">
+            <h2 className="text-5xl md:text-7xl font-black text-brand-navy mb-6 tracking-tighter leading-tight uppercase">أفق البحث الحديث</h2>
+            <p className="text-[10px] text-brand-green font-black uppercase tracking-[0.3em]">طابق منصتك مع نية البحث الخاصة بجمهورك.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {socialSEOPlatforms.map((p) => {
               const Icon = p.icon;
               return (
-                <div key={p.name} className="bg-white p-10 rounded-[3rem] shadow-sm border border-gray-100 hover:border-blue-200 transition-colors group">
-                  <div className={`w-14 h-14 ${p.color} rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:rotate-6 transition-transform`}>
-                    <Icon className="h-7 w-7 text-white" />
+                <div key={p.name} className="bg-white p-12 rounded-[3.5rem] shadow-sm border border-slate-100 hover:border-brand-green transition-all group text-right">
+                  <div className={`w-16 h-16 ${p.color} rounded-2xl flex items-center justify-center mb-10 shadow-sm group-hover:rotate-6 transition-transform mr-auto ml-0`}>
+                    <Icon className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-normal text-gray-900 mb-4 leading-tight">{p.name}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed font-normal">{p.description}</p>
+                  <h3 className="text-2xl font-black text-brand-navy mb-6 leading-tight tracking-tighter uppercase">{p.name}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed font-bold">{p.description}</p>
                 </div>
               );
             })}
@@ -125,23 +127,23 @@ export default function SocialMediaPage() {
       </section>
 
       {/* The Discovery Protocol */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-32 bg-white overflow-hidden text-right">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div className="relative">
-              <div className="absolute -top-10 -left-10 w-64 h-64 bg-blue-50 rounded-full blur-3xl opacity-50" />
-              <div className="relative bg-gray-900 rounded-[3rem] p-12 text-white shadow-sm border border-white/5">
-                <div className="flex justify-between items-center mb-12">
-                  <h3 className="text-3xl font-normal tracking-tight leading-tight">Feed <br /> Discovery</h3>
-                  <TrendingUp className="h-12 w-12 text-blue-400" />
+              <div className="absolute -top-10 -right-10 w-64 h-64 bg-brand-mint opacity-20 rounded-full blur-3xl" />
+              <div className="relative bg-brand-navy rounded-[4.5rem] p-16 text-white shadow-3xl border border-white/5">
+                <div className="flex justify-between items-center mb-16 flex-row-reverse">
+                  <h3 className="text-4xl font-black tracking-tighter leading-none text-white">اكـتشاف <br /> التغـذية</h3>
+                  <TrendingUp className="h-16 w-16 text-brand-green animate-pulse" />
                 </div>
-                <div className="space-y-6">
+                <div className="space-y-8">
                   {discoveryProtocol.map((item, i) => (
-                    <div key={i} className="flex items-start space-x-4 p-4 bg-white/5 rounded-2xl border border-white/5 group">
-                      <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shrink-0 font-normal">0{i + 1}</div>
-                      <div>
-                        <h4 className="font-normal text-white uppercase text-[10px] tracking-widest mb-1">{item.title}</h4>
-                        <p className="text-gray-400 text-xs leading-relaxed font-normal">{item.desc}</p>
+                    <div key={i} className="flex items-start gap-6 p-6 bg-white/5 rounded-3xl border border-white/5 group hover:bg-white/10 transition-colors flex-row-reverse">
+                      <div className="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center shrink-0 font-black text-brand-navy text-xs">0{i + 1}</div>
+                      <div className="text-right">
+                        <h4 className="font-black text-white uppercase text-[11px] tracking-widest mb-2">{item.title}</h4>
+                        <p className="text-slate-400 text-sm leading-relaxed font-bold">{item.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -150,89 +152,91 @@ export default function SocialMediaPage() {
             </div>
 
             <div>
-              <h2 className="text-5xl font-normal text-gray-900 mb-8 leading-tight tracking-tight">
-                You Win In <br />
-                <span className="text-blue-600">The Feed.</span>
+              <h2 className="text-5xl md:text-9xl font-black text-brand-navy mb-10 leading-[0.85] tracking-tighter">
+                أنـت تفـوز فـي <br />
+                <span className="text-brand-green">الخوارزمية.</span>
               </h2>
-              <p className="text-xl text-gray-600 mb-10 leading-relaxed font-normal">
-                Unstructured content is invisible. We treat every piece of social content like a searchable asset, optimizing captions, on-screen text, and spoken words so you answer problems <span className="text-gray-900 font-normal">instantly on the spot</span>.
+              <p className="text-xl text-slate-500 mb-12 leading-relaxed font-bold">
+                المحتوى غير المهيكل غير مرئي. نحن نعامل كل قطعة من المحتوى الاجتماعي كأصل قابل للبحث، ونحسن التعليقات التوضيحية والنصوص على الشاشة والكلمات المنطوقة حتى تجيب على المشكلات <span className="text-brand-navy underline transition-colors hover:text-brand-green cursor-pointer uppercase">على الفور في مكانها</span>.
               </p>
-              <div className="grid grid-cols-2 gap-6 mb-12">
-                <div className="p-6 bg-gray-50 rounded-3xl border border-gray-100 text-center">
-                  <div className="text-3xl font-normal text-gray-900 mb-1 tracking-tight uppercase">Indexable</div>
-                  <p className="text-[10px] font-normal text-gray-400 uppercase tracking-widest">Metadata Extraction</p>
+              <div className="grid grid-cols-2 gap-8 mb-16 flex-row-reverse">
+                <div className="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 text-center group hover:border-brand-green transition-all">
+                  <div className="text-4xl font-black text-brand-navy mb-2 tracking-tighter uppercase group-hover:scale-105 transition-transform">قابلة للفهرسة</div>
+                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">استخراج الـ Metadata</p>
                 </div>
-                <div className="p-6 bg-gray-50 rounded-3xl border border-gray-100 text-center">
-                  <div className="flex items-center justify-center space-x-3 mb-1">
-                    <div className="text-3xl font-normal text-gray-900 tracking-tight uppercase">High</div>
-                    <Cpu className="h-6 w-6 text-blue-600" />
+                <div className="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 text-center group hover:border-brand-green transition-all">
+                  <div className="flex items-center justify-center gap-3 mb-2 flex-row-reverse">
+                    <div className="text-4xl font-black text-brand-navy tracking-tighter uppercase group-hover:scale-105 transition-transform">عالٍ</div>
+                    <Cpu className="h-8 w-8 text-brand-green" />
                   </div>
-                  <p className="text-[10px] font-normal text-gray-400 uppercase tracking-widest">AI Citation Rate</p>
+                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">معدل الاستشهاد بـ AI</p>
                 </div>
               </div>
-              <Link
-                href="/contact"
-                className="inline-flex items-center space-x-3 text-blue-600 font-normal uppercase tracking-widest text-xs group"
-              >
-                <span>Master Feed Discovery</span>
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-2 transition-transform" />
-              </Link>
+              <div className="flex justify-end">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-4 text-brand-navy font-black uppercase tracking-widest text-[11px] group"
+                >
+                  <span>احتراف اكتشاف التغذية الإخبارية</span>
+                  <ArrowLeft className="h-5 w-5 group-hover:-translate-x-2 transition-transform text-brand-green" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Social SEO Packages */}
-      <section className="py-24 bg-gray-50 border-y border-gray-100">
+      <section className="py-32 bg-slate-50 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-normal text-gray-900 mb-4 tracking-tight">Social SEO <span className="text-blue-600">Packages.</span></h2>
-            <p className="text-gray-500 font-normal uppercase tracking-widest text-xs">Engineered for discovery and in-app revenue.</p>
+          <div className="text-center mb-24">
+            <h2 className="text-5xl md:text-9xl font-black text-brand-navy mb-8 tracking-tighter uppercase leading-[0.85]">بـاقـات <span className="text-brand-green">السـيو الاجتماعـي.</span></h2>
+            <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.3em] text-center">مصممة للاكتشاف والإيرادات داخل التطبيق.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-12">
             {[
               {
-                name: 'Social Search Base',
+                name: 'أساس البحث الاجتماعي',
                 price: '999',
-                desc: 'Structured metadata and question-based content for foundational social discovery.',
-                features: ['8 SEO-Optimized Reels / Mo', 'AnswerThePublic Query Map', 'Basic DM Integration', 'Monthly Indexing Report'],
+                desc: 'Metadata مهيكلة ومحتوى قائم على الأسئلة للاكتشاف الاجتماعي الأساسي.',
+                features: ['8 فيديوهات Reels محسنة للسيو / شهر', 'خريطة استعلام AnswerThePublic', 'تكامل أساسي للرسائل المباشرة', 'تقرير فهرسة شهري'],
                 highlight: false
               },
               {
-                name: 'Discovery Engine',
+                name: 'محرك الاكتشاف',
                 price: '2,499',
-                desc: 'Total algorithm domination. We solve problems before your users realize they have them.',
-                features: ['15 High-Signal Short Videos', 'Advanced DM Funneling', 'AI Content Citations', 'On-Screen Text Analysis', 'Bi-Weekly Search Sync'],
+                desc: 'سيطرة تامة على الخوارزمية. نحل المشكلات قبل أن يدرك مستخدموك وجودها.',
+                features: ['15 فيديو قصير عالي الإشارة', 'نظام رسائل مباشرة متقدم', 'الاستشهاد بالمحتوى في AI', 'تحليل النص على الشاشة', 'مزامنة بحث كل أسبوعين'],
                 highlight: true
               },
               {
-                name: 'The Infinite Loop',
+                name: 'الحلقة اللانهائية',
                 price: '4,999',
-                desc: 'Closed-loop retention ecosystem designed to maximize on-platform transactions.',
-                features: ['Cross-Platform Search Dom.', 'Automated Conversation Flows', 'Full Native Checkout Build', 'Predictive Trend Engineering', '24/7 Priority Support'],
+                desc: 'نظام بيئي مغلق للاستبقاء مصمم لزيادة المعاملات على المنصة.',
+                features: ['سيطرة على البحث عبر المنصات', 'تدفقات محادثة مؤتمتة', 'بناء عملية دفع أصلية بالكامل', 'هندسة الاتجاهات التنبؤية', 'دعم ذو أولوية 24/7'],
                 highlight: false
               }
             ].map((pkg) => (
-              <div key={pkg.name} className={`relative p-10 rounded-[3rem] border transition-all duration-500 ${pkg.highlight ? 'bg-gray-900 text-white border-blue-600/30 shadow-xl scale-105 z-10' : 'bg-white border-gray-100 hover:border-blue-200'}`}>
+              <div key={pkg.name} className={`relative p-12 rounded-[4rem] border transition-all duration-500 text-right ${pkg.highlight ? 'bg-brand-navy text-white border-brand-green shadow-3xl scale-105 z-10' : 'bg-white border-slate-100 hover:border-brand-green'}`}>
                 {pkg.highlight && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-5 py-1.5 rounded-full text-[10px] font-normal uppercase tracking-widest">
-                    Best ROI
+                  <div className="absolute -top-5 right-1/2 translate-x-1/2 bg-brand-green text-brand-navy px-8 py-2 rounded-full text-[10px] font-black uppercase tracking-widest shadow-xl">
+                    أفضل عائد استثمار
                   </div>
                 )}
-                <h3 className="text-2xl font-normal mb-4 leading-tight">{pkg.name}</h3>
-                <div className="flex items-baseline mb-8">
-                  <span className="text-2xl font-normal">$</span>
-                  <span className="text-6xl font-normal">{pkg.price}</span>
-                  <span className="text-gray-500 text-xs ml-2 font-normal uppercase tracking-widest">/mo</span>
+                <h3 className="text-3xl font-black mb-6 leading-tight tracking-tighter uppercase">{pkg.name}</h3>
+                <div className="flex items-baseline mb-10 flex-row-reverse justify-end gap-3">
+                  <span className="text-2xl font-black text-brand-green transition-all">$</span>
+                  <span className="text-7xl font-black tracking-tighter leading-none">{pkg.price}</span>
+                  <span className={`text-[10px] font-black uppercase tracking-widest mr-2 ${pkg.highlight ? 'text-slate-400' : 'text-slate-500'}`}>/شهرياً</span>
                 </div>
 
-                <p className={`text-sm mb-10 leading-relaxed font-normal ${pkg.highlight ? 'text-gray-400' : 'text-gray-500'}`}>{pkg.desc}</p>
+                <p className={`text-sm mb-12 leading-relaxed font-bold ${pkg.highlight ? 'text-slate-400' : 'text-slate-500'}`}>{pkg.desc}</p>
 
-                <ul className="space-y-4 mb-12">
+                <ul className="space-y-6 mb-16">
                   {pkg.features.map(feat => (
-                    <li key={feat} className="flex items-start space-x-3 text-sm font-normal">
-                      <CheckCircle className={`h-5 w-5 flex-shrink-0 ${pkg.highlight ? 'text-blue-400' : 'text-blue-600'}`} />
+                    <li key={feat} className="flex items-start gap-4 text-sm font-bold flex-row-reverse justify-end">
+                      <CheckCircle className={`h-6 w-6 flex-shrink-0 ${pkg.highlight ? 'text-brand-green' : 'text-brand-green/30'}`} />
                       <span>{feat}</span>
                     </li>
                   ))}
@@ -240,9 +244,9 @@ export default function SocialMediaPage() {
 
                 <Link
                   href="/contact"
-                  className={`block w-full text-center py-5 rounded-xl font-normal uppercase tracking-widest text-xs transition-all ${pkg.highlight ? 'bg-blue-600 text-white hover:brightness-110' : 'bg-gray-900 text-white hover:bg-blue-600'}`}
+                  className={`block w-full text-center py-6 rounded-full font-black uppercase tracking-widest text-[10px] transition-all shadow-xl ${pkg.highlight ? 'bg-brand-green text-brand-navy hover:scale-105' : 'bg-brand-navy text-white hover:bg-brand-green hover:text-brand-navy'}`}
                 >
-                  Initiate Sync
+                  بدء المزامنة
                 </Link>
               </div>
             ))}
@@ -251,74 +255,74 @@ export default function SocialMediaPage() {
       </section>
 
       {/* Native Transactions Section */}
-      <section className="py-24 bg-white border-t border-gray-100">
+      <section className="py-32 bg-white border-t border-slate-100 text-right">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-900 rounded-[3rem] p-12 lg:p-20 relative overflow-hidden text-white">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="bg-brand-navy rounded-[4rem] p-16 lg:p-24 relative overflow-hidden text-white shadow-3xl">
+            <div className="absolute top-0 left-0 w-64 h-64 bg-brand-green/10 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2" />
+            <div className="grid lg:grid-cols-2 gap-24 items-center">
               <div>
-                <div className="inline-flex items-center space-x-2 bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-[10px] font-normal uppercase tracking-widest mb-6 border border-blue-500/30">
+                <div className="inline-flex items-center gap-3 bg-white/5 text-brand-green px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest mb-10 border border-white/10 backdrop-blur-md flex-row-reverse">
                   <Zap className="h-4 w-4" />
-                  <span>The Native Action Protocol</span>
+                  <span>بروتوكول العمل الأصلي</span>
                 </div>
-                <h2 className="text-4xl md:text-6xl font-normal mb-8 leading-tight tracking-tight">
-                  Native <br />
-                  <span className="text-blue-400">Transactions.</span>
+                <h2 className="text-5xl md:text-8xl font-black mb-10 leading-[0.85] tracking-tighter uppercase">
+                  معـاملات <br />
+                  <span className="text-brand-green">أصـلـية.</span>
                 </h2>
-                <p className="text-xl text-gray-400 mb-10 leading-relaxed font-normal">
-                  Social algorithms penalize off-platform links. We build <span className="text-white font-normal">Closed Loop Ecosystems</span> using DM automation and native checkouts so you monetize users without fighting the algorithm.
+                <p className="text-2xl text-slate-400 mb-12 leading-relaxed font-bold">
+                  خوارزميات التواصل الاجتماعي تعاقب الروابط الخارجية. نحن نبني <span className="text-white">أنظمة بيئية مغلقة</span> باستخدام أتمتة الرسائل المباشرة والدفع الأصلي حتى تتمكن من تسييل المستخدمين دون محاربة الخوارزمية.
                 </p>
-                <div className="flex flex-wrap gap-8 text-center sm:text-left mb-10">
+                <div className="flex flex-wrap gap-12 text-center sm:text-right mb-16 flex-row-reverse justify-end">
                   <div>
-                    <div className="text-3xl font-normal text-white tracking-tight uppercase">10x</div>
-                    <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest text-center">Organic Reach Lift</p>
+                    <div className="text-4xl font-black text-white tracking-tighter uppercase group-hover:text-brand-green transition-colors">10x</div>
+                    <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest text-center">رفع الوصول العضوي</p>
                   </div>
                   <div>
-                    <div className="text-3xl font-normal text-white tracking-tight uppercase">14 Days</div>
-                    <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest text-center">Launch Velocity</p>
+                    <div className="text-4xl font-black text-white tracking-tighter uppercase group-hover:text-brand-green transition-colors">14 يوماً</div>
+                    <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest text-center">سرعة الإطلاق</p>
                   </div>
                   <div>
-                    <div className="text-3xl font-normal text-white tracking-tight uppercase">Zero</div>
-                    <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest text-center">Platform Exits</p>
+                    <div className="text-4xl font-black text-white tracking-tighter uppercase group-hover:text-brand-green transition-colors">صفر</div>
+                    <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest text-center">خروج من المنصة</p>
                   </div>
                 </div>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center bg-white text-gray-900 px-10 py-5 rounded-xl hover:bg-blue-600 hover:text-white transition-all font-normal uppercase tracking-widest text-xs shadow-sm"
+                  className="inline-flex items-center gap-4 bg-brand-green text-brand-navy px-12 py-6 rounded-full hover:scale-105 transition-all font-black uppercase tracking-widest text-[10px] shadow-2xl shadow-brand-green/20 group"
                 >
-                  Build Native Ecosystem
-                  <ArrowRight className="ml-3 h-5 w-5" />
+                  بناء نظام بيئي أصلي
+                  <ArrowLeft className="h-5 w-5 group-hover:-translate-x-2 transition-transform" />
                 </Link>
               </div>
               <div className="relative group">
-                <div className="absolute -inset-4 bg-blue-500/20 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="relative bg-white/5 border border-white/10 rounded-[3rem] p-10 backdrop-blur-sm">
-                  <div className="space-y-6">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                        <DollarSign className="h-6 w-6 text-blue-400" />
+                <div className="absolute -inset-4 bg-brand-green/10 rounded-[4rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="relative bg-white/5 border border-white/10 rounded-[4rem] p-12 backdrop-blur-md">
+                  <div className="space-y-10">
+                    <div className="flex items-center gap-6 flex-row-reverse">
+                      <div className="w-16 h-16 bg-brand-green/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <DollarSign className="h-8 w-8 text-brand-green" />
                       </div>
-                      <div>
-                        <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest letter-spacing-widest">Revenue Protocol</p>
-                        <p className="text-sm font-normal text-white">Native App Checkout Integration</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                        <Users className="h-6 w-6 text-blue-400" />
-                      </div>
-                      <div>
-                        <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest">Community Hub</p>
-                        <p className="text-sm font-normal text-white">ManyChat DM Conversions</p>
+                      <div className="text-right">
+                        <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">بروتوكول الإيرادات</p>
+                        <p className="text-lg font-black text-white tracking-tighter">تكامل الدفع الأصلي داخل التطبيق</p>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-                        <Cpu className="h-6 w-6 text-blue-400" />
+                    <div className="flex items-center gap-6 flex-row-reverse">
+                      <div className="w-16 h-16 bg-brand-green/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <Users className="h-8 w-8 text-brand-green" />
                       </div>
-                      <div>
-                        <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest">AI Logistics</p>
-                        <p className="text-sm font-normal text-white">Automated Lead Qualification</p>
+                      <div className="text-right">
+                        <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">مركز المجتمع</p>
+                        <p className="text-lg font-black text-white tracking-tighter">تحويلات ManyChat المباشرة</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-6 flex-row-reverse">
+                      <div className="w-16 h-16 bg-brand-green/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                        <Cpu className="h-8 w-8 text-brand-green" />
+                      </div>
+                      <div className="text-right">
+                        <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">لوجستيات AI</p>
+                        <p className="text-lg font-black text-white tracking-tighter">تأهيل العملاء المحتملين تلقائياً</p>
                       </div>
                     </div>
                   </div>
@@ -330,39 +334,39 @@ export default function SocialMediaPage() {
       </section>
 
       {/* Performance Metrics */}
-      <section className="py-24 bg-gray-900 text-white">
+      <section className="py-32 bg-brand-navy text-white border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
             {[
-              { label: 'Search Discovery Rate', value: '340%+', icon: TrendingUp },
-              { label: 'AI Citation Rank', value: 'Top 1%', icon: Search },
-              { label: 'On-Platform Actions', value: '10k+', icon: Users },
-              { label: 'Feed Retention', value: 'High', icon: Shield }
+              { label: 'معدل اكتشاف البحث', value: '+340%', icon: TrendingUp },
+              { label: 'تصنيف استشهاد AI', value: 'الأفضل 1%', icon: Search },
+              { label: 'إجراءات داخل المنصة', value: '10k+', icon: Users },
+              { label: 'استبقاء التغذية', value: 'عالٍ', icon: Shield }
             ].map(stat => (
-              <div key={stat.label} className="p-8 border border-white/10 rounded-[2.5rem] bg-white/5 hover:border-blue-500 transition-colors group">
-                <stat.icon className="h-8 w-8 text-blue-400 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                <div className="text-4xl font-normal mb-2 tracking-tight uppercase leading-none">{stat.value}</div>
-                <p className="text-[10px] font-normal text-gray-500 uppercase tracking-widest leading-none">{stat.label}</p>
+              <div key={stat.label} className="p-10 border border-white/10 rounded-[3rem] bg-white/5 hover:border-brand-green transition-all group">
+                <stat.icon className="h-10 w-10 text-brand-green mx-auto mb-8 group-hover:scale-110 transition-transform" />
+                <div className="text-5xl font-black mb-3 tracking-tighter uppercase leading-none">{stat.value}</div>
+                <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] leading-none">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-blue-600 relative overflow-hidden">
+      {/* Final CTA Strip */}
+      <section className="py-40 bg-brand-green relative overflow-hidden text-center">
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-          <h2 className="text-4xl md:text-6xl font-normal text-white mb-8 tracking-tight">Scale Your Discoverability.</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto font-normal">
-            Stop interrupting people. Start being the solution they're already searching for on Instagram, TikTok, and YouTube.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h2 className="text-6xl md:text-9xl font-black text-brand-navy mb-12 tracking-tighter uppercase leading-[0.85]">قـم بتوسيع <br /> قـدرة الاكتشـاف.</h2>
+          <p className="text-2xl text-brand-navy/70 mb-16 max-w-2xl mx-auto font-bold leading-relaxed">
+            توقف عن مقاطعة الناس. ابدأ بكونك الحل الذي يبحثون عنه بالفعل على Instagram و TikTok و YouTube.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-white text-blue-600 px-12 py-6 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest shadow-sm"
+            className="inline-flex items-center bg-brand-navy text-white px-16 py-8 rounded-full hover:scale-105 transition-all font-black uppercase tracking-widest text-[10px] shadow-3xl shadow-brand-navy/20 gap-4"
           >
-            Initiate Strategy
-            <ArrowRight className="ml-3 h-6 w-6" />
+            بدء الاستراتيجية الآن
+            <ArrowLeft className="h-6 w-6 text-brand-green" />
           </Link>
         </div>
       </section>

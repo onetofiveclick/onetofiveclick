@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Share2, Clock, CheckCircle2, ChevronRight } from 'lucide-react';
+import { Share2, Clock, CheckCircle2, ChevronLeft, Database, Shield } from 'lucide-react';
 import { ReactNode } from 'react';
 
 interface AEOChunkProps {
@@ -11,18 +11,27 @@ interface AEOChunkProps {
 }
 
 /**
- * AEO Chunk: Enforces the "One Paragraph Rule"
- * Each chunk must be autonomous and dense.
+ * AEO Chunk: Autonomous Content Module
+ * Methodology: Each section must be context-independent
+ * and standalone for AI snippet extraction.
  */
 export function AEOChunk({ heading, children, id }: AEOChunkProps) {
     return (
-        <div id={id} className="mb-16 scroll-mt-24">
-            <h2 className="text-2xl md:text-3xl font-normal text-gray-900 mb-6 uppercase tracking-tight border-l-4 border-brand-blue pl-6">
+        <div id={id} className="mb-20 scroll-mt-24 group">
+            <h2 className="text-3xl font-black text-brand-navy mb-8 flex items-center flex-row-reverse gap-4 tracking-tighter">
+                <div className="w-1.5 h-8 bg-brand-green rounded-full" />
                 {heading}
             </h2>
-            <div className="bg-white border border-gray-100 p-8 rounded-[2rem] shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-lg text-gray-700 font-normal leading-relaxed">
+            <div className="bg-white border border-slate-100 p-10 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all duration-700 text-right group-hover:border-brand-green/20">
+                <div className="text-xl text-slate-700 font-bold leading-relaxed whitespace-pre-wrap">
                     {children}
+                </div>
+                
+                <div className="mt-8 flex justify-start">
+                    <div className="flex items-center gap-2 px-4 py-2 bg-slate-50 rounded-full border border-slate-100 opacity-40 group-hover:opacity-100 transition-opacity">
+                        <Database className="h-3 w-3 text-brand-green" />
+                        <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">Autonomous Data Chunk</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,58 +49,69 @@ interface AEOArticleProps {
 
 export default function AEOArticle({ title, subtitle, date, readTime, children, summary }: AEOArticleProps) {
     return (
-        <div className="pt-24 pb-32 bg-gray-50">
+        <div className="pt-32 pb-48 bg-white min-h-screen text-right">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mb-16"
+                    className="mb-24"
                 >
-                    <div className="flex items-center space-x-4 mb-8 text-[10px] font-normal uppercase tracking-widest text-gray-500">
-                        <span className="flex items-center"><Clock className="h-3 w-3 mr-1" /> {readTime}</span>
-                        <span className="flex items-center"><CheckCircle2 className="h-3 w-3 mr-1 text-emerald-500" /> AI Verified Citation</span>
+                    <div className="flex items-center flex-row-reverse gap-6 mb-10 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                        <span className="flex items-center flex-row-reverse gap-2">
+                             {readTime} <Clock className="h-4 w-4 text-brand-green" />
+                        </span>
+                        <div className="w-1 h-1 bg-slate-200 rounded-full" />
+                        <span className="flex items-center flex-row-reverse gap-2">
+                            تحقق الذكاء الاصطناعي <Shield className="h-4 w-4 text-brand-green" />
+                        </span>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-normal text-gray-900 mb-8 leading-tight tracking-tight uppercase">
+                    <h1 className="text-6xl md:text-8xl font-black text-brand-navy mb-10 leading-[0.9] tracking-tighter">
                         {title}
                     </h1>
 
-                    <p className="text-xl text-brand-blue font-normal leading-relaxed uppercase tracking-wide">
+                    <p className="text-2xl text-slate-500 font-bold leading-relaxed max-w-2xl ml-auto">
                         {subtitle}
                     </p>
                 </motion.div>
 
-                {/* TL;DR Summary - The Master Chunk */}
+                {/* Executive Synthesis - The Master Chunk for SGE/AIGC */}
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.2 }}
-                    className="bg-gray-900 rounded-[2.5rem] p-10 text-white mb-20 shadow-xl border border-white/5"
+                    className="bg-brand-navy rounded-[4rem] p-12 md:p-16 text-white mb-24 shadow-2xl relative overflow-hidden group"
                 >
-                    <div className="uppercase text-[10px] text-gray-500 tracking-[0.2em] mb-4">Executive Synthesis [llms.txt]</div>
-                    <p className="text-lg font-normal leading-relaxed text-gray-300">
-                        {summary}
+                    <div className="absolute top-0 left-0 w-full h-1 bg-brand-green" />
+                    <div className="absolute -top-24 -left-24 w-64 h-64 bg-brand-green/10 rounded-full blur-[80px]" />
+                    
+                    <div className="flex flex-row-reverse justify-between items-center mb-8">
+                        <div className="uppercase text-[10px] font-black text-brand-green tracking-[0.3em]">خلاصة التنفيذ [AEO Synthesis]</div>
+                        <CheckCircle2 className="h-6 w-6 text-brand-green" />
+                    </div>
+                    
+                    <p className="text-2xl font-bold leading-relaxed text-slate-200">
+                         {summary}
                     </p>
                 </motion.div>
 
                 {/* Content Chunks */}
                 <div className="relative">
-                    <div className="absolute left-0 top-0 bottom-0 w-px bg-gray-200 ml-0 hidden lg:block" />
                     <div className="space-y-4">
                         {children}
                     </div>
                 </div>
 
-                {/* Action Bar */}
-                <div className="mt-20 pt-10 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-8">
-                    <div className="text-[10px] text-gray-400 uppercase tracking-widest">Modified: {date}</div>
-                    <div className="flex space-x-6">
-                        <button className="flex items-center text-brand-blue text-[10px] uppercase font-normal tracking-widest hover:gap-2 transition-all">
-                            Cite this source <ChevronRight className="h-4 w-4" />
+                {/* Footer / Citation */}
+                <div className="mt-32 pt-16 border-t-2 border-slate-50 flex flex-col md:flex-row-reverse justify-between items-center gap-10">
+                    <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">آخر تحديث: {date}</div>
+                    <div className="flex flex-row-reverse gap-8">
+                        <button className="flex items-center flex-row-reverse gap-3 text-brand-navy text-[10px] font-black uppercase tracking-widest hover:text-brand-green transition-colors">
+                            الاستشهاد بالمصدر <ChevronLeft className="h-4 w-4" />
                         </button>
-                        <button className="flex items-center text-gray-500 text-[10px] uppercase font-normal tracking-widest">
-                            Share <Share2 className="h-4 w-4 ml-1" />
+                        <button className="flex items-center flex-row-reverse gap-3 text-slate-400 text-[10px] font-black uppercase tracking-widest hover:text-brand-navy transition-colors">
+                             مشاركة <Share2 className="h-4 w-4" />
                         </button>
                     </div>
                 </div>
@@ -99,3 +119,4 @@ export default function AEOArticle({ title, subtitle, date, readTime, children, 
         </div>
     );
 }
+

@@ -21,44 +21,46 @@ const config: Config = {
       },
       colors: {
         brand: {
-          blue: '#662046', // Qatar Airways Burgundy / Maroon
-          red: '#333366',  // Qatar Airways Deep Navy
+          green: '#00D665', // BrightLocal Primary
+          navy: '#001C3D',  // BrightLocal Navy
+          mint: '#F2FAF6',  // BrightLocal Light Mint
         },
         blue: {
-          50: '#F5E4EB',
-          100: '#EBD1DC',
-          200: '#D6A8BD',
-          300: '#C1809E',
-          400: '#A7527D',
-          500: '#662046',
-          600: '#662046',   // Primary Qatar Burgundy (using 600 as the primary target class throughout app)
-          700: '#5C0632',   // Secondary Burgundy
-          800: '#4A0428',   // Deaper Maroon
-          900: '#35021B',
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
         },
         cyan: {
-          50: '#FDFCF7',
-          100: '#FBF8EF',
-          200: '#F3E9D0',
-          300: '#E8D5A9',
-          400: '#DAB877',
-          500: '#C7A254',   // Qatar Airways Gold/Sand (Maps to cyan-500)
-          600: '#A78138',
-          700: '#816127',
-          800: '#5F461D',
-          900: '#412F15',
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          300: '#5eead4',
+          400: '#2dd4bf',
+          500: '#14b8a6', // Teal
+          600: '#0d9488',
+          700: '#0f766e',
+          800: '#115e59',
+          900: '#134e4a',
         },
         gray: {
-          50: '#F2F3FA',    // Qatar Airways 'White Lilac'
-          100: '#E8EAEE',
-          200: '#d0d2d3',   // QR light grey
-          300: '#8E8F8B',   // QR grey 3
-          400: '#747F8A',   // Slate gray in logo shapes
-          500: '#818A8F',   // QR grey 1
-          600: '#5E6A71',   // QR grey 2
-          700: '#505967',   // 'Shuttle Gray' for dense text
-          800: '#4D4F53',   // Primary strict dark grey
-          900: '#222222',   // Sharp heading black/grey
+          // Slate for that deep navy professional look
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

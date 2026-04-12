@@ -20,7 +20,8 @@ import {
   Activity,
   Layers,
   Sparkles,
-  Search
+  Search,
+  ArrowLeft
 } from 'lucide-react';
 import {
   Accordion,
@@ -31,97 +32,98 @@ import {
 
 const features = [
   {
-    title: 'Executive Ghostwriting',
-    description: 'We capture your unique voice and turn your industry expertise into high-converting LinkedIn content.',
+    title: 'الكتابة الشبحية التنفيذية',
+    description: 'نحن نلتقط صوتك الفريد ونحول خبرتك في الصناعة إلى محتوى LinkedIn عالي التحويل.',
     icon: PenTool
   },
   {
-    title: 'B2B Lead Generation',
-    description: 'Transform organic engagement into qualified sales calls through strategic DM outreach and profiling.',
+    title: 'توليد عملاء B2B',
+    description: 'تحويل المشاركة العضوية إلى مكالمات مبيعات مؤهلة من خلال الرسائل المباشرة الاستراتيجية والتحليل.',
     icon: Target
   },
   {
-    title: 'Authority Newsletters',
-    description: 'Build a direct-to-human owned audience with deep-dive technical and strategic newsletters.',
+    title: 'رسائل إخبارية مرجعية',
+    description: 'بناء جمهور مملوك ومباشر من خلال رسائل إخبارية فنية واستراتيجية متعمقة.',
     icon: BookOpen
   },
   {
-    title: 'Founder Branding',
-    description: 'Position leadership as the undeniable voice of the industry, creating an inbound gravity well.',
+    title: 'العلامة التجارية للمؤسس',
+    description: 'وضع القيادة كصوت لا غنى عنه في الصناعة، مما يخلق بئر جاذبية للطلبات الواردة.',
     icon: Briefcase
   },
   {
-    title: 'Community Building',
-    description: 'Foster genuine conversations and relationships within your B2B ecosystem.',
+    title: 'بناء المجتمع',
+    description: 'تعزيز المحادثات والعلاقات الحقيقية داخل النظام البيئي الخاص بـ B2B.',
     icon: Users
   },
   {
-    title: 'Conversion Copywriting',
-    description: 'Sales pages, funnels, and VSL scripts that leverage psychological triggers to close high-ticket deals.',
+    title: 'كتابة نصوص التحويل',
+    description: 'صفحات المبيعات، والمسارات، ونصوص VSL التي تستفيد من المحفزات النفسية لإغلاق الصفقات الكبيرة.',
     icon: MessageSquare
   }
 ];
 
 const faqs = [
   {
-    question: 'Why focus on LinkedIn and Executive Branding?',
-    answer: 'In 2026, B2B buyers don\'t trust corporate logos—they trust people. Founders and executives who build personal brands command higher prices, attract better talent, and close deals faster. It\'s the ultimate organic leverage.'
+    question: 'لماذا التركيز على LinkedIn والعلامة التجارية التنفيذية؟',
+    answer: 'في عام 2026، لا يثق مشتري B2B بشعارات الشركات، بل يثقون في الأشخاص. المؤسسون والمديرين التنفيذيين الذين يبنون علامات تجارية شخصية يحصلون على أسعار أعلى، ويجذبون مواهب أفضل، ويغلقون الصفقات بشكل أسرع. إنها الرافعة العضوية القصوى.'
   },
   {
-    question: 'How do you capture my voice as a founder?',
-    answer: 'We don\'t use templates. We conduct deep-dive interviews, analyze your past communications, and use proprietary frameworks to extract your unique perspective, ensuring every post sounds exactly like you—just more refined.'
+    question: 'كيف تلتقط صوتي كمؤسس؟',
+    answer: 'نحن لا نستخدم القوالب. نقوم بإجراء مقابلات متعمقة، ونحلل اتصالاتك السابقة، ونستخدم أطر عمل ملكية لاستخراج منظورك الفريد، مما يضمن أن كل منشور يبدو مثلك تماماً—ولكن بشكل أكثر تهذيباً.'
   },
   {
-    question: 'How long does it take to see inbound leads?',
-    answer: 'While authority builds over time, our strategic outreach and high-signal content typically generate the first qualified inbound conversations within 45 to 60 days of consistent execution.'
+    question: 'كم من الوقت يستغرق رؤية العملاء الواردين؟',
+    answer: 'بينما تبنى السلطة بمرور الوقت، فإن تواصلنا الاستراتيجي ومحتوانا عالي الإشارة يولد عادةً أولى محادثات المبيعات المؤهلة في غضون 45 إلى 60 يوماً من التنفيذ المتواصل.'
   },
   {
-    question: 'Do you guarantee viral posts?',
-    answer: 'No. "Going viral" to unqualified audiences is a vanity metric. We guarantee high-signal engagement from decision-makers in your target market. Revenue over reach.'
+    question: 'هل تضمنون المنشورات الفيروسية؟',
+    answer: 'لا. "الانتشار الفيروسي" لجمهور غير مؤهل هو مقياس للغرور. نحن نضمن مشاركة عالية الإشارة من صناع القرار في سوقك المستهدف. الإيرادات أهم من الوصول.'
   },
   {
-    question: 'How much time do I need to commit?',
-    answer: 'As a founder, your time is your most valuable asset. We require just 60 minutes of your time per month for a strategic brain-dump. We handle the 99% of execution, writing, and community management.'
+    question: 'كم من الوقت أحتاج للالتزام به؟',
+    answer: 'كمؤسس، وقتك هو أغلى أصل تملكه. نحن نحتاج فقط إلى 60 دقيقة من وقتك شهرياً لتفريغ المعلومات الاستراتيجي. نحن نتولى 99% من التنفيذ والكتابة وإدارة المجتمع.'
   }
 ];
 
 export default function ContentWritingPage() {
   return (
-    <div className="pt-16 overflow-hidden">
+    <div className="pt-24 bg-white overflow-hidden text-right">
       {/* Hero Section */}
-      <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-white py-32 lg:py-48 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-blue/5 via-transparent to-brand-red/5" />
-        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-blue/10 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-brand-red/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-brand-navy/5 via-transparent to-brand-green/5" />
+        <div className="absolute top-1/4 -right-20 w-96 h-96 bg-brand-navy/10 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-brand-green/10 rounded-full blur-[120px] animate-pulse" />
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center space-x-2 bg-brand-blue/5 text-brand-blue px-5 py-2 rounded-full text-xs font-normal mb-10 border border-brand-blue/10">
-                <div className="w-2 h-2 bg-brand-blue rounded-full animate-pulse" />
-                <span>B2B Organic & Executive Branding</span>
+              <div className="inline-flex items-center gap-3 bg-brand-navy/5 text-brand-navy px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-12 border border-brand-navy/10 backdrop-blur-sm">
+                <div className="w-2 h-2 bg-brand-navy rounded-full animate-pulse" />
+                <span>أفضل تسويق عضوي لـ B2B في السعودية والعلامة التجارية للمؤسسين</span>
               </div>
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-normal text-gray-900 mb-8 leading-tight">
-                People Buy From <br />
-                <span className="text-brand-blue">People.</span>
+              <h1 className="text-6xl md:text-9xl font-black text-brand-navy mb-8 leading-[0.85] tracking-tighter">
+                الناس يشترون <br />
+                <span className="text-brand-green uppercase">من الناس في المملكة.</span>
               </h1>
-              <p className="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed font-normal max-w-2xl mx-auto">
-                The silent goldmine of 2026. We turn founders into industry <span className="text-gray-900 font-normal">Monopolies</span> through high-signal LinkedIn authority and written organic ecosystems.
+              <p className="text-xl md:text-2xl text-slate-500 mb-16 leading-relaxed font-bold max-w-2xl mx-auto">
+                منجم الذهب الصامت لعام 2026 في السعودية. نحن نحول المؤسسين في الرياض وجدة إلى <span className="text-brand-navy underline transition-colors hover:text-brand-green cursor-pointer uppercase">احتكارات</span> في مجالهم من خلال سلطة LinkedIn عالية الإشارة والأنظمة البيئية العضوية المكتوبة.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center bg-brand-blue text-white px-10 py-4 rounded-lg hover:brightness-110 transition-all font-normal text-lg group"
+                  className="inline-flex items-center justify-center bg-brand-navy text-white px-12 py-6 rounded-full hover:scale-105 transition-all font-black text-[10px] uppercase tracking-widest shadow-2xl shadow-brand-navy/20 group gap-3"
                 >
-                  Become The Authority
-                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                  كن السلطة المرجعية
+                  <ArrowLeft className="h-5 w-5 group-hover:-translate-x-2 transition-transform text-brand-green" />
                 </Link>
-                <div className="text-gray-500 font-normal text-sm">
-                  *Limited to Founders doing $1M+
+                <div className="text-slate-400 font-bold text-sm">
+                  *مقتصر على المؤسسين الذين يحققون +1M$
                 </div>
               </div>
             </motion.div>
@@ -129,41 +131,41 @@ export default function ContentWritingPage() {
         </div>
       </section>
 
-      {/* The Gold Rush Concept */}
-      <section className="py-24 bg-gray-50 overflow-hidden border-y border-gray-100 relative">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-orange-100 blur-[100px] opacity-50" />
+      {/* Trust Deficit Concept */}
+      <section className="py-32 bg-slate-50 overflow-hidden border-y border-slate-100 relative">
+        <div className="absolute top-0 left-0 w-1/3 h-full bg-brand-mint/30 blur-[100px] -translate-x-1/2" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-normal text-gray-900 uppercase tracking-tight leading-tight mb-6">
-                The B2B <br />
-                <span className="text-blue-600">Trust Deficit.</span>
+          <div className="grid lg:grid-cols-2 gap-24 items-center">
+            <div className="text-right">
+              <h2 className="text-5xl md:text-7xl font-black text-brand-navy uppercase tracking-tighter leading-tight mb-8">
+                عجز الثقة <br />
+                <span className="text-brand-green">في B2B.</span>
               </h2>
-              <p className="text-lg text-gray-600 mb-6 font-normal leading-relaxed">
-                In a world drowning in AI-generated fluff and automated sales pitches, trust is at an all-time low. Decision-makers don't read generic blog posts or reply to automated cold emails anymore.
+              <p className="text-xl text-slate-500 mb-8 font-bold leading-relaxed">
+                في عالم يغرق في الحشو الناتج عن الذكاء الاصطناعي وعروض المبيعات المؤتمتة، بلغت الثقة أدنى مستوياتها على الإطلاق. صناع القرار لم يعودوا يقرؤون منشورات المدونات العامة أو يردون على رسائل البريد الباردة المؤتمتة.
               </p>
-              <p className="text-lg text-gray-600 mb-8 font-normal leading-relaxed">
-                They buy from <span className="text-gray-900 font-normal">Founders they know, like, and trust.</span> By strategically commanding your personal brand on LinkedIn and across targeted newsletters, you build an inbound engine that rivals costly ad campaigns.
+              <p className="text-xl text-slate-500 mb-12 font-bold leading-relaxed">
+                هم يشترون من <span className="text-brand-navy underline">المؤسسين الذين يعرفونهم ويحبونهم ويثقون بهم.</span> من خلال قيادة علامتك التجارية الشخصية استراتيجياً على LinkedIn وعبر النشرات الإخبارية المستهدفة، يمكنك بناء محرك وارد ينافس الحملات الإعلانية المكلفة.
               </p>
-              <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm w-max">
-                <Award className="h-8 w-8 text-blue-600" />
-                <div>
-                  <div className="text-xl font-normal text-gray-900 uppercase tracking-tight">"Sell Shovels"</div>
-                  <div className="text-[10px] font-normal text-gray-500 uppercase tracking-widest text-center">Provide absolute authority</div>
+              <div className="flex items-center gap-6 bg-white p-6 rounded-3xl border border-slate-100 shadow-xl w-max mr-0 ml-auto flex-row-reverse">
+                <Award className="h-10 w-10 text-brand-green" />
+                <div className="text-right">
+                  <div className="text-2xl font-black text-brand-navy uppercase tracking-tighter">"بيـع المغاريف"</div>
+                  <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest">توفير سلطة مطلقة</div>
                 </div>
               </div>
             </div>
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-8">
               {[
-                { metric: "300%", label: "Higher Conversion Rate vs Brand Pages", icon: TrendingUp },
-                { metric: "Zero", label: "Ad Spend Required for Inbound Deals", icon: BarChart },
-                { metric: "Top 1%", label: "Positioning in Your Industry Niche", icon: Target },
-                { metric: "7+", label: "Decision Layers Bypassed via Trust", icon: Network }
+                { metric: "300%", label: "معدل تحويل أعلى مقابل صفحات العلامة التجارية", icon: TrendingUp },
+                { metric: "صفر", label: "إنفاق إعلاني مطلوب للصفقات الواردة", icon: BarChart },
+                { metric: "الأفضل 1%", label: "التموضع في تخصصك الصناعي", icon: Target },
+                { metric: "+7", label: "تجاوز طبقات القرار عبر الثقة", icon: Network }
               ].map((stat, i) => (
-                <div key={i} className="bg-white p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:border-blue-200 transition-all">
-                  <stat.icon className="h-8 w-8 text-blue-600 mb-6" />
-                  <div className="text-4xl font-normal text-gray-900 mb-2 tracking-tight">{stat.metric}</div>
-                  <div className="text-[10px] font-normal text-gray-500 uppercase tracking-widest leading-tight">{stat.label}</div>
+                <div key={i} className="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:border-brand-green transition-all group text-right">
+                  <stat.icon className="h-10 w-10 text-brand-green mb-8 group-hover:scale-110 transition-transform" />
+                  <div className="text-4xl font-black text-brand-navy mb-3 tracking-tighter">{stat.metric}</div>
+                  <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-tight">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -172,21 +174,21 @@ export default function ContentWritingPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-white">
+      <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-gray-900 uppercase tracking-tight mb-4">Authority Infrastructure</h2>
-            <p className="text-gray-500 font-normal uppercase tracking-widest text-sm">The Written Engines of 2026</p>
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-7xl font-black text-brand-navy uppercase tracking-tighter mb-4">بنية السلطة التحتية</h2>
+            <p className="text-[10px] text-brand-green font-black uppercase tracking-[0.3em]">محركات الكتابة لعام 2026</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {features.map((feature, index) => {
               const Icon = feature.icon || PenTool;
               return (
-                <div key={index} className="group bg-gray-50 rounded-[2.5rem] p-10 hover:border-blue-200 border border-gray-100 transition-all">
-                  <div className="w-16 h-1 bg-blue-600 mb-8 rounded-full" />
-                  <Icon className="h-8 w-8 text-blue-600 mb-6 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-2xl font-normal uppercase tracking-tight mb-4 leading-tight">{feature.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed font-normal">{feature.description}</p>
+                <div key={index} className="group bg-slate-50 rounded-[3.5rem] p-12 hover:border-brand-green border border-transparent transition-all text-right shadow-sm hover:shadow-2xl">
+                    <div className="w-20 h-1.5 bg-brand-green mb-10 rounded-full mr-0 ml-auto" />
+                    <Icon className="h-10 w-10 text-brand-navy mb-8 group-hover:scale-110 transition-transform group-hover:text-brand-green" />
+                    <h3 className="text-2xl font-black uppercase tracking-tighter mb-6 leading-tight text-brand-navy">{feature.title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed font-bold">{feature.description}</p>
                 </div>
               );
             })}
@@ -195,56 +197,56 @@ export default function ContentWritingPage() {
       </section>
 
       {/* Success Packages */}
-      <section className="py-24 bg-gray-900 text-white border-y border-white/10">
+      <section className="py-32 bg-brand-navy text-white border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-normal mb-4 uppercase tracking-tight leading-tight">Growth <span className="text-blue-400">Packages.</span></h2>
-            <p className="text-gray-400 font-normal uppercase tracking-widest text-sm">Engineered for Founders & Executives.</p>
+          <div className="text-center mb-24">
+            <h2 className="text-5xl md:text-9xl font-black mb-8 uppercase tracking-tighter leading-[0.85]">بـاقات <span className="text-brand-green">النمـو.</span></h2>
+            <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.3em]">مصممة للمؤسسين والمديرين التنفيذيين.</p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-12">
             {[
               {
-                name: 'Authority Base',
+                name: 'أساس السلطة',
                 price: '999',
-                desc: 'Establish your voice and dominate your industry niche with consistent, high-signal posting.',
-                features: ['12 High-Value LinkedIn Posts', 'Profile Optimization', 'Basic Comment Engagement', 'Monthly Analytics Review'],
+                desc: 'ثبت صوتك وسيطر على تخصصك الصناعي من خلال منشورات متسقة وعالية الإشارة.',
+                features: ['12 منشور LinkedIn عالي القيمة', 'تحسين الملف الشخصي', 'تفاعل تعليقات أساسي', 'مراجعة تحليلات شهرية'],
                 highlight: false
               },
               {
-                name: 'Inbound Engine',
+                name: 'المحرك الوارد',
                 price: '2,499',
-                desc: 'Our most popular protocol. Turn your brand into an automated lead generation machine.',
-                features: ['20 High-Signal LinkedIn Posts', 'Strategic DM Protocol (Sales)', 'Custom Newsletter (2x/mo)', 'Executive Positioning Strategy', 'Bi-Weekly Zoom Sync'],
+                desc: 'البروتوكول الأكثر شهرة لدينا. حول علامتك التجارية إلى آلة توليد عملاء مؤتمتة.',
+                features: ['20 منشور LinkedIn عالي الإشارة', 'بروتوكول رسائل مباشرة استراتيجي', 'نشرة إخبارية مخصصة (مرتين/شهر)', 'استراتيجية تموضع تنفيذية', 'مزامنة Zoom كل أسبوعين'],
                 highlight: true
               },
               {
-                name: 'The Monopoly',
+                name: 'الاحتكار',
                 price: '4,999',
-                desc: 'Absolute semantic and social dominance. You become the definitive voice of your industry.',
-                features: ['Daily Platform Domination', 'C-Suite Networking Protocol', 'Ghostwritten Viral Threads', 'Webinar/VSL Scripting', 'Priority 24/7 Access'],
+                desc: 'سيطرة دلالية واجتماعية مطلقة. تصبح الصوت القاطع في مجال عملك.',
+                features: ['سيطرة يومية على المنصات', 'بروتوكول شبكات C-Suite', 'سلاسل منشورات فيروسية مكتوبة', 'كتابة نصوص الويبينار/VSL', 'وصول ذو أولوية 24/7'],
                 highlight: false
               }
             ].map((pkg) => (
-              <div key={pkg.name} className={`relative p-10 rounded-[3rem] border transition-all duration-500 ${pkg.highlight ? 'bg-white text-gray-900 border-blue-600 shadow-sm scale-105 z-10' : 'bg-gray-800 border-white/10 hover:border-blue-500'}`}>
+              <div key={pkg.name} className={`relative p-12 rounded-[4rem] border transition-all duration-500 text-right ${pkg.highlight ? 'bg-white text-brand-navy border-brand-green shadow-3xl scale-105 z-10' : 'bg-white/5 border-white/10 hover:border-brand-green'}`}>
                 {pkg.highlight && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-5 py-1.5 rounded-full text-[10px] font-normal uppercase tracking-widest shadow-sm">
-                    Most Selected
+                  <div className="absolute -top-5 right-1/2 translate-x-1/2 bg-brand-green text-brand-navy px-8 py-2 rounded-full text-[10px] font-black uppercase tracking-widest shadow-xl">
+                    الأكثر طلباً
                   </div>
                 )}
-                <h3 className="text-2xl font-normal uppercase mb-4 leading-tight">{pkg.name}</h3>
-                <div className="flex items-baseline mb-8">
-                  <span className="text-2xl font-normal">$</span>
-                  <span className="text-6xl font-normal">{pkg.price}</span>
-                  <span className={`text-xs ml-2 font-normal uppercase tracking-widest ${pkg.highlight ? 'text-gray-500' : 'text-gray-400'}`}>/mo</span>
+                <h3 className="text-3xl font-black uppercase mb-6 leading-tight tracking-tighter">{pkg.name}</h3>
+                <div className="flex items-baseline mb-10 flex-row-reverse justify-end gap-3">
+                  <span className="text-2xl font-black text-brand-green transition-all">$</span>
+                  <span className="text-7xl font-black tracking-tighter leading-none">{pkg.price}</span>
+                  <span className={`text-[10px] font-black uppercase tracking-widest mr-2 ${pkg.highlight ? 'text-slate-400' : 'text-slate-500'}`}>/شهرياً</span>
                 </div>
 
-                <p className={`text-sm mb-10 leading-relaxed font-normal ${pkg.highlight ? 'text-gray-600' : 'text-gray-400'}`}>{pkg.desc}</p>
+                <p className={`text-sm mb-12 leading-relaxed font-bold ${pkg.highlight ? 'text-slate-500' : 'text-slate-400'}`}>{pkg.desc}</p>
 
-                <ul className="space-y-4 mb-12">
+                <ul className="space-y-6 mb-16">
                   {pkg.features.map(feat => (
-                    <li key={feat} className="flex items-start space-x-3 text-sm font-normal">
-                      <CheckCircle className={`h-5 w-5 flex-shrink-0 ${pkg.highlight ? 'text-blue-600' : 'text-blue-400'}`} />
+                    <li key={feat} className="flex items-start gap-4 text-sm font-bold flex-row-reverse justify-end">
+                      <CheckCircle className={`h-6 w-6 flex-shrink-0 ${pkg.highlight ? 'text-brand-green' : 'text-brand-green/50'}`} />
                       <span>{feat}</span>
                     </li>
                   ))}
@@ -252,9 +254,9 @@ export default function ContentWritingPage() {
 
                 <Link
                   href="/contact"
-                  className={`block w-full text-center py-5 rounded-xl font-normal uppercase tracking-widest text-xs transition-all ${pkg.highlight ? 'bg-blue-600 text-white hover:brightness-110' : 'bg-white/10 text-white hover:bg-blue-600'}`}
+                  className={`block w-full text-center py-6 rounded-full font-black uppercase tracking-widest text-[10px] transition-all shadow-xl ${pkg.highlight ? 'bg-brand-navy text-white hover:bg-brand-green hover:text-brand-navy' : 'bg-white/10 text-white hover:bg-brand-green hover:text-brand-navy'}`}
                 >
-                  Initiate Sync
+                  بدء المزامنة
                 </Link>
               </div>
             ))}
@@ -263,19 +265,19 @@ export default function ContentWritingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-white border-b border-gray-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-normal text-gray-900 mb-4 uppercase tracking-tight leading-tight">Foundational Logic</h2>
-            <p className="text-blue-600 font-normal uppercase tracking-widest text-[10px] text-center">Briefing Protocol</p>
+      <section className="py-32 bg-white border-b border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-7xl font-black text-brand-navy mb-6 uppercase tracking-tighter leading-tight">المنطق التأسيسي</h2>
+            <p className="text-brand-green font-black uppercase tracking-[0.3em] text-[10px] text-center">بروتوكول الإحاطة</p>
           </div>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-100">
-                <AccordionTrigger className="text-left py-6 text-lg font-normal text-gray-900 hover:text-blue-600 uppercase tracking-tight leading-tight">
+              <AccordionItem key={index} value={`item-${index}`} className="border-b border-slate-100 last:border-0 overflow-hidden rounded-3xl mb-4 bg-slate-50">
+                <AccordionTrigger className="text-right px-8 py-8 text-xl font-black text-brand-navy hover:text-brand-green uppercase tracking-tighter leading-tight hover:no-underline transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-500 leading-relaxed font-normal pb-6">
+                <AccordionContent className="text-slate-500 leading-relaxed font-bold px-8 pb-8 text-lg">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -284,20 +286,20 @@ export default function ContentWritingPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-blue-600 relative overflow-hidden">
+      {/* Final CTA */}
+      <section className="py-40 bg-brand-green relative overflow-hidden text-center">
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-          <h2 className="text-4xl md:text-6xl font-normal text-white mb-8 tracking-tight uppercase">Own The Narrative.</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto font-normal">
-            Stop competing on pricing and features. Shift the battlefield to trust and authority—the only assets AI can't replicate.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 className="text-5xl md:text-9xl font-black text-brand-navy mb-12 tracking-tighter uppercase leading-[0.85]">املك السرد <br /> الخاص بك.</h2>
+          <p className="text-xl text-brand-navy/70 mb-16 max-w-2xl mx-auto font-bold leading-relaxed">
+            توقف عن المنافسة على الأسعار والميزات. انقل ساحة المعركة إلى الثقة والسلطة—الأصول الوحيدة التي لا يمكن للذكاء الاصطناعي تقليدها.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center bg-white text-blue-600 px-12 py-6 rounded-xl hover:bg-gray-50 transition-all font-normal uppercase tracking-widest text-sm shadow-sm"
+            className="inline-flex items-center bg-brand-navy text-white px-16 py-8 rounded-full hover:scale-105 transition-all font-black uppercase tracking-widest text-[10px] shadow-3xl shadow-brand-navy/20 gap-4"
           >
-            Start Your Reign
-            <ArrowRight className="ml-3 h-6 w-6" />
+            ابدأ عهدك الآن
+            <ArrowLeft className="h-6 w-6 text-brand-green" />
           </Link>
         </div>
       </section>
