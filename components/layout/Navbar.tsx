@@ -11,6 +11,7 @@ const navigationLinks = [
   { name: 'الأدوات', href: '/tools/' },
   { name: 'الخدمات', href: '/services/' },
   { name: 'خبراتنا', href: '/expertise/' },
+  { name: 'دراسات حالة', href: '/case-studies/' },
   { name: 'أعمالنا', href: '/portfolio/' },
 ];
 
