@@ -14,7 +14,7 @@ export default function AlRawdahDistrictPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click Al-Rawdah Riyadh | ون تو فايف كليك الروضة",
-            "image": "https://onetofiveclick.com/logo.png",
+            "image": "https://onetofiveclick.com/logo.svg",
             "url": "https://onetofiveclick.com/locations/riyadh/al-rawdah",
             "telephone": "+966 57 580 6733",
             "address": {

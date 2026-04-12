@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   },
   description: 'أداة AEO Generator من ون تو فايف كليك لتوليد المحتوى الذري وتحسين محركات الإجابة.',
   alternates: {
-    canonical: 'https://www.onetofiveclick.com/tools/aeo-generator/',
+    canonical: 'https://onetofiveclick.com/tools/aeo-generator/',
   },
 };
 

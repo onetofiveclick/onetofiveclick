@@ -14,7 +14,7 @@ export default function OlayaDistrictPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click Olaya Riyadh | ون تو فايف كليك العليا",
-            "image": "https://onetofiveclick.com/riyadh_digital_marketing_authority_1775799453369.png",
+            "image": "https://onetofiveclick.comhttps://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/riyadh/olaya",
             "telephone": "+966 57 580 6733",
             "address": {
@@ -35,8 +35,8 @@ export default function OlayaDistrictPage() {
       <section className="relative h-[70vh] flex items-center overflow-hidden bg-brand-navy">
         <div className="absolute inset-0 z-0 opacity-40">
            <div className="absolute inset-0 bg-gradient-to-l from-brand-navy to-transparent z-10" />
-           <img 
-            src="/riyadh_digital_marketing_authority_1775799453369.png" 
+           <img width="1200" height="800" 
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" 
             alt="حي العليا الرياض - مركز المال والأعمال"
             className="w-full h-full object-cover"
           />

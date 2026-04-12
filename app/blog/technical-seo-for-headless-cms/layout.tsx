@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: { absolute: 'السيو التقني لـ Headless CMS 2026 (Next.js & Contentful) | ون تو فايف كليك' },
   description: 'دليل المطورين والمسوقين لبناء مواقع خارقة السرعة، صديقة للذكاء الاصطناعي، ومثالية للسوق السعودي.',
   alternates: {
-    canonical: 'https://www.onetofiveclick.com/blog/technical-seo-for-headless-cms/',
+    canonical: 'https://onetofiveclick.com/blog/technical-seo-for-headless-cms/',
   },
 };
 

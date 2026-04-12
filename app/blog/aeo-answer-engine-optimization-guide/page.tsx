@@ -223,7 +223,7 @@ export default function AEOGuidePage() {
       name: 'ون تو فايف كليك',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://onetofiveclick.com/logo.png',
+        url: 'https://onetofiveclick.com/logo.svg',
       },
     },
     datePublished: '2026-04-11',

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'وكالة سيو في الرياض | سيطرة كاملة على نتائج البحث',
     description: 'تحسين محركات البحث المحلي وأتمتة العمليات للشركات في الرياض. رؤية 2030 تبدأ من هنا.',
-    images: ['https://onetofiveclick.com/riyadh_digital_marketing_authority_1775799453369.png'],
+    images: ['https://onetofiveclick.comhttps://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200'],
   }
 };
 

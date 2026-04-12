@@ -74,7 +74,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'ون تو فايف كليك',
               url: 'https://onetofiveclick.com',
-              logo: 'https://onetofiveclick.com/logo.png',
+              logo: 'https://onetofiveclick.com/logo.svg',
               description: 'أفضل وكالة تسويق رقمي في السعودية متخصصة في Next.js وتحسين محركات البحث المحلية (سيو) في الرياض وجدة.',
               email: 'team@onetofiveclick.com',
               contactPoint: {

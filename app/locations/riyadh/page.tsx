@@ -15,7 +15,7 @@ export default function RiyadhLocationPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click Riyadh | ون تو فايف كليك الرياض",
-            "image": "https://onetofiveclick.com/riyadh_digital_marketing_authority_1775799453369.png",
+            "image": "https://onetofiveclick.comhttps://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/riyadh",
             "telephone": "+966 57 580 6733",
             "address": {
@@ -34,8 +34,8 @@ export default function RiyadhLocationPage() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/riyadh_digital_marketing_authority_1775799453369.png" 
+          <img width="1200" height="800" 
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" 
             alt="الرياض - عاصمة التسويق الرقمي"
             className="w-full h-full object-cover"
           />

@@ -183,8 +183,8 @@ export default function ContactPage() {
       <section className="py-24 bg-brand-mint text-right">
         <div className="max-w-7xl mx-auto px-4">
             <div className="relative rounded-[4rem] overflow-hidden group shadow-2xl">
-                <img 
-                    src="/happy_marketing_professional_smiling_17757379273.png" 
+                <img width="1200" height="800" 
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200" 
                     alt="فريق دعم ون تو فايف كليك"
                     className="w-full h-[600px] object-cover"
                 />

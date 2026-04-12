@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: { absolute: 'الظهور في Google Discover 2026: استراتيجية الزيارات المليونية | ون تو فايف كليك' },
   description: 'كيف تقتحم واجهة هواتف ملايين السعوديين وتجعل محتواك ينتشر تلقائياً كالـ Viral دون انتظار بحث المستخدم.',
   alternates: {
-    canonical: 'https://www.onetofiveclick.com/blog/google-discover-visibility/',
+    canonical: 'https://onetofiveclick.com/blog/google-discover-visibility/',
   },
 };
 

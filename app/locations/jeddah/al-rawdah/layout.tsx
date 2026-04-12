@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: '1-5 Click - حي الروضة جدة | ون تو فايف كليك',
   description: 'خدمات سيو متخصصة لحي الروضة بجدة. نساعد الشركات التجارية في الروضة على الهيمنة على نتائج البحث المحلية.',
   alternates: {
-    canonical: 'https://www.onetofiveclick.com/locations/jeddah/al-rawdah/',
+    canonical: 'https://onetofiveclick.com/locations/jeddah/al-rawdah/',
   },
 };
 

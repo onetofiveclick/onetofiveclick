@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   },
   description: 'تسويق رقمي عالمي المستوى للشركات والمؤسسات في الحي الدبلوماسي بالرياض. خبرة في الوصول للجمهور الدولي والمحلي.',
   alternates: {
-    canonical: 'https://www.onetofiveclick.com/locations/riyadh/diplomatic-quarter/',
+    canonical: 'https://onetofiveclick.com/locations/riyadh/diplomatic-quarter/',
   },
 };
 

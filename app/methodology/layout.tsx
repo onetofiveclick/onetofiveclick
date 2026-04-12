@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: { absolute: 'منهجيتنا | ون تو فايف كليك' },
   description: 'كيف نعمل؟ اكتشف منهجية الـ 3 مراحل التي نستخدمها لرفع ترتيب المواقع وزيادة المبيعات بشكل مستدام.',
   alternates: {
-    canonical: 'https://www.onetofiveclick.com/methodology/',
+    canonical: 'https://onetofiveclick.com/methodology/',
   },
 };
 

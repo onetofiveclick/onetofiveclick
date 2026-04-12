@@ -15,7 +15,7 @@ export default function JeddahLocationPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click Jeddah | ون تو فايف كليك جدة",
-            "image": "https://onetofiveclick.com/jeddah_marketing_excellence_1775799895344.png",
+            "image": "https://onetofiveclick.comhttps://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/jeddah",
             "telephone": "+966 57 580 6733",
             "address": {
@@ -34,8 +34,8 @@ export default function JeddahLocationPage() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/jeddah_marketing_excellence_1775799895344.png" 
+          <img width="1200" height="800" 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
             alt="جدة - رائدة التسويق الرقمي على البحر الأحمر"
             className="w-full h-full object-cover"
           />

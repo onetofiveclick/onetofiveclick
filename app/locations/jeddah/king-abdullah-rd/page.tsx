@@ -14,7 +14,7 @@ export default function KingAbdullahRdPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click King Abdullah Rd Jeddah | ون تو فايف كليك طريق الملك عبدالله",
-            "image": "https://onetofiveclick.com/jeddah_marketing_excellence_1775799895344.png",
+            "image": "https://onetofiveclick.comhttps://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/jeddah/king-abdullah-rd",
             "telephone": "+966 57 580 6733",
             "address": {
@@ -35,8 +35,8 @@ export default function KingAbdullahRdPage() {
       <section className="relative h-[70vh] flex items-center overflow-hidden bg-brand-navy">
         <div className="absolute inset-0 z-0 opacity-40">
            <div className="absolute inset-0 bg-gradient-to-l from-brand-navy to-transparent z-10" />
-           <img 
-            src="/jeddah_marketing_excellence_1775799895344.png" 
+           <img width="1200" height="800" 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
             alt="طريق الملك عبدالله جدة - القلب التجاري"
             className="w-full h-full object-cover"
           />

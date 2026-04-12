@@ -120,7 +120,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     title: `${post.title} | ون تو فايف كليك`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://www.onetofiveclick.com/blog/${params.slug}/`,
+      canonical: `https://onetofiveclick.com/blog/${params.slug}/`,
     },
   };
 }

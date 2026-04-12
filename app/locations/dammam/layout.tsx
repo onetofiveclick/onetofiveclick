@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: '1-5 Click - الدمام والمنطقة الشرقية | ون تو فايف كليك',
   description: 'حلول تسويقية متكاملة وسيو صناعي مخصص لشركات الدمام، الخبر، والجبيل. نبني حضورك الرقمي لينافس عالمياً.',
   alternates: {
-    canonical: 'https://www.onetofiveclick.com/locations/dammam/',
+    canonical: 'https://onetofiveclick.com/locations/dammam/',
   },
 };
 
