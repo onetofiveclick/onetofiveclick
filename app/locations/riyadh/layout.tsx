@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'وكالة سيو في الرياض | سيطرة كاملة على نتائج البحث | 1-5 كليك',
   description: 'أفضل وكالة سيو وأتمتة أعمال في الرياض. نحن نساعد الشركات الكبرى في المملكة على السيطرة على نتائج البحث المحلية (GMB) وزيادة التحويلات باستخدام الذكاء الاصطناعي.',
   alternates: {
-    canonical: 'https://onetofiveclick.com/locations/riyadh',
+    canonical: 'https://onetofiveclick.com/locations/riyadh/',
   },
   openGraph: {
     title: 'وكالة سيو في الرياض | سيطرة كاملة على نتائج البحث',

@@ -5,7 +5,7 @@ import { FileText, ArrowLeft } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'شروط الاستخدام | ون تو فايف كليك',
   description: 'شروط وأحكام استخدام خدمات ون تو فايف كليك — الوكالة الرقمية المتخصصة في السوق السعودي.',
-  alternates: { canonical: 'https://onetofiveclick.com/terms' },
+  alternates: { canonical: 'https://onetofiveclick.com/terms/' },
   openGraph: {
     title: 'شروط الاستخدام | ون تو فايف كليك',
     description: 'الشروط والأحكام القانونية لاستخدام خدمات ون تو فايف كليك.',

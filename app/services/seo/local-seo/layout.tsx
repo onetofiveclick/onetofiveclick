@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: '/services/seo/local-seo',
+        canonical: '/services/seo/local-seo/',
     },
 };
 

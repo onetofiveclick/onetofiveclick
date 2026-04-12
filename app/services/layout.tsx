@@ -16,9 +16,6 @@ export const metadata: Metadata = {
     'تحسين محركات البحث السعودية',
     'وكالة تسويق الرياض'
   ],
-  alternates: {
-    canonical: 'https://onetofiveclick.com/services',
-  },
   openGraph: {
     title: 'خدمات التسويق الرقمي الاحترافية في السعودية',
     description: 'ارتقِ بعملك مع استراتيجيات التسويق الرقمي المتقدمة والسيو لعام 2026. نحن نضمن لك الظهور في النتائج الأولى في السعودية.',
@@ -26,6 +23,9 @@ export const metadata: Metadata = {
     siteName: 'ون تو فايف كليك',
     locale: 'ar_SA',
     type: 'website',
+  },
+  alternates: {
+    canonical: '/services/',
   },
 };
 

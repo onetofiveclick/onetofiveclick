@@ -14,7 +14,7 @@ export default function AshShatiDistrictPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click Ash-Shati Dammam | ون تو فايف كليك حي الشاطئ",
-            "image": "https://onetofiveclick.com/dammam_business_growth_1775799957205.png",
+            "image": "https://images.unsplash.com/photo-1541888941259-773a9417d741?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/dammam/ash-shati",
             "telephone": "+966XXXXXXXXX",
             "address": {
@@ -36,7 +36,7 @@ export default function AshShatiDistrictPage() {
         <div className="absolute inset-0 z-0 opacity-40">
            <div className="absolute inset-0 bg-gradient-to-l from-brand-navy to-transparent z-10" />
            <img 
-            src="/dammam_business_growth_1775799957205.png" 
+            src="https://images.unsplash.com/photo-1541888941259-773a9417d741?auto=format&fit=crop&q=80&w=1200" 
             alt="حي الشاطئ الدمام - بوابة الشرق الرقمية"
             className="w-full h-full object-cover"
           />

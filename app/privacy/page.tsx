@@ -5,7 +5,7 @@ import { Shield, ArrowLeft } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'سياسة الخصوصية | ون تو فايف كليك',
   description: 'سياسة الخصوصية لشركة ون تو فايف كليك — كيف نجمع بياناتك ونحميها ونستخدمها في السوق السعودي.',
-  alternates: { canonical: 'https://onetofiveclick.com/privacy' },
+  alternates: { canonical: 'https://onetofiveclick.com/privacy/' },
   openGraph: {
     title: 'سياسة الخصوصية | ون تو فايف كليك',
     description: 'كيف تحمي ون تو فايف كليك بياناتك الشخصية والتجارية.',

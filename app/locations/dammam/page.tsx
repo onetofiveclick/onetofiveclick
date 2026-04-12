@@ -14,7 +14,7 @@ export default function DammamLocationPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click Dammam | ون تو فايف كليك الدمام",
-            "image": "https://onetofiveclick.com/dammam_business_growth_1775799957205.png",
+            "image": "https://images.unsplash.com/photo-1541888941259-773a9417d741?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/dammam",
             "telephone": "+966XXXXXXXXX",
             "address": {
@@ -34,7 +34,7 @@ export default function DammamLocationPage() {
       <section className="relative h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/dammam_business_growth_1775799957205.png" 
+            src="https://images.unsplash.com/photo-1541888941259-773a9417d741?auto=format&fit=crop&q=80&w=1200" 
             alt="الدمام - قلب الصناعة والتسويق الرقمي"
             className="w-full h-full object-cover"
           />

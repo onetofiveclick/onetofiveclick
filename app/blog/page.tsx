@@ -8,13 +8,33 @@ import { Calendar, User, ArrowRight, Search, ArrowLeft } from 'lucide-react';
 
 const blogPosts = [
     {
+        id: 164,
+        title: 'دليل السيو لعام 2026: عصر الكيانات والوكلاء',
+        excerpt: 'اكتشف كيف تهيمن على محركات الإجابة وتتهيأ لعصر البحث الأرجنتي في السعودية والخليج.',
+        author: 'فريق ون تو فايف كليك',
+        date: '12 أبريل 2026',
+        category: 'استراتيجية 2026',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
+        slug: 'seo-this-year-guide-2026'
+    },
+    {
+        id: 163,
+        title: 'استراتيجيات بناء الروابط في 2026: من الروابط إلى الاستشهادات',
+        excerpt: 'لماذا لم تعد الباك لينكس كافية؟ تعلم كيف تبني روابط سلطة تثق بها محركات الذكاء الاصطناعي.',
+        author: 'فريق ون تو فايف كليك',
+        date: '12 أبريل 2026',
+        category: 'بناء السلطة',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
+        slug: 'link-building-strategies-2026'
+    },
+    {
         id: 162,
         title: 'ما هو AEO؟ دليل تحسين محركات الإجابة الشامل',
         excerpt: 'تعرّف على AEO (تحسين محركات الإجابة) وكيف تجعل أدوات الذكاء الاصطناعي مثل ChatGPT و Perplexity و Gemini و Claude توصي بعملك. دليل شامل مع خطوات عملية.',
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'aeo-answer-engine-optimization-guide'
     },
     {
@@ -24,7 +44,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800',
         slug: 'programmatic-seo-saudi'
     },
     {
@@ -34,7 +54,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'ai-generated-content-policy'
     },
     {
@@ -44,7 +64,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الهيمنة على السوق',
-        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80&w=800',
         slug: 'google-discover-visibility'
     },
     {
@@ -54,7 +74,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-for-real-estate-saudi'
     },
     {
@@ -64,7 +84,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'عائد استثمار المحتوى',
-        image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800',
         slug: 'medical-seo-guide-ksa'
     },
     {
@@ -74,7 +94,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التجارة الإلكترونية (E-commerce)',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800',
         slug: 'retail-media-network-seo'
     },
     {
@@ -84,7 +104,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=800',
         slug: 'future-of-local-search'
     },
     {
@@ -94,7 +114,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
         slug: 'knowledge-graph-optimization'
     },
     {
@@ -104,7 +124,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800',
         slug: 'technical-seo-for-headless-cms'
     },
     {
@@ -114,7 +134,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الاستراتيجية',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-roi-reporting-for-ceos'
     },
     {
@@ -124,7 +144,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'semrush-review-saudi'
     },
     {
@@ -134,7 +154,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'ahrefs-review-saudi'
     },
     {
@@ -144,7 +164,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
         slug: 'surferseo-review-saudi'
     },
     {
@@ -154,7 +174,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'عائد استثمار المحتوى',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'clarity-vs-hotjar-cro-saudi'
     },
     {
@@ -164,7 +184,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
         slug: 'history-of-search-engines-guide'
     },
     {
@@ -174,7 +194,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=800',
         slug: 'voice-search-seo-arabic'
     },
     {
@@ -184,7 +204,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800',
         slug: 'viral-marketing-strategy-saudi'
     },
     {
@@ -194,7 +214,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'عائد استثمار المحتوى',
-        image: 'https://images.unsplash.com/photo-1454165833767-0266b01131e5?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1454165833767-0266b01131e5?auto=format&fit=crop&q=80&w=800',
         slug: 'b2b-content-marketing-ksa'
     },
     {
@@ -204,7 +224,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'عائد استثمار المحتوى',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'cro-local-business-saudi'
     },
     {
@@ -214,7 +234,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800',
         slug: 'marketing-funnel-mastery-saudi'
     },
     {
@@ -224,7 +244,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800',
         slug: 'video-marketing-guide-ksa'
     },
     {
@@ -234,7 +254,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=800',
         slug: 'eeat-checklist-saudi-authority'
     },
     {
@@ -244,7 +264,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'automate-marketing-ai-workflows'
     },
     {
@@ -254,7 +274,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'ga4-guide-saudi-business'
     },
     {
@@ -264,7 +284,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الهيمنة على السوق',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800',
         slug: 'ecommerce-growth-strategy-salla-zid'
     },
     {
@@ -274,7 +294,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'original-research-data-seo-saudi'
     },
     {
@@ -284,7 +304,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800',
         slug: 'search-intent-mastery-saudi'
     },
     {
@@ -294,7 +314,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'advanced-internal-linking-strategy'
     },
     {
@@ -304,7 +324,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'semrush-ahrefs-guide-saudi'
     },
     {
@@ -314,7 +334,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'lsi-semantic-entities-ai'
     },
     {
@@ -324,7 +344,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'site-architecture-deep-crawling'
     },
     {
@@ -334,7 +354,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800',
         slug: 'youtube-keyword-research-metadata'
     },
     {
@@ -344,7 +364,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800',
         slug: 'google-trends-real-time-seo'
     },
     {
@@ -354,7 +374,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=800',
         slug: 'podcast-seo-audio-search-saudi'
     },
     {
@@ -364,7 +384,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-visibility-brand-awareness'
     },
     {
@@ -374,7 +394,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800',
         slug: 'building-in-house-seo-team-saudi'
     },
     {
@@ -384,7 +404,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c02?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1556742044-3c52d6e88c02?auto=format&fit=crop&q=80&w=800',
         slug: 'lead-magnets-conversion-assets'
     },
     {
@@ -394,7 +414,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-copywriting-mastery-arabic'
     },
     {
@@ -404,7 +424,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=800',
         slug: 'robots-txt-sitemap-technical-seo'
     },
     {
@@ -414,7 +434,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-friendly-design-ui-ux'
     },
     {
@@ -424,7 +444,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1557838330-91f614bd5a1e?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1557838330-91f614bd5a1e?auto=format&fit=crop&q=80&w=800',
         slug: 'linkbait-viral-content-saudi'
     },
     {
@@ -434,7 +454,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1506784919141-93b4828b5552?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1506784919141-93b4828b5552?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-content-planning-calendar'
     },
     {
@@ -444,7 +464,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800',
         slug: 'user-engagement-retention-saudi'
     },
     {
@@ -454,7 +474,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=80&w=800',
         slug: 'visual-content-strategy-saudi'
     },
     {
@@ -464,7 +484,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التحليلات والأدوات',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'top-paid-seo-tools-review'
     },
     {
@@ -474,7 +494,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=800',
         slug: 'content-marketing-templates-saudi'
     },
     {
@@ -484,7 +504,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'serp-features-ai-summaries'
     },
     {
@@ -494,7 +514,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1543286386-713bcd53400b?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1543286386-713bcd53400b?auto=format&fit=crop&q=80&w=800',
         slug: 'duplicate-content-forensic-seo'
     },
     {
@@ -504,7 +524,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'on-page-seo-checklist-saudi'
     },
     {
@@ -514,7 +534,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800',
         slug: 'featured-snippets-guide-saudi'
     },
     {
@@ -524,7 +544,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80&w=800',
         slug: 'long-tail-keywords-strategy-saudi'
     },
     {
@@ -534,7 +554,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800',
         slug: 'content-repurposing-strategy'
     },
     {
@@ -544,7 +564,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
         slug: 'enterprise-seo-saudi'
     },
     {
@@ -554,7 +574,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800',
         slug: 'semantic-seo-lsi-arabic'
     },
     {
@@ -564,7 +584,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التحليلات والأدوات',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'dwell-time-bounce-rate-saudi'
     },
     {
@@ -574,7 +594,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&q=80&w=800',
         slug: 'broken-link-building-strategy'
     },
     {
@@ -584,7 +604,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'saudi-ecommerce-statistics'
     },
     {
@@ -594,7 +614,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80&w=800',
         slug: 'marketing-automation-b2b-ksa'
     },
     {
@@ -604,7 +624,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80&w=800',
         slug: 'search-intent-optimization-saudi'
     },
     {
@@ -614,7 +634,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80&w=800',
         slug: 'mobile-first-indexing-guide-ksa'
     },
     {
@@ -624,7 +644,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو محلي',
-        image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=800',
         slug: 'local-seo-multi-location-saudi'
     },
     {
@@ -634,7 +654,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
         slug: 'http3-edge-seo-future'
     },
     {
@@ -644,7 +664,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'serp-features-ai-summaries'
     },
     {
@@ -654,7 +674,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1543286386-713bcd53400b?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1543286386-713bcd53400b?auto=format&fit=crop&q=80&w=800',
         slug: 'duplicate-content-forensic-seo'
     },
     {
@@ -664,7 +684,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'on-page-seo-checklist-saudi'
     },
     {
@@ -674,7 +694,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800',
         slug: 'featured-snippets-guide-saudi'
     },
     {
@@ -684,7 +704,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80&w=800',
         slug: 'long-tail-keywords-strategy-saudi'
     },
     {
@@ -694,7 +714,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800',
         slug: 'content-repurposing-strategy'
     },
     {
@@ -704,7 +724,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
         slug: 'enterprise-seo-saudi'
     },
     {
@@ -714,7 +734,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800',
         slug: 'semantic-seo-lsi-arabic'
     },
     {
@@ -724,7 +744,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التحليلات والأدوات',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'dwell-time-bounce-rate-saudi'
     },
     {
@@ -734,7 +754,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1558403194-611308249627?auto=format&fit=crop&q=80&w=800',
         slug: 'broken-link-building-strategy'
     },
     {
@@ -744,7 +764,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أبحاث وتقارير',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'saudi-ecommerce-statistics'
     },
     {
@@ -754,7 +774,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80&w=800',
         slug: 'marketing-automation-b2b-ksa'
     },
     {
@@ -764,7 +784,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1507537362145-5fbb81d9a922?auto=format&fit=crop&q=80&w=800',
         slug: 'search-intent-optimization-saudi'
     },
     {
@@ -774,7 +794,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80&w=800',
         slug: 'mobile-first-indexing-guide-ksa'
     },
     {
@@ -784,7 +804,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو محلي',
-        image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=800',
         slug: 'local-seo-multi-location-saudi'
     },
     {
@@ -794,7 +814,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
         slug: 'http3-edge-seo-future'
     },
     {
@@ -804,7 +824,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التحليلات والأدوات',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'top-seo-tools-saudi-agencies'
     },
     {
@@ -814,7 +834,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1512428559083-a400a3b8463e?auto=format&fit=crop&q=80&w=800',
         slug: 'saudi-consumer-behavior-digital'
     },
     {
@@ -824,7 +844,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800',
         slug: 'backlink-gap-analysis-guide'
     },
     {
@@ -834,7 +854,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
         slug: 'ecommerce-conversion-optimization'
     },
     {
@@ -844,7 +864,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'ai-search-engine-strategy'
     },
     {
@@ -854,7 +874,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التحليلات والأدوات',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'marketing-research-data-seo'
     },
     {
@@ -864,7 +884,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=800',
         slug: 'link-building-research'
     },
     {
@@ -874,7 +894,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80&w=800',
         slug: 'video-seo-youtube-saudi'
     },
     {
@@ -884,7 +904,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=800',
         slug: 'affiliate-marketing-ksa'
     },
     {
@@ -894,7 +914,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'google-search-console'
     },
     {
@@ -904,7 +924,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=800',
         slug: 'web-accessibility'
     },
     {
@@ -914,7 +934,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800',
         slug: 'b2b-lead-generation'
     },
     {
@@ -924,7 +944,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
         slug: 'site-speed-optimization'
     },
     {
@@ -934,7 +954,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800',
         slug: 'technical-seo'
     },
     {
@@ -944,7 +964,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-audit'
     },
     {
@@ -954,7 +974,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=800',
         slug: 'instagram-marketing'
     },
     {
@@ -964,7 +984,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?auto=format&fit=crop&q=80&w=800',
         slug: 'email-marketing'
     },
     {
@@ -974,7 +994,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&q=80&w=800',
         slug: 'tiktok-marketing'
     },
     {
@@ -984,7 +1004,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800',
         slug: 'ecommerce-seo'
     },
     {
@@ -994,7 +1014,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800',
         slug: 'content-marketing'
     },
     {
@@ -1004,7 +1024,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الإعلانات المدفوعة',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'performance-max'
     },
     {
@@ -1014,7 +1034,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800',
         slug: 'local-seo'
     },
     {
@@ -1024,7 +1044,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800',
         slug: 'link-building'
     },
     {
@@ -1034,7 +1054,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800',
         slug: 'google-discover'
     },
     {
@@ -1044,7 +1064,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800',
         slug: 'ai-bot-management'
     },
     {
@@ -1054,7 +1074,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1616509091215-57bbece93654?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1616509091215-57bbece93654?auto=format&fit=crop&q=80&w=800',
         slug: 'reddit-marketing'
     },
     {
@@ -1064,7 +1084,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=800',
         slug: 'international-seo'
     },
     {
@@ -1074,7 +1094,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?auto=format&fit=crop&q=80&w=800',
         slug: 'linkedin-marketing'
     },
     {
@@ -1084,7 +1104,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80&w=800',
         slug: 'youtube-marketing'
     },
     {
@@ -1094,7 +1114,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800',
         slug: 'internal-linking'
     },
     {
@@ -1104,7 +1124,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800',
         slug: 'brand-building'
     },
     {
@@ -1114,7 +1134,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800',
         slug: 'wordpress-security'
     },
     {
@@ -1124,7 +1144,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'conversion-rate-optimization'
     },
     {
@@ -1134,7 +1154,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&q=80&w=800',
         slug: 'agentic-ai-shopping'
     },
     {
@@ -1144,7 +1164,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800',
         slug: 'schema-markup'
     },
     {
@@ -1154,7 +1174,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'تحليل البيانات',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'google-analytics'
     },
     {
@@ -1164,7 +1184,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الإعلانات المدفوعة',
-        image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800',
         slug: 'click-fraud'
     },
     {
@@ -1174,7 +1194,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-for-startups'
     },
     {
@@ -1184,7 +1204,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'ai-search-visibility'
     },
     {
@@ -1194,7 +1214,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800',
         slug: 'google-core-updates'
     },
     {
@@ -1204,7 +1224,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1655720828018-abb4c4a2d4e3?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1655720828018-abb4c4a2d4e3?auto=format&fit=crop&q=80&w=800',
         slug: 'ai-content-trust'
     },
     {
@@ -1214,7 +1234,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الإعلانات المدفوعة',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-vs-ppc'
     },
     {
@@ -1224,7 +1244,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الإعلانات المدفوعة',
-        image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80&w=800',
         slug: 'google-ads'
     },
     {
@@ -1234,7 +1254,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الإعلانات المدفوعة',
-        image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800',
         slug: 'ppc-trends'
     },
     {
@@ -1244,7 +1264,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800',
         slug: 'search-engines'
     },
     {
@@ -1254,7 +1274,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق',
-        image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80&w=800',
         slug: 'holiday-marketing'
     },
     {
@@ -1264,7 +1284,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'تحليل البيانات',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'content-kpis'
     },
     {
@@ -1274,7 +1294,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&q=80&w=800',
         slug: 'google-algo-history'
     },
     {
@@ -1284,7 +1304,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الإعلانات المدفوعة',
-        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800',
         slug: 'facebook-ads'
     },
     {
@@ -1294,7 +1314,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'ووردبريس',
-        image: 'https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&q=80&w=800',
         slug: 'wordpress-seo'
     },
     {
@@ -1304,7 +1324,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800',
         slug: 'on-page-seo'
     },
     {
@@ -1314,7 +1334,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'ranking-factors'
     },
     {
@@ -1324,7 +1344,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الكلمات المفتاحية',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'keyword-research'
     },
     {
@@ -1334,7 +1354,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الأداء التقني',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800',
         slug: 'core-web-vitals'
     },
     {
@@ -1344,7 +1364,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-trends'
     },
     {
@@ -1354,7 +1374,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'الاستراتيجية',
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
         slug: 'enterprise-seo'
     },
     {
@@ -1364,7 +1384,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?auto=format&fit=crop&q=80&w=800',
         slug: 'google-eat-guide'
     },
     {
@@ -1374,7 +1394,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'صناعة المحتوى',
-        image: 'https://images.unsplash.com/photo-1542744094-24638ea0b56c?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1542744094-24638ea0b56c?auto=format&fit=crop&q=80&w=800',
         slug: 'content-marketing'
     },
     {
@@ -1384,7 +1404,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'enterprise-seo-audit'
     },
     {
@@ -1394,7 +1414,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'ppc-guide'
     },
     {
@@ -1404,7 +1424,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التجارة الإلكترونية (E-commerce)',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800',
         slug: 'ecommerce-seo-guide'
     },
     {
@@ -1414,7 +1434,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800',
         slug: 'technical-seo-guide'
     },
     {
@@ -1424,7 +1444,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سوشيال ميديا',
-        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800',
         slug: 'social-media-marketing-guide'
     },
     {
@@ -1434,7 +1454,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التقنية والسيو',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'seo-tools-guide'
     },
     {
@@ -1444,7 +1464,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو الشركات (B2B)',
-        image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=800',
         slug: 'law-firm-seo-guide'
     },
     {
@@ -1454,7 +1474,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800',
         slug: 'b2b-lead-generation-guide'
     },
     {
@@ -1464,7 +1484,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
         slug: 'link-building-strategy-guide'
     },
     {
@@ -1474,7 +1494,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800',
         slug: 'local-seo-guide'
     },
     {
@@ -1484,7 +1504,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'التسويق الرقمي',
-        image: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80&w=800',
         slug: 'ppc-advertising-strategy-guide'
     },
     {
@@ -1494,7 +1514,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'عائد استثمار المحتوى',
-        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=800',
         slug: 'ecommerce-marketing-guide'
     },
     {
@@ -1504,7 +1524,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'عائد استثمار المحتوى',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'content-marketing-kpis-guide'
     },
     {
@@ -1514,7 +1534,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800',
         slug: 'enterprise-seo-guide'
     },
     {
@@ -1524,7 +1544,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'عائد استثمار المحتوى',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'content-marketing-guide'
     },
     {
@@ -1534,7 +1554,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'سيو الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'how-search-engines-work-guide'
     },
     {
@@ -1544,7 +1564,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=800',
         slug: 'holiday-marketing-guide-saudi'
     },
     {
@@ -1554,7 +1574,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800',
         slug: 'on-page-seo-guide'
     },
     {
@@ -1564,7 +1584,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&q=80&w=800',
         slug: 'wordpress-seo-guide'
     },
     {
@@ -1574,7 +1594,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'السيو التقني',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'core-web-vitals-guide'
     },
     {
@@ -1584,7 +1604,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'keyword-research-guide'
     },
     {
@@ -1594,7 +1614,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'ultimate-seo-audit-checklist-ar'
     },
     {
@@ -1604,7 +1624,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية السيو',
-        image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=800',
         slug: 'entity-seo-helpful-content-ai-ksa'
     },
     {
@@ -1614,7 +1634,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'السيو التقني',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'technical-seo-saudi-guide'
     },
     {
@@ -1624,7 +1644,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'مستقبل البحث',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'sundar-pichai-search-future'
     },
     {
@@ -1634,7 +1654,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية AI Mode',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'google-ai-mode-seo-5-rules'
     },
     {
@@ -1644,7 +1664,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'استراتيجية GEO',
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
         slug: 'geo-agency-ksa'
     },
     {
@@ -1654,7 +1674,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'أتمتة الأعمال',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
         slug: 'marketing-automation-riyadh-b2b'
     },
     {
@@ -1664,7 +1684,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '11 أبريل 2026',
         category: 'السيو التقني',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
         slug: 'umrah-taxi-service'
     },
     {
@@ -1674,7 +1694,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '2 مارس 2026',
         category: 'استراتيجية المبدعين',
-        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800',
         slug: 'ai-shadow-operating'
     },
     {
@@ -1684,7 +1704,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '28 فبراير 2026',
         category: 'سيو الذكاء الاصطناعي',
-        image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800',
         slug: 'youtube-rag-stacking-visibility'
     },
     {
@@ -1694,7 +1714,7 @@ const blogPosts = [
         author: 'فريق ون تو فايف كليك',
         date: '25 فبراير 2026',
         category: 'الهيمنة على السوق',
-        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&q=80&w=800',
         slug: 'goliath-strategy-scaling'
     }
 ];

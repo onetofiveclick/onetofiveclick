@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,7 +12,7 @@ const blogContent: Record<string, any> = {
     author: 'فريق ون تو فايف كليك',
     date: '2 مارس 2026',
     category: 'استراتيجية AEO',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200',
     content: `
       <h2>الخوارزمية غير المرئية: إنها ليست عقوبة، إنها تطور</h2>
       <p>خلال الأرباع القليلة الماضية، كانت فرق التسويق في كل قطاع B2B وSaaS تبلغ عن نفس المقياس المرعب: الحركة العضوية تهوي. تُظهر لوحات تحكم Google Search Console انطباعات تسقط من حافة الهاوية، والكلمات الرئيسية "الذهبية" المستقرة سابقاً لم تعد تحقق أي نقرات.</p>
@@ -52,7 +53,7 @@ const blogContent: Record<string, any> = {
     author: 'فريق ون تو فايف كليك',
     date: '28 فبراير 2026',
     category: 'AI-SEO',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1200',
     content: `
       <h2>التحول إلى البحث متعدد الوسائط</h2>
       <p>عندما يفكر المسوقون في السيو، فإنهم يفكرون عادةً في النص على صفحة الويب. ما يفتقدونه هو أن نماذج اللغة الكبيرة (LLMs) مثل ChatGPT وGemini يتم تدريبها على بيانات أكثر بكثير من مجرد HTML القياسي. المصدر الأكثر قوة وغير المستغل حالياً؟ <strong>نصوص الفيديو.</strong></p>
@@ -82,7 +83,7 @@ const blogContent: Record<string, any> = {
     author: 'فريق ون تو فايف كليك',
     date: '27 فبراير 2026',
     category: 'السيطرة على السوق',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
     content: `
       <h2>استراتيجية جالوت: رسم الخط الفاصل</h2>
       <p>صناعة التسويق الرقمي عند نقطة انعطاف. في جانب توجد وكالات السيو الضخمة والقديمة التي لا تزال تبيع "سلطة النطاق" و"كثافة الكلمات الرئيسية". وفي الجانب الآخر يوجد الواقع الجديد: <strong>تحسين المحركات التوليدية (GEO).</strong></p>
@@ -108,6 +109,20 @@ export function generateStaticParams() {
   return Object.keys(blogContent).map((slug) => ({
     slug,
   }));
+}
+
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const post = blogContent[params.slug];
+  if (!post) return {};
+
+  return {
+    title: `${post.title} | ون تو فايف كليك`,
+    description: post.excerpt,
+    alternates: {
+      canonical: `https://www.onetofiveclick.com/blog/${params.slug}/`,
+    },
+  };
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {

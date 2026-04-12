@@ -24,7 +24,7 @@ const projects = [
     title: 'الهيمنة المتعددة المواقع',
     client: 'مجموعة طب الأسنان الوطنية',
     category: 'السمعة وصدارة الخرائط',
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1000',
     results: '+300% حجم المراجعات',
     description: 'تحسين إدارة السمعة عبر 45 عيادة، مما أدى إلى تقييم متوسط 4.8 وتصدر نتائج البحث في جميع مناطق الخدمة.',
     color: 'brand-navy shadow-brand-navy/10'
@@ -33,7 +33,7 @@ const projects = [
     title: 'محرك السلطة المحلية',
     client: 'مكتب المحاماة النخبة',
     category: 'تجميع الكلمات حسب الأحياء',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1000',
     results: '4.5x عملاء محتملين/شهر',
     description: 'بناء محرك محتوى محلي مخصص يسيطر على عمليات البحث القانونية الإقليمية ويستهدف المستخدمين في أكثر من 15 حياً تجارياً.',
     color: 'brand-green shadow-brand-green/10'
@@ -42,7 +42,7 @@ const projects = [
     title: 'مركز نمو الامتياز',
     client: 'امتياز فيتنس فيرست',
     category: 'الإشارات والدقة',
-    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1000',
     results: 'مزامنة 100% للإشارات',
     description: 'تصحيح أكثر من 12,000 إشارة غير متسقة مما أدى إلى فتح آفاق كبيرة لظهور البحث وبناء ثقة العملاء.',
     color: 'brand-navy shadow-brand-navy/10'
@@ -51,7 +51,7 @@ const projects = [
     title: 'مسرع التصنيف المحلي',
     client: 'أبيكس لخدمات التكييف',
     category: 'استراتيجية سيو محلي',
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1000',
     results: 'المركز الأول في الخرائط',
     description: 'أتمتة تحسين الملفات المحلية لتأمين المركز الأول لعبارات عالية القيمة مثل "إصلاح مكيفات طارئ" خلال 60 يوماً.',
     color: 'brand-green shadow-brand-green/10'
@@ -141,6 +141,7 @@ export default function PortfolioPage() {
                     </div>
                     <Link
                         href="/contact"
+                        aria-label={`تواصل معنا بخصوص مشروع ${project.title}`}
                         className="w-14 h-14 rounded-full border border-slate-200 flex items-center justify-center hover:bg-brand-green hover:border-brand-green hover:text-brand-navy transition-all group/btn shadow-sm"
                     >
                         <ArrowLeft className="h-6 w-6 group-hover/btn:-translate-x-1 transition-transform" />

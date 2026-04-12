@@ -1,5 +1,15 @@
 User-agent: *
 Allow: /
+Allow: /_next/static/
+Allow: /_next/image/
+Allow: /public/
+Allow: /favicon.ico
+Allow: /home%20images/
+
+# Critical assets for rendering
+Allow: /icons/
+Allow: /fonts/
+Allow: /images/
 
 # AI Crawlers
 User-agent: GPTBot

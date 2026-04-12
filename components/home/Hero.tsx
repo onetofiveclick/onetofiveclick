@@ -68,9 +68,9 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-2 mt-2 text-sm font-bold text-slate-500">
                 <div className="flex -space-x-2 space-x-reverse mr-2">
-                   <img className="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1" alt="" />
-                   <img className="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=2" alt="" />
-                   <img className="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=3" alt="" />
+                   <img className="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=1" alt="عميل سعيد 1" />
+                   <img className="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=2" alt="عميل سعيد 2" />
+                   <img className="w-6 h-6 rounded-full border-2 border-white" src="https://i.pravatar.cc/100?img=3" alt="عميل سعيد 3" />
                 </div>
                 <span>أكثر من <strong>10,000+ شركة</strong> تثق بنا في المملكة</span>
               </div>

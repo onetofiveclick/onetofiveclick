@@ -10,6 +10,13 @@ import VisibilityTool from '@/components/home/VisibilityTool';
 import FAQSection from '@/components/home/FAQSection';
 import TrustedBy from '@/components/home/TrustedBy';
 import CTA from '@/components/home/CTA';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function Home() {
   return (

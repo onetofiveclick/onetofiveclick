@@ -125,10 +125,10 @@ export default function ReviewSection() {
 
                             <div className="flex items-center justify-between mt-auto pt-6 border-t border-slate-100 flex-row-reverse">
                                 <div className="flex gap-2">
-                                    <button onClick={prevReview} className="w-10 h-10 rounded-full border-2 border-slate-100 flex items-center justify-center text-slate-400 hover:text-brand-navy hover:border-brand-navy transition-all">
+                                    <button onClick={prevReview} aria-label="المراجعة السابقة" className="w-10 h-10 rounded-full border-2 border-slate-100 flex items-center justify-center text-slate-400 hover:text-brand-navy hover:border-brand-navy transition-all">
                                         <ChevronRight className="w-5 h-5" />
                                     </button>
-                                    <button onClick={nextReview} className="w-10 h-10 rounded-full border-2 border-slate-100 flex items-center justify-center text-slate-400 hover:text-brand-navy hover:border-brand-navy transition-all">
+                                    <button onClick={nextReview} aria-label="المراجعة التالية" className="w-10 h-10 rounded-full border-2 border-slate-100 flex items-center justify-center text-slate-400 hover:text-brand-navy hover:border-brand-navy transition-all">
                                         <ChevronLeft className="w-5 h-5" />
                                     </button>
                                 </div>

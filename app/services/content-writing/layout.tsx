@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         type: 'website',
     },
     alternates: {
-        canonical: '/services/content-writing',
+        canonical: '/services/content-writing/',
     },
 };
 

@@ -9,13 +9,14 @@ export default function Footer() {
         <div className="max-w-4xl mx-auto px-4 text-center">
             <div className="flex justify-center flex-row-reverse -space-x-reverse -space-x-4 mb-10">
               <div className="w-16 h-16 rounded-full border-4 border-white overflow-hidden bg-slate-200 shadow-lg">
-                <img src="/happy_small_business_owners_miling_1775757153671.png" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=200" alt="صاحب شركة صغيرة ناجح" className="w-full h-full object-cover" />
+              </div>
+              <div className="w-16 h-16 rounded-full border-4 border-white overflow-hidden bg-slate-200 shadow-lg" />
+              <div className="w-16 h-16 rounded-full border-4 border-white overflow-hidden bg-slate-200 shadow-lg">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" alt="خبير تسويق رقمي مبتسم" className="w-full h-full object-cover" />
               </div>
               <div className="w-16 h-16 rounded-full border-4 border-white overflow-hidden bg-slate-200 shadow-lg">
-                <img src="/happy_marketing_professional_smiling_17757379273.png" className="w-full h-full object-cover" />
-              </div>
-              <div className="w-16 h-16 rounded-full border-4 border-white overflow-hidden bg-slate-200 shadow-lg">
-                <img src="/seo_dashboard_mockup_clean_1775757287871.png" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=200" alt="لوحة بيانات سيو متقدمة" className="w-full h-full object-cover" />
               </div>
             </div>
             <h2 className="text-4xl md:text-5xl font-black text-brand-navy mb-10 tracking-tighter">انضم إلى أكثر من 10,000 مسوق محلي <br className="hidden md:block" /> يحققون النجاح بالفعل مع 1-5 كليك.</h2>
@@ -49,10 +50,10 @@ export default function Footer() {
               شريكك الاستراتيجي في النمو. نحن نُمكّن الوكالات والعلامات التجارية متعددة المواقع في السعودية من السيطرة المطلقة على البحث المحلي من خلال تقارير مدعومة بالذكاء الاصطناعي وبناء سمعة أقوى.
             </p>
             <div className="flex gap-5">
-              <a href="#" className="text-slate-400 hover:text-brand-green transition-colors"><Facebook className="h-5 w-5" /></a>
-              <a href="#" className="text-slate-400 hover:text-brand-green transition-colors"><Twitter className="h-5 w-5" /></a>
-              <a href="#" className="text-slate-400 hover:text-brand-green transition-colors"><Linkedin className="h-5 w-5" /></a>
-              <a href="#" className="text-slate-400 hover:text-brand-green transition-colors"><Instagram className="h-5 w-5" /></a>
+              <a href="#" aria-label="تابعنا على فيسبوك" className="text-slate-400 hover:text-brand-green transition-colors"><Facebook className="h-5 w-5" /></a>
+              <a href="#" aria-label="تابعنا على تويتر" className="text-slate-400 hover:text-brand-green transition-colors"><Twitter className="h-5 w-5" /></a>
+              <a href="#" aria-label="تابعنا على لينكد إن" className="text-slate-400 hover:text-brand-green transition-colors"><Linkedin className="h-5 w-5" /></a>
+              <a href="#" aria-label="تابعنا على إنستغرام" className="text-slate-400 hover:text-brand-green transition-colors"><Instagram className="h-5 w-5" /></a>
             </div>
           </div>
 
