@@ -58,22 +58,24 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <h3 className="font-extrabold text-brand-navy mb-8 text-xs uppercase tracking-[0.2em]">المنصة</h3>
+            <h3 className="font-extrabold text-brand-navy mb-8 text-xs uppercase tracking-[0.2em]">خدمات السيو المتقدمة</h3>
             <ul className="space-y-5 text-sm font-bold text-slate-500">
-              <li><Link href="/services/seo/" className="hover:text-brand-green transition-colors">تصنيفات محلية</Link></li>
-              <li><Link href="/services/reputation/" className="hover:text-brand-green transition-colors">التدقيق والمراجعات</Link></li>
-              <li><Link href="/services/citations/" className="hover:text-brand-green transition-colors">بناء الإشارات</Link></li>
-              <li><Link href="/services/gbp/" className="hover:text-brand-green transition-colors">تحسين ملف جوجل</Link></li>
+              <li><Link href="/seo-services/" className="hover:text-brand-green transition-colors">السيو للقطاعات والمدن</Link></li>
+              <li><Link href="/services/seo/technical-seo/" className="hover:text-brand-green transition-colors">السيو التقني</Link></li>
+              <li><Link href="/services/seo/on-page-seo/" className="hover:text-brand-green transition-colors">تحسين السيو الداخلي</Link></li>
+              <li><Link href="/services/seo/off-page-seo/" className="hover:text-brand-green transition-colors">بناء الروابط الخلفية</Link></li>
+              <li><Link href="/services/seo/" className="hover:text-brand-green transition-colors">خدمات السيو الشاملة</Link></li>
             </ul>
           </div>
 
           <div className="lg:col-span-3">
-            <h3 className="font-extrabold text-brand-navy mb-8 text-xs uppercase tracking-[0.2em]">المصادر والنمو</h3>
+            <h3 className="font-extrabold text-brand-navy mb-8 text-xs uppercase tracking-[0.2em]">الشركة والمصادر</h3>
             <ul className="space-y-5 text-sm font-bold text-slate-500">
-              <li><Link href="/blog/" className="hover:text-brand-green transition-colors">مدونة السيو والذكاء الاصطناعي</Link></li>
-              <li><Link href="/resources/" className="hover:text-brand-green transition-colors">مركز المعرفة والتقارير</Link></li>
+              <li><Link href="/about/" className="hover:text-brand-green transition-colors">من نحن</Link></li>
+              <li><Link href="/blog/" className="hover:text-brand-green transition-colors">مركز المعرفة</Link></li>
+              <li><Link href="/resources/" className="hover:text-brand-green transition-colors">الأدوات والتقارير</Link></li>
               <li><Link href="/expertise/" className="hover:text-brand-green transition-colors">دراسات الحالة</Link></li>
-              <li><Link href="/contact/" className="hover:text-brand-green transition-colors">تواصل مع مستشار تقني</Link></li>
+              <li><Link href="/contact/" className="hover:text-brand-green transition-colors">تواصل معنا</Link></li>
             </ul>
           </div>
 

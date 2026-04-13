@@ -26,10 +26,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ون تو فايف كليك - وكالة خبيرة في التسويق الرقمي وسيو',
     description: 'ارتقِ بعلامتك التجارية مع خدمات التسويق الرقمي الخبيرة. متخصصون في السيو التقني والمحلي وحلول التسويق الشاملة.',
-    url: 'https://onetofiveclick.com',
     siteName: 'ون تو فايف كليك',
     locale: 'ar_SA',
     type: 'website',
+    images: [
+      {
+        url: '/logo.svg',
+        width: 1200,
+        height: 630,
+        alt: 'ون تو فايف كليك - وكالة خبيرة في التسويق الرقمي وسيو',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',

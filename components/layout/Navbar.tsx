@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navigationLinks = [
+  { name: 'من نحن', href: '/about/' },
   { name: 'المنهجية', href: '/methodology/' },
   { name: 'مركز المعرفة', href: '/blog/' },
   { name: 'الأدوات', href: '/tools/' },
