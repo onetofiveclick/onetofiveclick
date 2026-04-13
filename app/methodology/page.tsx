@@ -263,7 +263,7 @@ export default function MethodologyPage() {
             className="animate-in fade-in zoom-in duration-1000 inline-grid"
           >
             <a 
-              href="/case-studies/goldfish-summer-care"
+              href="/case-studies/goldfish-summer-care/"
               className="group relative bg-white border-2 border-brand-green/30 p-8 rounded-[3rem] hover:border-brand-green transition-all shadow-xl shadow-slate-200/50"
             >
               <div className="flex items-center gap-6">

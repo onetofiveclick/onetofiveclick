@@ -14,7 +14,7 @@ export default function AlRawdahJeddahPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click - حي الروضة جدة | ون تو فايف كليك",
-            "image": "https://images.unsplash.com/photo-1578330132822-04fb775a2d1d?auto=format&fit=crop&q=80&w=1200",
+            "image": "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/jeddah/al-rawdah/",
             "telephone": "+966 57 580 6733",
             "address": {
@@ -35,7 +35,7 @@ export default function AlRawdahJeddahPage() {
       <section className="relative h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1578330132822-04fb775a2d1d?auto=format&fit=crop&q=80&w=1200" 
+            src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&q=80&w=1200" 
             alt="حي الروضة جدة - وجهة المبدعين والأعمال"
             className="w-full h-full object-cover"
           />

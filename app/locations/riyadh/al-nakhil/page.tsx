@@ -14,7 +14,7 @@ export default function AlNakhilPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "1-5 Click - حي النخيل الرياض | ون تو فايف كليك",
-            "image": "https://images.unsplash.com/photo-1586724230473-455799a61763?auto=format&fit=crop&q=80&w=1200",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
             "url": "https://onetofiveclick.com/locations/riyadh/al-nakhil/",
             "telephone": "+966 57 580 6733",
             "address": {
@@ -35,7 +35,7 @@ export default function AlNakhilPage() {
       <section className="relative h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1586724230473-455799a61763?auto=format&fit=crop&q=80&w=1200" 
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200" 
             alt="حي النخيل الرياض - التميز الرقمي"
             className="w-full h-full object-cover"
           />

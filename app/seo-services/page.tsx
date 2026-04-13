@@ -15,6 +15,30 @@ export default function SeoServicesIndex() {
           </p>
         </div>
 
+        {/* City Hub Pages - Fixes Orphan Pages Issue */}
+        <div className="mb-16 bg-brand-navy p-10 rounded-[3rem] shadow-sm text-white">
+          <div className="flex items-center gap-4 mb-8 flex-row-reverse border-b border-brand-navy-light pb-6">
+            <div className="w-12 h-12 bg-brand-green/20 rounded-xl flex items-center justify-center">
+              <MapPin className="w-6 h-6 text-brand-green" />
+            </div>
+            <h2 className="text-2xl font-black text-white">متخصصون في مدينتك</h2>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {seoCities.map(city => (
+              <Link
+                key={`city-hub-${city.slug}`}
+                href={`/seo-services/${city.slug}/`}
+                className="group flex flex-col items-center justify-center p-6 bg-white/5 rounded-[2rem] hover:bg-brand-green hover:text-brand-navy transition-all duration-300 border border-white/10 hover:border-brand-green"
+              >
+                <span className="font-bold text-white group-hover:text-brand-navy text-sm text-center">
+                  سيو {city.name}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {seoNiches.map(niche => (
           <div key={niche.slug} className="mb-16 bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100">
             <div className="flex items-center gap-4 mb-8 flex-row-reverse border-b border-slate-100 pb-6">
