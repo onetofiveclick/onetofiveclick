@@ -10,7 +10,7 @@ const reviews = [
         quote: "زادت رؤية البحث المحلي لدينا بنسبة 300٪ في غضون 3 أشهر من استخدام محرك السمعة الخاص بهم.",
         author: "سارة جينكينز",
         role: "مؤسسة برايت هورايزون",
-        image: "/happy_small_business_owners_miling_1775757153671.png"
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=200"
     },
     {
         quote: "كنت أعاني من التقييمات السلبية العشوائية، الآن لدي تحكم كامل في سمعتي الرقمية محلياً.",

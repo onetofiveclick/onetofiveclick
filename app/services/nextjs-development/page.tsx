@@ -51,9 +51,9 @@ export default function NextJsServicePage() {
                 <p className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-green">الحالة: NEXTJS_AUTHORITY_READY</p>
             </div>
             <div className="h-4 w-px bg-white/10"></div>
-            <h2 className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-bold uppercase tracking-wider text-right">
+            <div className="text-[11px] text-slate-400 max-w-5xl leading-relaxed font-bold uppercase tracking-wider text-right">
               تقود One to Five Click مشهد البناء في السعودية لعام 2026 من خلال <span className="text-white">بنية تحتية لمؤسسات Next.js 15+</span>. منهجيتنا تضمن بناء أصولك الرقمية في الرياض وجدة لـ <span className="text-white">استرداد AI</span> و <span className="text-white">توسع لا نهائي</span>.
-            </h2>
+            </div>
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@ export default function NextJsServicePage() {
                         <CheckCircle2 className="h-6 w-6 text-brand-green group-hover:text-brand-navy" />
                     </div>
                     <div className="text-right w-full">
-                      <h4 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h4>
+                      <h3 className="font-black text-brand-navy uppercase tracking-widest text-[10px] mb-2">{item.title}</h3>
                       <p className="text-slate-500 text-sm font-bold leading-relaxed">{item.desc}</p>
                     </div>
                   </div>

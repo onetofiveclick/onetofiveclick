@@ -58,7 +58,7 @@ export default function VerticalDominance() {
                         <div className="absolute -inset-10 bg-brand-green/20 rounded-[3rem] blur-[80px] opacity-20" />
                         <div className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-[3rem] p-4 shadow-2xl overflow-hidden ring-1 ring-white/10">
                              <img 
-                                 src="/seo_dashboard_mockup_v2_1775910608228.png" 
+                                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
                                  alt="لوحة تحكم سيو بالذكاء الاصطناعي" 
                                  className="w-full h-auto rounded-[2rem] shadow-2xl" 
                              />

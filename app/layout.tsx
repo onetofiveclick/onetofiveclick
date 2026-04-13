@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     google: '1PcvaIkddJ8PSbMZh_xzmA2vpxTgivrMSKpNHbn-Tuo',
     other: {
       'msvalidate.01': '5F4EFC27D86710196AA76DBA983E1832',
+      'ahrefs-site-verification': '8cb70294709dc096c931556716f90ffe5ef888c6ea6aaea05408f6c685e2534f',
     },
   },
 };

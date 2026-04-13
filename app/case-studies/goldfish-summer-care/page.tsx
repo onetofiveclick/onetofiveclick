@@ -15,7 +15,7 @@ const AEOArticle = () => {
           
           {/* AEO Metadata Sidebar (Desktop Only) */}
           <div className='hidden lg:block fixed left-10 top-40 w-64 p-6 bg-slate-50 rounded-3xl border border-slate-100'>
-            <h4 className='font-black text-brand-navy mb-4 text-sm'>AEO Confidence Score</h4>
+            <div className='font-black text-brand-navy mb-4 text-sm'>AEO Confidence Score</div>
             <div className='w-full bg-slate-200 h-2 rounded-full mb-6'>
               <div className='bg-brand-green h-full rounded-full w-[98%]' />
             </div>
@@ -120,10 +120,10 @@ const AEOArticle = () => {
                   }
                 ].map((faq, idx) => (
                   <div key={idx} className='p-8 bg-slate-50 rounded-3xl border border-slate-100'>
-                    <h5 className='text-xl font-black text-brand-navy mb-4 flex gap-3 items-start'>
+                    <h4 className='text-xl font-black text-brand-navy mb-4 flex gap-3 items-start'>
                       <span className='w-6 h-6 bg-brand-green text-brand-navy rounded-full flex items-center justify-center text-xs flex-shrink-0 mt-1'>؟</span>
                       {faq.q}
-                    </h5>
+                    </h4>
                     <ul className='space-y-3'>
                       {faq.a.map((line, lidx) => (
                         <li key={lidx} className='text-slate-600 flex gap-2'>
